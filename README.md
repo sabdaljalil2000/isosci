@@ -57,21 +57,6 @@ isosci/
 
 ---
 
-## Pipeline Stages
-
-| Stage | Name | Wall Time | API Cost |
-|-------|------|-----------|----------|
-| 1 | Seed collection | ~30 min | ~$20 |
-| 2 | Pair generation | ~3–4 hr | ~$150 |
-| 3 | Verification | ~2–3 hr | ~$80 |
-| 4 | Model evaluation | ~8–12 hr | ~$600–1,500 |
-| 5 | Analysis | ~2 min | $0 |
-| 6 | Figures & tables | ~2 min | $0 |
-| 7 | Dataset release | ~1 min | $0 |
-| **Total** | | **~14–20 hr** | **~$850–1,750** |
-
----
-
 ## Running Specific Stages
 
 ```bash
