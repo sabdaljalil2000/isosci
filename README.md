@@ -1,6 +1,5 @@
-# IsoSci-150 Research Pipeline
+# ISOSCI: A Benchmark of Isomorphic Cross-Domain Science Problems for Evaluating Reasoning versus Knowledge Retrieval in LLMs
 
-> **Full A-to-Z pipeline** for the IsoSci-150 NeurIPS D&B submission:
 > dataset construction → model evaluation → analysis → figures → HuggingFace release.
 
 ---
@@ -215,5 +214,5 @@ After running all stages, the following are ready for inclusion in the paper:
 
 ---
 
-
+pu
 ```
