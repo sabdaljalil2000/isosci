@@ -1,0 +1,78 @@
+2026-04-16 22:14:50,954 [INFO] stage8 — IsoSci incorrect responses to classify: 875
+2026-04-16 22:14:50,954 [INFO] stage8 — Limited to 20 for testing
+2026-04-16 22:14:50,954 [INFO] stage8 — Remaining to classify: 20
+2026-04-16 22:15:34,938 [INFO] stage8 — IsoSci incorrect responses to classify: 875
+2026-04-16 22:15:34,938 [INFO] stage8 — Limited to 20 for testing
+2026-04-16 22:15:34,938 [INFO] stage8 — Remaining to classify: 20
+2026-04-16 22:16:26,410 [INFO] stage8 —   Classified 20/20
+2026-04-16 22:16:28,153 [INFO] stage8 — Saved 20 classified responses to /Users/sabdaljalil/Downloads/isosci/analysis/error_taxonomy_raw.json
+2026-04-16 22:16:28,155 [INFO] stage8 — Saved taxonomy summary to /Users/sabdaljalil/Downloads/isosci/analysis/error_taxonomy_summary.json
+2026-04-16 22:16:28,156 [INFO] stage8 — 
+============================================================
+2026-04-16 22:16:28,156 [INFO] stage8 — TOTAL INCORRECT RESPONSES CLASSIFIED: 20
+2026-04-16 22:16:28,156 [INFO] stage8 —   Knowledge errors (K1+K2+K3): 10.0%
+2026-04-16 22:16:28,156 [INFO] stage8 —   Reasoning errors (R1+R2+R3+R4): 0.0%
+2026-04-16 22:16:28,156 [INFO] stage8 — 
+Source problems — knowledge errors: 0.0%
+2026-04-16 22:16:28,156 [INFO] stage8 — Target problems — knowledge errors: 16.7%
+2026-04-16 22:16:28,156 [INFO] stage8 — (Higher K% on target = knowledge bottleneck on cross-domain problems)
+2026-04-16 22:16:28,964 [INFO] stage8 — Saved Figure 4: /Users/sabdaljalil/Downloads/isosci/outputs/figure_4_error_taxonomy.pdf
+2026-04-16 22:17:47,975 [INFO] stage8 — IsoSci incorrect responses to classify: 875
+2026-04-16 22:17:47,975 [INFO] stage8 — Resuming: 20 already classified
+2026-04-16 22:17:47,975 [INFO] stage8 — Remaining to classify: 836
+2026-04-16 22:19:55,645 [INFO] stage8 — IsoSci incorrect responses to classify: 875
+2026-04-16 22:19:55,646 [INFO] stage8 — Resuming: 20 already classified
+2026-04-16 22:19:55,647 [INFO] stage8 — Remaining to classify: 836
+2026-04-16 22:20:46,585 [INFO] stage8 —   Classified 20/836
+2026-04-16 22:21:47,661 [INFO] stage8 —   Classified 40/836
+2026-04-16 22:22:49,325 [INFO] stage8 —   Classified 60/836
+2026-04-16 22:23:49,472 [INFO] stage8 —   Classified 80/836
+2026-04-16 22:25:02,159 [INFO] stage8 —   Classified 100/836
+2026-04-16 22:26:04,033 [INFO] stage8 —   Classified 120/836
+2026-04-16 22:27:07,400 [INFO] stage8 —   Classified 140/836
+2026-04-16 22:28:03,973 [INFO] stage8 —   Classified 160/836
+2026-04-16 22:29:07,525 [INFO] stage8 —   Classified 180/836
+2026-04-16 22:30:07,832 [INFO] stage8 —   Classified 200/836
+2026-04-16 22:31:06,656 [INFO] stage8 —   Classified 220/836
+2026-04-16 22:32:07,201 [INFO] stage8 —   Classified 240/836
+2026-04-16 22:33:06,804 [INFO] stage8 —   Classified 260/836
+2026-04-16 22:34:07,957 [INFO] stage8 —   Classified 280/836
+2026-04-16 22:35:05,113 [INFO] stage8 —   Classified 300/836
+2026-04-16 22:36:02,413 [INFO] stage8 —   Classified 320/836
+2026-04-16 22:37:02,558 [INFO] stage8 —   Classified 340/836
+2026-04-16 22:37:56,215 [INFO] stage8 —   Classified 360/836
+2026-04-16 22:38:42,636 [INFO] stage8 —   Classified 380/836
+2026-04-16 22:39:41,447 [INFO] stage8 —   Classified 400/836
+2026-04-16 22:40:41,430 [INFO] stage8 —   Classified 420/836
+2026-04-16 22:41:40,773 [INFO] stage8 —   Classified 440/836
+2026-04-16 22:42:33,527 [INFO] stage8 —   Classified 460/836
+2026-04-16 22:43:20,082 [INFO] stage8 —   Classified 480/836
+2026-04-16 22:44:13,720 [INFO] stage8 —   Classified 500/836
+2026-04-16 22:44:57,975 [INFO] stage8 —   Classified 520/836
+2026-04-16 22:45:37,998 [INFO] stage8 —   Classified 540/836
+2026-04-16 22:46:09,661 [INFO] stage8 —   Classified 560/836
+2026-04-16 22:46:37,846 [INFO] stage8 —   Classified 580/836
+2026-04-16 22:47:01,644 [INFO] stage8 —   Classified 600/836
+2026-04-16 22:47:16,071 [INFO] stage8 —   Classified 620/836
+2026-04-16 22:47:38,466 [INFO] stage8 —   Classified 640/836
+2026-04-16 22:48:20,661 [INFO] stage8 —   Classified 660/836
+2026-04-16 22:49:05,096 [INFO] stage8 —   Classified 680/836
+2026-04-16 22:49:55,030 [INFO] stage8 —   Classified 700/836
+2026-04-16 22:50:40,719 [INFO] stage8 —   Classified 720/836
+2026-04-16 22:51:00,113 [INFO] stage8 —   Classified 740/836
+2026-04-16 22:51:27,112 [INFO] stage8 —   Classified 760/836
+2026-04-16 22:51:53,557 [INFO] stage8 —   Classified 780/836
+2026-04-16 22:52:14,567 [INFO] stage8 —   Classified 800/836
+2026-04-16 22:52:28,088 [INFO] stage8 —   Classified 820/836
+2026-04-16 22:53:02,162 [INFO] stage8 — Saved 856 classified responses to /Users/sabdaljalil/Downloads/isosci/analysis/error_taxonomy_raw.json
+2026-04-16 22:53:02,165 [INFO] stage8 — Saved taxonomy summary to /Users/sabdaljalil/Downloads/isosci/analysis/error_taxonomy_summary.json
+2026-04-16 22:53:02,165 [INFO] stage8 — 
+============================================================
+2026-04-16 22:53:02,165 [INFO] stage8 — TOTAL INCORRECT RESPONSES CLASSIFIED: 856
+2026-04-16 22:53:02,165 [INFO] stage8 —   Knowledge errors (K1+K2+K3): 6.1%
+2026-04-16 22:53:02,165 [INFO] stage8 —   Reasoning errors (R1+R2+R3+R4): 2.1%
+2026-04-16 22:53:02,165 [INFO] stage8 — 
+Source problems — knowledge errors: 6.7%
+2026-04-16 22:53:02,165 [INFO] stage8 — Target problems — knowledge errors: 5.5%
+2026-04-16 22:53:02,165 [INFO] stage8 — (Higher K% on target = knowledge bottleneck on cross-domain problems)
+2026-04-16 22:53:03,004 [INFO] stage8 — Saved Figure 4: /Users/sabdaljalil/Downloads/isosci/outputs/figure_4_error_taxonomy.pdf

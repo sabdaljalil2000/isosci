@@ -1,0 +1,19 @@
+{
+  "n_total_pairs": 144,
+  "n_train_pairs": 76,
+  "n_test_pairs": 68,
+  "mapping_counts": {
+    "physics_to_biology": 25,
+    "biology_to_earth_science": 25,
+    "chemistry_to_biology": 22,
+    "physics_to_earth_science": 25,
+    "chemistry_to_earth_science": 22,
+    "physics_to_chemistry": 25
+  },
+  "license": "CC-BY-4.0",
+  "version": "1.0.0",
+  "splits": {
+    "train": "train.json",
+    "test": "test.json"
+  }
+}

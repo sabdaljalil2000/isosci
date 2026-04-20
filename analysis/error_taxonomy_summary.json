@@ -1,0 +1,212 @@
+{
+  "by_model": {
+    "google/gemini-2.0-flash-001 [thinking=OFF]": {
+      "total_errors": 109,
+      "counts": {
+        "U2": 30,
+        "K3": 12,
+        "C1": 63,
+        "R4": 2,
+        "R1": 2
+      },
+      "pct_knowledge": 11.009174311926607,
+      "pct_reasoning": 3.669724770642202,
+      "pct_artifact": 85.3211009174312
+    },
+    "google/gemini-2.0-flash-001 [thinking=ON]": {
+      "total_errors": 91,
+      "counts": {
+        "R4": 3,
+        "K3": 11,
+        "C1": 52,
+        "U2": 23,
+        "R1": 2
+      },
+      "pct_knowledge": 12.087912087912088,
+      "pct_reasoning": 5.4945054945054945,
+      "pct_artifact": 82.41758241758241
+    },
+    "openai/gpt-4o-mini-2024-07-18": {
+      "total_errors": 111,
+      "counts": {
+        "U2": 40,
+        "K3": 16,
+        "C1": 48,
+        "R4": 4,
+        "R2": 1,
+        "R1": 2
+      },
+      "pct_knowledge": 14.414414414414415,
+      "pct_reasoning": 6.306306306306306,
+      "pct_artifact": 79.27927927927928
+    },
+    "openai/o3-mini": {
+      "total_errors": 182,
+      "counts": {
+        "U2": 27,
+        "K3": 9,
+        "C1": 123,
+        "U1": 20,
+        "R4": 1,
+        "K2": 2
+      },
+      "pct_knowledge": 6.043956043956044,
+      "pct_reasoning": 0.5494505494505495,
+      "pct_artifact": 93.4065934065934
+    },
+    "qwen/qwen3-32b:nitro [thinking=OFF]": {
+      "total_errors": 182,
+      "counts": {
+        "U2": 13,
+        "U1": 96,
+        "C1": 71,
+        "R4": 1,
+        "K3": 1
+      },
+      "pct_knowledge": 0.5494505494505495,
+      "pct_reasoning": 0.5494505494505495,
+      "pct_artifact": 98.9010989010989
+    },
+    "qwen/qwen3-32b:nitro [thinking=ON]": {
+      "total_errors": 181,
+      "counts": {
+        "U2": 20,
+        "U1": 99,
+        "C1": 61,
+        "K3": 1
+      },
+      "pct_knowledge": 0.5524861878453038,
+      "pct_reasoning": 0.0,
+      "pct_artifact": 99.4475138121547
+    }
+  },
+  "source_vs_target": {
+    "source": {
+      "counts": {
+        "C1": 204,
+        "R4": 7,
+        "U2": 63,
+        "K3": 26,
+        "R2": 1,
+        "R1": 1,
+        "U1": 115,
+        "K2": 2
+      },
+      "pct_knowledge": 6.682577565632458,
+      "n": 419
+    },
+    "target": {
+      "counts": {
+        "U2": 90,
+        "K3": 24,
+        "C1": 214,
+        "R1": 5,
+        "R4": 4,
+        "U1": 100
+      },
+      "pct_knowledge": 5.491990846681922,
+      "n": 437
+    }
+  },
+  "by_domain": {
+    "chemistry": {
+      "total_errors": 221,
+      "counts": {
+        "U2": 62,
+        "K3": 7,
+        "C1": 63,
+        "R2": 1,
+        "R1": 1,
+        "U1": 85,
+        "K2": 2
+      },
+      "pct_knowledge": 4.072398190045249,
+      "pct_reasoning": 0.904977375565611
+    },
+    "physics": {
+      "total_errors": 196,
+      "counts": {
+        "C1": 129,
+        "R4": 7,
+        "U2": 16,
+        "K3": 7,
+        "U1": 37
+      },
+      "pct_knowledge": 3.571428571428571,
+      "pct_reasoning": 3.571428571428571
+    },
+    "biology": {
+      "total_errors": 211,
+      "counts": {
+        "U2": 24,
+        "C1": 124,
+        "K3": 23,
+        "R4": 3,
+        "R1": 1,
+        "U1": 36
+      },
+      "pct_knowledge": 10.90047393364929,
+      "pct_reasoning": 1.8957345971563981
+    },
+    "earth_science": {
+      "total_errors": 228,
+      "counts": {
+        "C1": 102,
+        "U2": 51,
+        "R1": 4,
+        "K3": 13,
+        "R4": 1,
+        "U1": 57
+      },
+      "pct_knowledge": 5.701754385964912,
+      "pct_reasoning": 2.1929824561403506
+    }
+  },
+  "reasoning_vs_standard": {
+    "reasoning": {
+      "n": 454,
+      "counts": {
+        "U2": 70,
+        "K3": 21,
+        "C1": 236,
+        "U1": 119,
+        "R4": 4,
+        "K2": 2,
+        "R1": 2
+      },
+      "pct_knowledge": 5.066079295154185,
+      "pct_reasoning": 1.3215859030837005,
+      "pct_artifact": 93.6123348017621
+    },
+    "standard": {
+      "n": 402,
+      "counts": {
+        "U2": 83,
+        "K3": 29,
+        "C1": 182,
+        "R4": 7,
+        "R2": 1,
+        "R1": 4,
+        "U1": 96
+      },
+      "pct_knowledge": 7.213930348258707,
+      "pct_reasoning": 2.9850746268656714,
+      "pct_artifact": 89.80099502487562
+    }
+  },
+  "overall": {
+    "n_classified": 856,
+    "counts": {
+      "U2": 153,
+      "K3": 50,
+      "C1": 418,
+      "R4": 11,
+      "R1": 6,
+      "R2": 1,
+      "U1": 215,
+      "K2": 2
+    },
+    "pct_knowledge": 6.074766355140187,
+    "pct_reasoning": 2.102803738317757
+  }
+}

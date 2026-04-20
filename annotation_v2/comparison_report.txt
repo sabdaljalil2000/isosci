@@ -1,0 +1,46 @@
+=================================================================
+LLM JUDGE vs HUMAN ANNOTATION COMPARISON REPORT
+=================================================================
+Total pairs in sample:              25
+Pairs where humans agreed:          20  (80%)
+Pairs where humans disagreed:       5  (20%)
+
+--- ACCEPTANCE RATES ---
+LLM judges accepted:                19/25  (76.0%)
+Annotator 1 accepted:               20/25  (80.0%)
+Annotator 2 accepted:               23/25  (92.0%)
+
+--- LLM JUDGE PERFORMANCE (gold = human consensus) ---
+N pairs with human consensus:       20
+True Positives  (LLM✓ Human✓):     16
+False Positives (LLM✓ Human✗):     1  ← LLM over-accepted
+False Negatives (LLM✗ Human✓):     3  ← LLM over-rejected
+True Negatives  (LLM✗ Human✗):     0
+Precision:                          0.941  (of LLM accepts, how many are valid)
+Recall:                             0.842  (of valid pairs, how many LLM found)
+F1:                                 0.889
+Accuracy:                           0.800
+
+--- INTER-RATER AGREEMENT (Cohen's κ) ---
+LLM vs Annotator 1:                 κ = 0.186
+LLM vs Annotator 2:                 κ = 0.148
+Annotator 1 vs Annotator 2:         κ = 0.194  (human agreement)
+
+--- CRITERION SCORES (mean, 1–5 scale) ---
+Criterion                       LLM   Human1   Human2   r(LLM,H1)   r(LLM,H2)
+---------------------------------------------------------------------------
+logical_equivalence            4.27     4.04     4.08       0.187       0.399
+domain_independence            4.85     5.00     4.04         nan       0.030
+difficulty_parity              4.11     3.80     4.04       0.090       0.369
+self_containment               4.80     5.00     4.92         nan      -0.116
+
+--- FAILURE MODES ON LLM FALSE POSITIVES (n=1) ---
+(Pairs LLM accepted that humans rejected — what went wrong?)
+  Difficulty mismatch                 1
+  formula overlap                     1
+
+--- INTERPRETATION ---
+  ✓ LLM precision ≥ 0.80: most LLM-accepted pairs are valid.
+    The benchmark findings are unlikely to be invalidated by LLM noise.
+  ✓ LLM recall ≥ 0.80: most valid pairs were found by LLM judges.
+=================================================================

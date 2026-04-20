@@ -1,0 +1,926 @@
+{
+  "openai/o3-mini": {
+    "gpqa": {
+      "overall": 56.1,
+      "by_domain": {
+        "physics": {
+          "accuracy": 65.1,
+          "ci_95": [
+            54.7,
+            74.4
+          ],
+          "n": 86
+        },
+        "chemistry": {
+          "accuracy": 47.3,
+          "ci_95": [
+            37.6,
+            57.0
+          ],
+          "n": 93
+        },
+        "biology": {
+          "accuracy": 57.9,
+          "ci_95": [
+            36.8,
+            78.9
+          ],
+          "n": 19
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 198
+    },
+    "isosci": {
+      "overall": 36.8,
+      "by_domain": {
+        "physics": {
+          "accuracy": 52.0,
+          "ci_95": [
+            40.0,
+            64.0
+          ],
+          "n": 75
+        },
+        "chemistry": {
+          "accuracy": 30.4,
+          "ci_95": [
+            20.3,
+            42.0
+          ],
+          "n": 69
+        },
+        "biology": {
+          "accuracy": 34.7,
+          "ci_95": [
+            25.0,
+            45.8
+          ],
+          "n": 72
+        },
+        "earth_science": {
+          "accuracy": 29.2,
+          "ci_95": [
+            19.4,
+            40.3
+          ],
+          "n": 72
+        }
+      },
+      "n_total": 288
+    },
+    "mmlu_stem": {
+      "overall": 60.0,
+      "by_domain": {
+        "physics": {
+          "accuracy": 43.6,
+          "ci_95": [
+            38.0,
+            49.6
+          ],
+          "n": 250
+        },
+        "chemistry": {
+          "accuracy": 51.6,
+          "ci_95": [
+            45.6,
+            57.6
+          ],
+          "n": 250
+        },
+        "biology": {
+          "accuracy": 84.8,
+          "ci_95": [
+            80.4,
+            88.8
+          ],
+          "n": 250
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 750
+    },
+    "scibench": {
+      "overall": 41.7,
+      "by_domain": {
+        "physics": {
+          "accuracy": 47.0,
+          "ci_95": [
+            41.1,
+            53.4
+          ],
+          "n": 236
+        },
+        "chemistry": {
+          "accuracy": 38.1,
+          "ci_95": [
+            32.9,
+            43.3
+          ],
+          "n": 349
+        },
+        "biology": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 585
+    }
+  },
+  "openai/gpt-4o-mini-2024-07-18": {
+    "gpqa": {
+      "overall": 36.9,
+      "by_domain": {
+        "physics": {
+          "accuracy": 44.2,
+          "ci_95": [
+            33.7,
+            54.7
+          ],
+          "n": 86
+        },
+        "chemistry": {
+          "accuracy": 30.1,
+          "ci_95": [
+            21.5,
+            39.8
+          ],
+          "n": 93
+        },
+        "biology": {
+          "accuracy": 36.8,
+          "ci_95": [
+            15.8,
+            57.9
+          ],
+          "n": 19
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 198
+    },
+    "isosci": {
+      "overall": 61.5,
+      "by_domain": {
+        "physics": {
+          "accuracy": 69.3,
+          "ci_95": [
+            58.7,
+            80.0
+          ],
+          "n": 75
+        },
+        "chemistry": {
+          "accuracy": 62.3,
+          "ci_95": [
+            50.7,
+            73.9
+          ],
+          "n": 69
+        },
+        "biology": {
+          "accuracy": 59.7,
+          "ci_95": [
+            48.6,
+            70.8
+          ],
+          "n": 72
+        },
+        "earth_science": {
+          "accuracy": 54.2,
+          "ci_95": [
+            41.7,
+            65.3
+          ],
+          "n": 72
+        }
+      },
+      "n_total": 288
+    },
+    "mmlu_stem": {
+      "overall": 79.2,
+      "by_domain": {
+        "physics": {
+          "accuracy": 71.6,
+          "ci_95": [
+            65.6,
+            76.4
+          ],
+          "n": 250
+        },
+        "chemistry": {
+          "accuracy": 74.0,
+          "ci_95": [
+            68.4,
+            79.6
+          ],
+          "n": 250
+        },
+        "biology": {
+          "accuracy": 92.0,
+          "ci_95": [
+            88.8,
+            95.2
+          ],
+          "n": 250
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 750
+    },
+    "scibench": {
+      "overall": 38.5,
+      "by_domain": {
+        "physics": {
+          "accuracy": 45.8,
+          "ci_95": [
+            39.4,
+            52.1
+          ],
+          "n": 236
+        },
+        "chemistry": {
+          "accuracy": 33.5,
+          "ci_95": [
+            28.7,
+            38.7
+          ],
+          "n": 349
+        },
+        "biology": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 585
+    }
+  },
+  "qwen/qwen3-32b:nitro [thinking=ON]": {
+    "gpqa": {
+      "overall": 29.8,
+      "by_domain": {
+        "physics": {
+          "accuracy": 46.5,
+          "ci_95": [
+            36.0,
+            57.0
+          ],
+          "n": 86
+        },
+        "chemistry": {
+          "accuracy": 10.8,
+          "ci_95": [
+            5.4,
+            18.3
+          ],
+          "n": 93
+        },
+        "biology": {
+          "accuracy": 47.4,
+          "ci_95": [
+            26.2,
+            68.4
+          ],
+          "n": 19
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 198
+    },
+    "isosci": {
+      "overall": 37.2,
+      "by_domain": {
+        "physics": {
+          "accuracy": 41.3,
+          "ci_95": [
+            29.3,
+            53.3
+          ],
+          "n": 75
+        },
+        "chemistry": {
+          "accuracy": 21.7,
+          "ci_95": [
+            13.0,
+            31.9
+          ],
+          "n": 69
+        },
+        "biology": {
+          "accuracy": 45.8,
+          "ci_95": [
+            34.7,
+            57.0
+          ],
+          "n": 72
+        },
+        "earth_science": {
+          "accuracy": 38.9,
+          "ci_95": [
+            27.8,
+            50.0
+          ],
+          "n": 72
+        }
+      },
+      "n_total": 288
+    },
+    "mmlu_stem": {
+      "overall": 60.8,
+      "by_domain": {
+        "physics": {
+          "accuracy": 45.6,
+          "ci_95": [
+            39.6,
+            51.6
+          ],
+          "n": 250
+        },
+        "chemistry": {
+          "accuracy": 51.2,
+          "ci_95": [
+            44.8,
+            57.2
+          ],
+          "n": 250
+        },
+        "biology": {
+          "accuracy": 85.6,
+          "ci_95": [
+            81.2,
+            90.0
+          ],
+          "n": 250
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 750
+    },
+    "scibench": {
+      "overall": 28.2,
+      "by_domain": {
+        "physics": {
+          "accuracy": 29.7,
+          "ci_95": [
+            23.7,
+            36.0
+          ],
+          "n": 236
+        },
+        "chemistry": {
+          "accuracy": 27.2,
+          "ci_95": [
+            22.6,
+            32.4
+          ],
+          "n": 349
+        },
+        "biology": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 585
+    }
+  },
+  "qwen/qwen3-32b:nitro [thinking=OFF]": {
+    "gpqa": {
+      "overall": 24.2,
+      "by_domain": {
+        "physics": {
+          "accuracy": 30.2,
+          "ci_95": [
+            20.9,
+            39.5
+          ],
+          "n": 86
+        },
+        "chemistry": {
+          "accuracy": 17.2,
+          "ci_95": [
+            9.7,
+            24.7
+          ],
+          "n": 93
+        },
+        "biology": {
+          "accuracy": 31.6,
+          "ci_95": [
+            10.5,
+            52.6
+          ],
+          "n": 19
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 198
+    },
+    "isosci": {
+      "overall": 36.8,
+      "by_domain": {
+        "physics": {
+          "accuracy": 36.0,
+          "ci_95": [
+            25.3,
+            46.7
+          ],
+          "n": 75
+        },
+        "chemistry": {
+          "accuracy": 26.1,
+          "ci_95": [
+            15.9,
+            37.7
+          ],
+          "n": 69
+        },
+        "biology": {
+          "accuracy": 50.0,
+          "ci_95": [
+            38.9,
+            62.5
+          ],
+          "n": 72
+        },
+        "earth_science": {
+          "accuracy": 34.7,
+          "ci_95": [
+            25.0,
+            45.8
+          ],
+          "n": 72
+        }
+      },
+      "n_total": 288
+    },
+    "mmlu_stem": {
+      "overall": 57.7,
+      "by_domain": {
+        "physics": {
+          "accuracy": 44.4,
+          "ci_95": [
+            38.4,
+            50.8
+          ],
+          "n": 250
+        },
+        "chemistry": {
+          "accuracy": 47.2,
+          "ci_95": [
+            41.6,
+            53.2
+          ],
+          "n": 250
+        },
+        "biology": {
+          "accuracy": 81.6,
+          "ci_95": [
+            76.8,
+            86.8
+          ],
+          "n": 250
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 750
+    },
+    "scibench": {
+      "overall": 25.3,
+      "by_domain": {
+        "physics": {
+          "accuracy": 30.5,
+          "ci_95": [
+            25.0,
+            36.4
+          ],
+          "n": 236
+        },
+        "chemistry": {
+          "accuracy": 21.8,
+          "ci_95": [
+            17.8,
+            26.4
+          ],
+          "n": 349
+        },
+        "biology": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 585
+    }
+  },
+  "google/gemini-2.0-flash-001 [thinking=ON]": {
+    "gpqa": {
+      "overall": 59.6,
+      "by_domain": {
+        "physics": {
+          "accuracy": 81.4,
+          "ci_95": [
+            73.3,
+            89.5
+          ],
+          "n": 86
+        },
+        "chemistry": {
+          "accuracy": 37.6,
+          "ci_95": [
+            28.0,
+            47.3
+          ],
+          "n": 93
+        },
+        "biology": {
+          "accuracy": 68.4,
+          "ci_95": [
+            47.4,
+            89.5
+          ],
+          "n": 19
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 198
+    },
+    "isosci": {
+      "overall": 61.8,
+      "by_domain": {
+        "physics": {
+          "accuracy": 65.3,
+          "ci_95": [
+            53.3,
+            76.0
+          ],
+          "n": 75
+        },
+        "chemistry": {
+          "accuracy": 62.3,
+          "ci_95": [
+            50.7,
+            72.5
+          ],
+          "n": 69
+        },
+        "biology": {
+          "accuracy": 58.3,
+          "ci_95": [
+            47.2,
+            69.4
+          ],
+          "n": 72
+        },
+        "earth_science": {
+          "accuracy": 61.1,
+          "ci_95": [
+            50.0,
+            72.2
+          ],
+          "n": 72
+        }
+      },
+      "n_total": 288
+    },
+    "mmlu_stem": {
+      "overall": 91.9,
+      "by_domain": {
+        "physics": {
+          "accuracy": 91.2,
+          "ci_95": [
+            87.2,
+            94.4
+          ],
+          "n": 250
+        },
+        "chemistry": {
+          "accuracy": 89.2,
+          "ci_95": [
+            84.8,
+            92.8
+          ],
+          "n": 250
+        },
+        "biology": {
+          "accuracy": 95.2,
+          "ci_95": [
+            92.4,
+            97.6
+          ],
+          "n": 250
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 750
+    },
+    "scibench": {
+      "overall": 53.5,
+      "by_domain": {
+        "physics": {
+          "accuracy": 52.5,
+          "ci_95": [
+            46.2,
+            59.3
+          ],
+          "n": 236
+        },
+        "chemistry": {
+          "accuracy": 54.2,
+          "ci_95": [
+            49.0,
+            59.3
+          ],
+          "n": 349
+        },
+        "biology": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 585
+    }
+  },
+  "google/gemini-2.0-flash-001 [thinking=OFF]": {
+    "gpqa": {
+      "overall": 61.1,
+      "by_domain": {
+        "physics": {
+          "accuracy": 81.4,
+          "ci_95": [
+            73.3,
+            89.5
+          ],
+          "n": 86
+        },
+        "chemistry": {
+          "accuracy": 39.8,
+          "ci_95": [
+            30.1,
+            50.5
+          ],
+          "n": 93
+        },
+        "biology": {
+          "accuracy": 73.7,
+          "ci_95": [
+            52.6,
+            89.5
+          ],
+          "n": 19
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 198
+    },
+    "isosci": {
+      "overall": 62.2,
+      "by_domain": {
+        "physics": {
+          "accuracy": 65.3,
+          "ci_95": [
+            54.7,
+            76.0
+          ],
+          "n": 75
+        },
+        "chemistry": {
+          "accuracy": 59.4,
+          "ci_95": [
+            47.8,
+            71.0
+          ],
+          "n": 69
+        },
+        "biology": {
+          "accuracy": 58.3,
+          "ci_95": [
+            47.2,
+            69.4
+          ],
+          "n": 72
+        },
+        "earth_science": {
+          "accuracy": 65.3,
+          "ci_95": [
+            54.2,
+            76.4
+          ],
+          "n": 72
+        }
+      },
+      "n_total": 288
+    },
+    "mmlu_stem": {
+      "overall": 91.9,
+      "by_domain": {
+        "physics": {
+          "accuracy": 91.2,
+          "ci_95": [
+            87.6,
+            94.4
+          ],
+          "n": 250
+        },
+        "chemistry": {
+          "accuracy": 88.8,
+          "ci_95": [
+            84.8,
+            92.4
+          ],
+          "n": 250
+        },
+        "biology": {
+          "accuracy": 95.6,
+          "ci_95": [
+            92.8,
+            98.0
+          ],
+          "n": 250
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 750
+    },
+    "scibench": {
+      "overall": 52.1,
+      "by_domain": {
+        "physics": {
+          "accuracy": 50.8,
+          "ci_95": [
+            44.5,
+            57.2
+          ],
+          "n": 236
+        },
+        "chemistry": {
+          "accuracy": 53.0,
+          "ci_95": [
+            48.1,
+            58.5
+          ],
+          "n": 349
+        },
+        "biology": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        },
+        "earth_science": {
+          "accuracy": null,
+          "ci_95": [
+            NaN,
+            NaN
+          ],
+          "n": 0
+        }
+      },
+      "n_total": 585
+    }
+  }
+}

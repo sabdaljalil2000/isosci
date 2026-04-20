@@ -1,0 +1,32 @@
+{
+  "consensus_accept_ids": [
+    "0bbf1f18-69e3-4c57-8542-0bfce7bbb7e2",
+    "0c974e4a-de4c-48b5-b195-db97d3626db6",
+    "102cdb5e-9205-4ef4-bfdd-91587c273711",
+    "2c39f451-5dae-4ed5-8230-01e2bd728094",
+    "30548af9-b4c1-4f01-92a1-1f12ac341355",
+    "3205df52-d574-44b2-a3e9-c09f4caeb211",
+    "57bf0366-e996-47e4-b44b-12e089545ab9",
+    "6c41294d-be84-4de5-8da2-671d563cc07a",
+    "6c8d2cec-46ad-40e0-b535-7effc89df3df",
+    "714f848a-7233-4f92-8e17-e4c94ae27b16",
+    "8296e4ae-930c-4dae-8abe-42185b4c8bb1",
+    "8b42e5a6-0a8c-493b-863a-7bff28ee1cd5",
+    "a765bd0a-0bc7-4d59-84f3-138b286f5a54",
+    "c2389daf-c446-4737-8b68-35b062ead753",
+    "c3a63127-022f-4b37-be02-6ffadf9b79c7",
+    "c6a514df-e893-467e-a47f-d7a3032edac9",
+    "c93486bb-0bb7-48c6-ad3c-00ae4af76bcf",
+    "d1b8bae9-c188-4010-aa7c-5a1c41c012d0",
+    "f610d198-a9a5-4ad9-b5ff-8e692f7b786c"
+  ],
+  "n_consensus_accept": 19,
+  "n_agreed_pairs": 20,
+  "n_total_sampled": 25,
+  "llm_precision": 0.9411764705882353,
+  "llm_recall": 0.8421052631578947,
+  "llm_f1": 0.8888888888888888,
+  "kappa_llm_h1": 0.18604651162790656,
+  "kappa_llm_h2": 0.14772727272727265,
+  "kappa_h1_h2": 0.193548387096774
+}

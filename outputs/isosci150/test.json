@@ -1,0 +1,1974 @@
+[
+  {
+    "pair_id": "f79ba367-4740-4b63-8ee2-40e6d8d17518",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Substances whose Lewis structures must be drawn with an unpaired electron are called\nA) ionic compounds\nB) free radicals\nC) resonance structures\nD) polar molecules",
+      "answer": "B) free radicals",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Cells that lack a membrane-bound nucleus and membrane-bound organelles are called\nA) eukaryotes\nB) prokaryotes\nC) organelles\nD) tissues",
+      "answer": "B) prokaryotes",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "af00e6e6-fab6-43b4-90a0-302050d87153",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "How many of the following compounds will exhibit optical activity?\n\n(Z)-1-chloro-2-methylbut-1-ene\n(3aR,7aS,E)-8-(chloromethylene)hexahydro-4,7-methanoisobenzofuran-1,3-dione\n(2R,3S)-2,3-dimethylsuccinic acid\n(2R,3R)-2,3-dimethylsuccinic acid\n(R)-cyclohex-3-en-1-ol\n(1s,3s,5s)-cyclohexane-1,3,5-triol\n1-cyclopentyl-3-methylbutan-1-one",
+      "answer": "3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "gpqa_diamond"
+    },
+    "target": {
+      "question": "How many of the following mineral samples will exhibit piezoelectric properties?\n\nCalcite (trigonal crystal system, space group R3c)\nQuartz (trigonal crystal system, space group P3\u208221)\nHalite (cubic crystal system, space group Fm3m)\nTourmaline (trigonal crystal system, space group R3m)\nFluorite (cubic crystal system, space group Fm3m)\nBeryl (hexagonal crystal system, space group P6/mcc)\nZinc blende (cubic crystal system, space group F43m)",
+      "answer": "3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "ab708bdf-89bd-4086-9fee-6c553992faec",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Substances whose Lewis structures must be drawn with an unpaired electron are called\nA) ionic compounds\nB) free radicals\nC) resonance structures\nD) polar molecules",
+      "answer": "B) free radicals",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Genes that are located on the same chromosome and tend to be inherited together are called\nA) alleles\nB) linked genes\nC) homologous genes\nD) sex-linked traits",
+      "answer": "B) linked genes",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.583333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "69cdbf65-428b-4363-b017-a938e2ad7146",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "As more lamps are connected in parallel in a circuit, the current in the power source\nA) increases\nB) decreases\nC) remains the same\nD) Not enough information to say",
+      "answer": "A) increases",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "As more nephrons in the kidney become functional during development, the total glomerular filtration rate (GFR) of the kidney\nA) increases\nB) decreases\nC) remains the same\nD) Not enough information to say",
+      "answer": "A) increases",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "9f9b545a-f759-4628-b2f6-b28c0d142df3",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "The lowest-frequency pure-rotational absorption line of ${ }^{12} \\mathrm{C}^{32} \\mathrm{~S}$ occurs at $48991.0 \\mathrm{MHz}$. Find the bond distance in ${ }^{12} \\mathrm{C}^{32} \\mathrm{~S}$.",
+      "answer": "1.5377",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A population of bacteria exhibits exponential growth with a doubling time of 25 minutes. If the initial population size is 1.5 \u00d7 10\u2076 cells and the final population size after continuous growth is 9.6 \u00d7 10\u2077 cells, calculate the elapsed time (in minutes) for this growth to occur.",
+      "answer": "150 minutes",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.5
+      }
+    }
+  },
+  {
+    "pair_id": "47bf16a8-61a4-433f-a92d-c6ad31519faf",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of these is a statement that Darwin would have rejected?\nA) Environmental change plays a role in evolution.\nB) The smallest entity that can evolve is an individual organism.\nC) Individuals can acquire new characteristics as they respond to new environments or situations.\nD) Inherited variation in a population is a necessary precondition for natural selection to operate.",
+      "answer": "B) The smallest entity that can evolve is an individual organism.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of these is a statement that Wegener would have rejected in his theory of continental drift?\nA) Ocean basins can expand and contract over geological time.\nB) The smallest entity that can undergo tectonic movement is a single mountain range.\nC) Continents can acquire new positions as they respond to convection currents in the mantle.\nD) The matching of geological features across continents is a necessary precondition for inferring past connections.",
+      "answer": "B) The smallest entity that can undergo tectonic movement is a single mountain range.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "6cf8fb31-9e0e-47d3-b474-6a6d8f5990d7",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Experimenter A uses a very small test charge qo, and experimenter B uses a test charge 2qo to measure an electric field produced by two parallel plates. A finds a field that is\nA) greater than the field found by B\nB) the same as the field found by B\nC) less than the field found by B\nD) either greater or less than the field found by B, depending on the accelerations of the test charges",
+      "answer": "B) the same as the field found by B",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Chemist A uses a very small indicator amount of 0.1 mL phenolphthalein, and chemist B uses 0.2 mL phenolphthalein to determine the pH at the endpoint of a titration of a strong acid with a strong base. A finds a pH that is\nA) greater than the pH found by B\nB) the same as the pH found by B\nC) less than the pH found by B\nD) either greater or less than the pH found by B, depending on the concentrations of the solutions",
+      "answer": "B) the same as the pH found by B",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "0985efd1-400a-45b9-9413-499df218081f",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which statement about an atom is not true:\nA) The nucleus contains most of the atom\u2019s mass but almost none of its volume.\nB) A neutral atom always has equal numbers of electrons and protons.\nC) A neutral atom always has equal numbers of neutrons and protons.\nD) The electrons can only orbit at particular energy levels.",
+      "answer": "C) A neutral atom always has equal numbers of neutrons and protons.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which statement about Earth's layers is not true:\nA) The core contains most of Earth's iron but occupies only about 15% of its volume.\nB) The lithosphere always has equal thicknesses of crust and uppermost mantle.\nC) The asthenosphere is partially molten and allows for tectonic plate movement.\nD) Seismic waves travel at different velocities through different layers.",
+      "answer": "B) The lithosphere always has equal thicknesses of crust and uppermost mantle.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "1404547a-4a15-4bef-a5da-79c2259b9116",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Venus shows evidence of which of the following surface processes?\nA) Impacts\nB) Erosion\nC) Volcanism\nD) A B and C",
+      "answer": "D) A B and C",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Bacterial endospores show evidence of which of the following protective features?\nA) Thick peptidoglycan cortex\nB) DNA-binding proteins\nC) Low water content\nD) A B and C",
+      "answer": "D) A B and C",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "edfcf4f3-a32b-4261-b668-c63b7b7c82b0",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "You have prepared an unknown compound. To identify the product, you have used the following characterisation techniques: FTIR and 1H NMR. The FTIR spectrum shows a very broad absorption peak at 3000 wavenumbers. A strong absorption peak is also observed at 1700 wavenumbers. Several peaks were observed in the 1H NMR spectrum, none of which are correspond to vinyl-hydrogens. One of the signals in the 1H NMR is a doublet of triplets of quartets whilst a different signal is a doublet of triplets of triplets. Identify the compound as either, CH3CH2C(H)(CH3)C(H)(CH3)COOH, CH3CH2C(H)(C2H5)C(H)(C2H5)COOH, CH3C(H)(CH3)C(H)(CH3)CH2COOH, or CH3C(H)(C2H5)C(H)(C2H5)CH2COOH",
+      "answer": "CH3C(H)(C2H5)C(H)(C2H5)CH2COOH",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "gpqa_diamond"
+    },
+    "target": {
+      "question": "You have isolated an unknown enzyme from a bacterial culture. To characterize the enzyme, you performed the following analyses: substrate specificity assay, pH optimum test, and inhibitor screening. The substrate specificity assay shows the enzyme cleaves peptide bonds only when proline is NOT in the P1' position. The pH optimum test reveals maximum activity at pH 8.5 with sharp decline below pH 7.0. The inhibitor screening shows complete inhibition by PMSF but no inhibition by EDTA or pepstatin A. One substrate shows a kcat/KM of 1.2 \u00d7 10^6 M^-1s^-1 while a different substrate shows a kcat/KM of 3.4 \u00d7 10^3 M^-1s^-1. Identify the enzyme as either: trypsin, chymotrypsin, elastase, or carboxypeptidase A.",
+      "answer": "chymotrypsin",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.333333333333333,
+        "overall": 4.333333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "8b0f969e-ffe7-4143-81d9-f2201cddacd1",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "You have prepared an unknown compound. To identify the product, you have used the following characterisation techniques: FTIR and 1H NMR. The FTIR spectrum shows a very broad absorption peak at 3000 wavenumbers. A strong absorption peak is also observed at 1700 wavenumbers. Several peaks were observed in the 1H NMR spectrum, none of which are correspond to vinyl-hydrogens. One of the signals in the 1H NMR is a doublet of triplets of quartets whilst a different signal is a doublet of triplets of triplets. Identify the compound as either, CH3CH2C(H)(CH3)C(H)(CH3)COOH, CH3CH2C(H)(C2H5)C(H)(C2H5)COOH, CH3C(H)(CH3)C(H)(CH3)CH2COOH, or CH3C(H)(C2H5)C(H)(C2H5)CH2COOH",
+      "answer": "CH3C(H)(C2H5)C(H)(C2H5)CH2COOH",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "gpqa_diamond"
+    },
+    "target": {
+      "question": "You have discovered an unknown membrane protein in epithelial cells. To identify its function, you conducted the following experiments: fluorescent dye accumulation assay, ATP depletion test, and ion selectivity analysis. The dye accumulation assay shows the protein transports rhodamine 123 against its concentration gradient with a Vmax of 45 nmol/min/mg protein. The ATP depletion test reveals transport activity drops to 5% of maximum when cells are treated with oligomycin. The ion selectivity analysis shows no transport of Na+, K+, or Cl- ions. One transport experiment shows a KM of 12 \u03bcM for substrate A while a different experiment shows a KM of 180 \u03bcM for substrate B. Identify the protein as either: P-glycoprotein (MDR1), CFTR chloride channel, Na+/K+-ATPase, or aquaporin-1.",
+      "answer": "P-glycoprotein (MDR1)",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.333333333333333,
+        "overall": 4.25
+      }
+    }
+  },
+  {
+    "pair_id": "a9989cbc-6e6a-43f3-ada8-32417c76c75e",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Planetary rings are\nA) known to exist for all of the jovian planets.\nB) composed of a large number of individual particles that orbit their planet in accord with Kepler's third law.\nC) nearer to their planet than any of the planet's large moons.\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Enzymes are\nA) biological catalysts that are typically proteins.\nB) capable of lowering the activation energy required for chemical reactions without being consumed in the process.\nC) specific in their action, with each enzyme catalyzing only particular substrates due to their active site structure.\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "21593334-1e7b-40bd-bca0-fd8ed3c17253",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Two genes (B and E) determine coat color in Labrador retrievers. Alleles B and b code for how much melanin is present. The dominant allele B codes for black fur, the recessive allele b codes for brown hair. A second gene consisting of two alleles, E and e, codes for the deposition of pigment in the hair. In this case, the alleles for pigment deposition (E or e) are said to be epistatic to the gene that codes for black or brown pigment. If the dominant allele (E) is not present, regardless of the genotype at the black/brown locus, the animal's fur will be yellow.\nA) BBEe will be brown.\nB) BbEe will be brown.\nC) Bbee will be brown.\nD) BBee will be yellow.",
+      "answer": "D) BBee will be yellow.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Two factors (M and P) determine the type of metamorphic rock formed from shale. Factor M represents temperature conditions, where allele M (high temperature >600\u00b0C) produces granulite-facies minerals and allele m (moderate temperature 400-600\u00b0C) produces amphibolite-facies minerals. Factor P represents the presence of fluids, where allele P allows mineral transformation and allele p prevents it. The fluid presence factor (P or p) is said to be epistatic to the temperature factor. If the dominant allele (P) for fluid presence is not present, regardless of the temperature conditions at the M locus, the rock will remain as slate (unmetamorphosed). Which statement is correct?\nA) MMPp will produce amphibolite-facies rock.\nB) MmPp will produce amphibolite-facies rock.\nC) Mmpp will produce amphibolite-facies rock.\nD) MMpp will produce slate.",
+      "answer": "D) MMpp will produce slate.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "678e016c-543d-4ba9-8bcf-da4e005f44b6",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "An urn contains eight red and seven blue balls. A second urn contains an unknown number of red balls and nine blue balls. A ball is drawn from each urn at random, and the probability of getting two balls of the same color is $151 / 300$. How many red balls are in the second urn?",
+      "answer": "11",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A sample contains 8 atoms of carbon-12 and 7 atoms of carbon-13. A second sample contains an unknown number of carbon-12 atoms and 9 atoms of carbon-13. One atom is randomly selected from each sample, and the probability of selecting two atoms of the same isotope is 151/300. How many carbon-12 atoms are in the second sample?",
+      "answer": "11 atoms",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "a765bd0a-0bc7-4d59-84f3-138b286f5a54",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The sedimentation coefficient of lysozyme $\\left(\\mathrm{M}=14,100 \\mathrm{~g} \\mathrm{~mol}^{-1}\\right)$ in water at $20^{\\circ} \\mathrm{C}$ is $1.91 \\times 10^{-13} \\mathrm{~s}$ and the specific volume is $0.703 \\mathrm{~cm}^3 \\mathrm{~g}^{-1}$. The density of water at this temperature is $0.998 \\mathrm{~g} \\mathrm{~cm}^{-3}$ and $\\eta=1.002 \\mathrm{cP}$. Assuming lysozyme is spherical, what is the radius of this protein?",
+      "answer": "1.94",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A spherical mineral grain with density 2650 kg/m\u00b3 settles through seawater at 15\u00b0C with a measured settling velocity of 0.85 cm/s. The density of seawater at this temperature is 1025 kg/m\u00b3 and the dynamic viscosity is 1.14 \u00d7 10\u207b\u00b3 Pa\u00b7s. Assuming laminar flow conditions (Stokes regime), what is the diameter of the grain?",
+      "answer": "0.245 mm",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "2260e096-fe27-495d-ab7a-f851e7c9fd24",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The factors, both of which will increase the magnetic field strength of an electromagnet, are\nA) increased electrical current and fewer coils of wire\nB) increased diameter of coil and an increase in the number of coils\nC) an increase in the electrical current and using a strong ferromagnetic material like iron\nD) using an air core instead of iron and increasing the diameter of the coil",
+      "answer": "C) an increase in the electrical current and using a strong ferromagnetic material like iron",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The factors, both of which will increase the electrical conductivity of an aqueous solution, are\nA) increased concentration of strong electrolyte and decreased temperature\nB) increased dilution and increased concentration of nonelectrolyte\nC) increased concentration of strong electrolyte and increased temperature\nD) using a weak electrolyte instead of a strong electrolyte and increasing the concentration",
+      "answer": "C) increased concentration of strong electrolyte and increased temperature",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "cfd2f58b-cd8b-47b9-aec5-5a10671a763b",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A particle is constrained to move in a circle with a 10-meter radius. At one instant, the particle\u2019s speed is 10 meters per second and is increasing at a rate of 10 meters per second squared. The angle between the particle\u2019s velocity and acceleration vectors is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Ocean water in a large gyre moves in a circular path with a 500-kilometer radius. At one instant, the current speed is 0.5 meters per second and is increasing at a rate of 0.00000025 meters per second squared due to wind stress. The angle between the current velocity vector and the total acceleration vector is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.833333333333334
+      }
+    }
+  },
+  {
+    "pair_id": "a705771f-c15e-46f8-9e83-a7efb51aa5a0",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A small cart of mass m is initially at rest. It collides elastically with a large cart of mass 4m and velocity v. The large cart loses half its kinetic energy to the little cart. The little cart now has a velocity of\nA) 1.41v\nB) v\nC) 2v\nD) 4v",
+      "answer": "A) 1.41v",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A small sediment grain of mass m is initially at rest on the ocean floor. A turbidity current carrying a large sediment grain of mass 4m at velocity v collides with it. The large grain loses half its kinetic energy to the small grain during the collision. The small grain now has a velocity of\nA) 1.41v\nB) v\nC) 2v\nD) 4v",
+      "answer": "A) 1.41v",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 5.0,
+        "self_containment": 5.0,
+        "overall": 5.0
+      }
+    }
+  },
+  {
+    "pair_id": "951f7779-e497-402c-a049-49f3edf7369b",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "The equation \u0394H = \u0394U + P\u0394V is applicable\nA) always\nB) only for constant pressure processes\nC) only for constant temperature processes\nD) only for constant volume processes",
+      "answer": "B) only for constant pressure processes",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The Hardy-Weinberg equation p\u00b2 + 2pq + q\u00b2 = 1 is applicable\nA) always for any population\nB) only for populations in genetic equilibrium with no evolutionary forces acting\nC) only for populations with natural selection\nD) only for small populations",
+      "answer": "B) only for populations in genetic equilibrium with no evolutionary forces acting",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "cd923f0f-d7a8-4fbb-bdbe-a360ef5a9a8a",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "When a cannonball is fired from a cannon, both the cannonball and the cannon experience equal\nA) amounts of force\nB) accelerations\nC) Both\nD) Neither",
+      "answer": "A) amounts of force",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "When a hydrogen atom and a chlorine atom form a covalent bond in HCl, both atoms experience equal\nA) amounts of attractive force\nB) changes in electronegativity\nC) Both\nD) Neither",
+      "answer": "A) amounts of attractive force",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 5.0,
+        "overall": 4.333333333333334
+      }
+    }
+  },
+  {
+    "pair_id": "2facf685-97a6-453b-a9dd-bc446a735ed3",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "The resolution of a telescope is a measure of its:\nA) Ability to magnify distant objects\nB) Ability to measure the angular separation of objects\nC) Ability to measure the distance between objects\nD) Light-collecting efficiency",
+      "answer": "B) Ability to measure the angular separation of objects",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The selectivity of an enzyme is a measure of its:\nA) Ability to accelerate reaction rates\nB) Ability to discriminate between similar substrates\nC) Ability to measure substrate concentrations\nD) Catalytic efficiency",
+      "answer": "B) Ability to discriminate between similar substrates",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "53808d5e-79d0-4dfc-a1c6-a7bd89db4cba",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Note that 1 atm = 1.013 25 bar. Unless otherwise stated, thermochemical data are for 298.15 K. An average human produces about $10 \\mathrm{MJ}$ of heat each day through metabolic activity. If a human body were an isolated system of mass $65 \\mathrm{~kg}$ with the heat capacity of water, what temperature rise would the body experience?",
+      "answer": "+37",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A resting muscle tissue sample of mass 250 g maintains a basal metabolic rate producing 180 J of heat per hour. If the muscle tissue has a specific heat capacity of 3.6 kJ/(kg\u00b7K) and were thermally isolated for 5 hours, what temperature rise would the tissue experience?",
+      "answer": "+1.0 K or +1.0 \u00b0C",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "a4f84a41-760d-48e7-bdf3-8229528af663",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Venus shows evidence of which of the following surface processes?\nA) Impacts\nB) Erosion\nC) Volcanism\nD) A B and C",
+      "answer": "D) A B and C",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The mitochondrion shows evidence of which of the following cellular processes?\nA) ATP synthesis\nB) Calcium storage\nC) Apoptosis initiation\nD) A B and C",
+      "answer": "D) A B and C",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "801f3a84-c118-497d-9cba-fbc5dce2bb9f",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Venus shows evidence of which of the following surface processes?\nA) Impacts\nB) Erosion\nC) Volcanism\nD) A B and C",
+      "answer": "D) A B and C",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The human liver shows evidence of which of the following metabolic functions?\nA) Glycogen storage\nB) Detoxification\nC) Bile production\nD) A B and C",
+      "answer": "D) A B and C",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "1cead2b5-e924-42d5-a62e-a93c33a4bee3",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Which of the following statements about images is true?\nA) Images produced by concave lenses are always real.\nB) Images produced by concave mirros are always real.\nC) Images produced by convex lenses can be both real and virtual.\nD) Images produced by convex mirrors can be both real and virtual.",
+      "answer": "C) Images produced by convex lenses can be both real and virtual.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following statements about oxidation states is true?\nA) Elements in Group 1 can have multiple positive oxidation states.\nB) Elements in Group 17 (halogens) can only have negative oxidation states.\nC) Transition metals can have multiple oxidation states.\nD) Noble gases can have both positive and negative oxidation states in all their compounds.",
+      "answer": "C) Transition metals can have multiple oxidation states.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "9bd96b5c-2b00-4463-91a7-3ca88d537152",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "A torque is a force\nA) like any other force\nB) multiplied by a lever arm\nC) that is fictitious\nD) that accelerates things",
+      "answer": "B) multiplied by a lever arm",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "An enzyme is a protein\nA) like any other protein\nB) that catalyzes biochemical reactions\nC) that stores genetic information\nD) that provides structural support only",
+      "answer": "B) that catalyzes biochemical reactions",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "40c0f9ba-45d9-49c7-a774-802913c3dbc1",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Which of the following statements about images is true?\nA) Images produced by concave lenses are always real.\nB) Images produced by concave mirros are always real.\nC) Images produced by convex lenses can be both real and virtual.\nD) Images produced by convex mirrors can be both real and virtual.",
+      "answer": "C) Images produced by convex lenses can be both real and virtual.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following statements about acid-base reactions is true?\nA) Weak acids always completely dissociate in water.\nB) Strong bases always form precipitates in aqueous solution.\nC) Amphoteric substances can act as both acids and bases.\nD) Buffer solutions can maintain pH in both strongly acidic and strongly basic regions.",
+      "answer": "C) Amphoteric substances can act as both acids and bases.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "73704107-f665-415e-86bd-0b477dda6cc0",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Which of the following statements about images is true?\nA) Images produced by concave lenses are always real.\nB) Images produced by concave mirros are always real.\nC) Images produced by convex lenses can be both real and virtual.\nD) Images produced by convex mirrors can be both real and virtual.",
+      "answer": "C) Images produced by convex lenses can be both real and virtual.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following statements about intermolecular forces is true?\nA) Ionic compounds always exhibit only ion-dipole interactions.\nB) Nonpolar molecules always exhibit only dipole-dipole interactions.\nC) Polar molecules can exhibit both dipole-dipole and London dispersion forces.\nD) Hydrogen bonding can occur in both alkanes and alkenes.",
+      "answer": "C) Polar molecules can exhibit both dipole-dipole and London dispersion forces.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "1d289796-1de4-460b-8394-3e779360eb03",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The Arrhenius equation may be used to determine\nA) the activation energy of a reaction\nB) the rate constant at various temperatures\nC) the shelf life of a consumer product or drug\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The Hjulstr\u00f6m curve may be used to determine\nA) the velocity required to erode sediment particles\nB) the velocity required to transport sediment particles\nC) the velocity at which sediment particles settle\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "e68f5b69-a98b-44a1-a223-812987964a26",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. The volume of a certain liquid varies with temperature as\r\n$$\r\nV=V^{\\prime}\\left\\{0.75+3.9 \\times 10^{-4}(T / \\mathrm{K})+1.48 \\times 10^{-6}(T / \\mathrm{K})^2\\right\\}\r\n$$\r\nwhere $V^{\\prime}$ is its volume at $300 \\mathrm{~K}$. Calculate its expansion coefficient, $\\alpha$, at $320 \\mathrm{~K}$.",
+      "answer": "0.00131",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "The magnetic field intensity at a location varies with distance from a mineral deposit as B = B\u2080{2.50 + 6.2 \u00d7 10\u207b\u2074(r/m) + 3.1 \u00d7 10\u207b\u2077(r/m)\u00b2} where B\u2080 is the background field (45000 nT) and r is the distance in meters. Calculate the magnetic gradient coefficient, \u03b3 = (1/B)(\u2202B/\u2202r), at a distance of 150 m from the deposit.",
+      "answer": "6.286 \u00d7 10\u207b\u2074 m\u207b\u00b9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "4941db76-30da-4683-9263-a9453f1064a0",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "The belts and zones of Jupiter are\nA) names for the layers of gaseous and metallic hydrogen deep within the planet.\nB) alternating bands of rising and falling air at different latitudes.\nC) alternating regions of charged particles in Jupiter's magnetic field.\nD) regions of the plasma torus created by ions from Io's volcanoes",
+      "answer": "B) alternating bands of rising and falling air at different latitudes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The palisade and spongy layers of a leaf are\nA) names for the epidermal tissues containing guard cells on upper and lower surfaces.\nB) alternating zones of tightly-packed and loosely-arranged photosynthetic cells.\nC) alternating regions of xylem and phloem in the leaf's vascular bundles.\nD) regions of the cuticle created by wax secretions from epidermal cells.",
+      "answer": "B) alternating zones of tightly-packed and loosely-arranged photosynthetic cells.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "d10f7319-eb0b-45ab-92c7-428448379388",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "A Mars year is approximately how many Earth years long?\nA) 1/2\nB) 1\nC) 2\nD) 4",
+      "answer": "C) 2",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The pH of pure water at 25\u00b0C is approximately:\nA) 3\nB) 5\nC) 7\nD) 9",
+      "answer": "C) 7",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "737cff0b-2628-420a-b4bd-bc4fe0ff0fc7",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "How many of the following compounds will exhibit optical activity?\n\n(Z)-1-chloro-2-methylbut-1-ene\n(3aR,7aS,E)-8-(chloromethylene)hexahydro-4,7-methanoisobenzofuran-1,3-dione\n(2R,3S)-2,3-dimethylsuccinic acid\n(2R,3R)-2,3-dimethylsuccinic acid\n(R)-cyclohex-3-en-1-ol\n(1s,3s,5s)-cyclohexane-1,3,5-triol\n1-cyclopentyl-3-methylbutan-1-one",
+      "answer": "3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "gpqa_diamond"
+    },
+    "target": {
+      "question": "How many of the following groundwater samples will exhibit net positive charge on clay particle surfaces at the measured pH?\n\nSample A: pH 3.5, dominated by kaolinite clay (pHpzc = 4.6)\nSample B: pH 7.2, dominated by montmorillonite clay (pHpzc = 2.5)\nSample C: pH 5.8, dominated by illite clay (pHpzc = 3.0)\nSample D: pH 2.1, dominated by montmorillonite clay (pHpzc = 2.5)\nSample E: pH 6.5, dominated by kaolinite clay (pHpzc = 4.6)\nSample F: pH 3.8, dominated by illite clay (pHpzc = 3.0)\nSample G: pH 4.2, dominated by kaolinite clay (pHpzc = 4.6)",
+      "answer": "3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "a57c8186-dcec-40e7-9bf3-0b27f7df540a",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Which of the following was not cited as evidence for life in the martian meteorite ALH84001?\nA) Complex organic molecules specifically PAHs\nB) Magnetite grains similar to those formed by bacteria on Earth\nC) Carbonate minerals indicating a thicker warmer Martian atmosphere\nD) Amino acids with a preferred orientation or \"chirality\"",
+      "answer": "D) Amino acids with a preferred orientation or \"chirality\"",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following was NOT cited as evidence in the Miller-Urey experiment demonstrating abiotic synthesis of organic compounds?\nA) Amino acids including glycine and alanine were detected in the apparatus\nB) Simple sugars and nucleotide bases were formed from the gas mixture\nC) The experimental conditions simulated early Earth's reducing atmosphere\nD) Complete self-replicating RNA molecules were spontaneously generated",
+      "answer": "D) Complete self-replicating RNA molecules were spontaneously generated",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "1e98afb5-ed9e-4169-ba47-4b0787def134",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "In which of the following situations involving a source of sound and a detector of the sound is it possible that there is NO perceived Doppler shift?\nA) The source travels toward the stationary detector.\nB) The detector travels toward the stationary source.\nC) Both the source and detector travel in the same direction.\nD) Both the source and detector travel in opposite directions, with the source and detector moving away from each other.",
+      "answer": "C) Both the source and detector travel in the same direction.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "In which of the following situations involving a tectonic plate boundary and a seismometer is it possible that there is NO perceived relative plate motion?\nA) The convergent boundary moves toward the stationary seismometer location.\nB) The seismometer location moves toward the stationary plate boundary.\nC) Both the plate boundary and seismometer location move in the same direction at the same rate.\nD) Both the plate boundary and seismometer location move in opposite directions, with the boundary and location moving away from each other.",
+      "answer": "C) Both the plate boundary and seismometer location move in the same direction at the same rate.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "dddcbdf4-7d52-4707-9777-40f1d5d8d133",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "More than a dozen species of Darwin's finches with various specialized adaptations inhabit the Gal\u00e1pagos Islands. Each species possesses a specialized adaptation for obtaining food. Why is it that similar adaptations do not exist among the finches of the South American mainland, the presumed origin of the Gal\u00e1pagos finch ancestor?\nA) The various foods available on the mainland are different than those on the Gal\u00e1pagos Islands.\nB) South American predators limited evolution of the mainland finch.\nC) Reproductive isolation is not possible on the mainland.\nD) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "answer": "D) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The Hawaiian Islands host numerous endemic species of land snails (over 750 species) with specialized shell morphologies and feeding adaptations. Each species has evolved distinct characteristics for exploiting specific microhabitats on the islands. Why is it that similar levels of diversification do not exist among land snails in Southeast Asia, the region from which the ancestral Hawaiian snails likely originated?\nA) The climate patterns in Southeast Asia are different than those in Hawaii.\nB) Southeast Asian parasites limited evolution of mainland snail populations.\nC) Reproductive isolation is not possible in continental Southeast Asia.\nD) The available ecological niches that Hawaiian land snails exploited were already occupied by other mollusk species and competitors in Southeast Asia.",
+      "answer": "D) The available ecological niches that Hawaiian land snails exploited were already occupied by other mollusk species and competitors in Southeast Asia.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "6b44ee47-18d8-454f-b65c-75b1cacc3c96",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "A Mars year is approximately how many Earth years long?\nA) 1/2\nB) 1\nC) 2\nD) 4",
+      "answer": "C) 2",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Avogadro's number is approximately how many entities per mole?\nA) 6.02 \u00d7 10\u00b2\u00b9\nB) 6.02 \u00d7 10\u00b2\u00b3\nC) 6.02 \u00d7 10\u00b2\u2075\nD) 6.02 \u00d7 10\u00b2\u2077",
+      "answer": "B) 6.02 \u00d7 10\u00b2\u00b3",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "70bf89f3-de5f-4081-8538-9b8a5aa2785a",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "How many of the following compounds will exhibit optical activity?\n\n(Z)-1-chloro-2-methylbut-1-ene\n(3aR,7aS,E)-8-(chloromethylene)hexahydro-4,7-methanoisobenzofuran-1,3-dione\n(2R,3S)-2,3-dimethylsuccinic acid\n(2R,3R)-2,3-dimethylsuccinic acid\n(R)-cyclohex-3-en-1-ol\n(1s,3s,5s)-cyclohexane-1,3,5-triol\n1-cyclopentyl-3-methylbutan-1-one",
+      "answer": "3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "gpqa_diamond"
+    },
+    "target": {
+      "question": "How many of the following rock samples will exhibit positive magnetic susceptibility when placed in an external magnetic field?\n\nPure limestone (CaCO\u2083, diamagnetic minerals only)\nMagnetite-bearing granite (contains 3% magnetite Fe\u2083O\u2084)\nPure quartzite (SiO\u2082, diamagnetic minerals only)\nHematite-rich sandstone (contains 8% hematite Fe\u2082O\u2083)\nPure halite rock salt (NaCl, diamagnetic minerals only)\nPyrrhotite-bearing schist (contains 5% pyrrhotite Fe\u2087S\u2088)\nPure gypsum (CaSO\u2084\u00b72H\u2082O, diamagnetic minerals only)",
+      "answer": "3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "deb86001-3b9a-42f9-9d02-8981182b2100",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Determine the H+(aq) concentration in 1.0 M phenol, C6H5OH, solution. (The Ka for phenol is 1 \u00d7 10^-10.)\nA) 1 \u00d7 10^-10 M\nB) 1 \u00d7 10^-9 M\nC) 1 \u00d7 10^-3 M\nD) 1 \u00d7 10^-5 M",
+      "answer": "D) 1 \u00d7 10^-5 M",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Determine the concentration of dissolved CO2 in ocean water at 25\u00b0C when the partial pressure of atmospheric CO2 is 400 ppm (4.0 \u00d7 10^-4 atm). The Henry's Law constant for CO2 at 25\u00b0C is 3.4 \u00d7 10^-2 M/atm. What is the dissolved CO2 concentration?\nA) 1.4 \u00d7 10^-5 M\nB) 1.4 \u00d7 10^-4 M\nC) 1.4 \u00d7 10^-3 M\nD) 1.4 \u00d7 10^-2 M",
+      "answer": "A) 1.4 \u00d7 10^-5 M",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 5.0,
+        "overall": 4.416666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "b0e1f697-09a1-4bb0-9033-745a991c9aa0",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "A liquid flows at a constant flow rate through a pipe with circular cross-sections of varying diameters. At one point in the pipe, the diameter is 2 cm and the flow speed is 18 m/s. What is the flow speed at another point in this pipe, where the diameter is 3 cm?\nA) 4 m/s\nB) 6 m/s\nC) 8 m/s\nD) 12 m/s",
+      "answer": "C) 8 m/s",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A gas diffuses through a porous membrane at a constant molar flow rate. At one location in the membrane, the cross-sectional area is 4.0 cm\u00b2 and the diffusion flux is 0.12 mol/(cm\u00b2\u00b7s). What is the diffusion flux at another location where the cross-sectional area is 6.0 cm\u00b2?\nA) 0.04 mol/(cm\u00b2\u00b7s)\nB) 0.06 mol/(cm\u00b2\u00b7s)\nC) 0.08 mol/(cm\u00b2\u00b7s)\nD) 0.18 mol/(cm\u00b2\u00b7s)",
+      "answer": "C) 0.08 mol/(cm\u00b2\u00b7s)",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "ed23d7d8-0231-44c3-80f1-361a61091d71",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Calculate $\\Delta_{\\mathrm{r}} G^{\\ominus}(375 \\mathrm{~K})$ for the reaction $2 \\mathrm{CO}(\\mathrm{g})+\\mathrm{O}_2(\\mathrm{~g}) \\rightarrow 2 \\mathrm{CO}_2(\\mathrm{~g})$ from the values of $\\Delta_{\\mathrm{r}} G^{\\ominus}(298 \\mathrm{~K})$ : and $\\Delta_{\\mathrm{r}} H^{\\ominus}(298 \\mathrm{~K})$, and the GibbsHelmholtz equation.",
+      "answer": "-501",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "Calculate the saturation vapor pressure of water at 25\u00b0C using the Clausius-Clapeyron equation in integrated form: ln(e\u2082/e\u2081) = (L/Rv) \u00d7 (1/T\u2081 - 1/T\u2082). Given: e\u2081 = 0.611 kPa at T\u2081 = 273 K, L = 2.5 \u00d7 10\u2076 J/kg (latent heat of vaporization), Rv = 461 J/(kg\u00b7K) (gas constant for water vapor), and T\u2082 = 298 K.",
+      "answer": "3.17 kPa",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 4.0,
+        "overall": 4.5
+      }
+    }
+  },
+  {
+    "pair_id": "cf78e3ba-3589-4bde-b81d-326e9f5d59fe",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Three 25.00 mL samples of approximately 0.10 M phenol, C6H5OH, Ka = 1.0 \u00d7 10^-10 were removed from a container and placed in separate 250 mL beakers. The samples were titrated with standard potassium hydroxide, KOH, solution. Cresol red was the acid-base indicator used in the titration. The samples required 31.75, 32.38, and 41.75 mL to reach the endpoint. Which of the following might explain why one of the samples required significantly more base to reach the endpoint?\nA) The indicator was added too late.\nB) The wrong indicator was used.\nC) There was a base contaminating the unclean beaker.\nD) There was an acid contaminating the unclean beaker.",
+      "answer": "D) There was an acid contaminating the unclean beaker.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Three 50.00 g samples of approximately 15% salinity seawater were removed from a storage tank and placed in separate evaporation dishes. The samples were heated to evaporate the water and measure the remaining salt mass. A calibrated analytical balance was used for measurements. The samples yielded 7.62, 7.75, and 10.38 g of salt residue. Which of the following might explain why one of the samples yielded significantly more salt?",
+      "answer": "D) There was dissolved mineral contaminating the unclean evaporation dish.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "e303b72b-6669-41d2-b825-ee4367519002",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following substances is found in greater quantity in exhaled air?\nA) Carbon dioxide\nB) Carbon monoxide\nC) Nitrogen\nD) Oxygen",
+      "answer": "C) Nitrogen",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following gases is found in the greatest quantity in Earth's atmosphere by volume?\nA) Argon\nB) Carbon dioxide\nC) Nitrogen\nD) Oxygen",
+      "answer": "C) Nitrogen",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "a17889e2-964a-4635-bf26-3d0a3719ab83",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Which of the following reactions is expected to have the greatest decrease in entropy?\nA) HCl(aq) + NaOH(aq) \u2192 NaCl(aq) + H2O(l)\nB) CH4(g) + 2 O2(g) \u2192 CO2(g) + 2 H2O(l)\nC) C(s) + O2(g) \u2192 CO2(g)\nD) 2 SO2(g) + O2(g) \u2192 2 SO3(g)",
+      "answer": "B) CH4(g) + 2 O2(g) \u2192 CO2(g) + 2 H2O(l)",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following processes is expected to have the greatest decrease in disorder (entropy)?\nA) Glucose breakdown in cytoplasm: C6H12O6(aq) \u2192 2 C3H6O3(aq)\nB) Cellular respiration: C6H12O6(aq) + 6 O2(g) \u2192 6 CO2(g) + 6 H2O(l)\nC) Photosynthesis light reactions: 2 H2O(l) + light \u2192 O2(g) + 4 H+(aq) + 4 e-\nD) Protein denaturation: Folded protein(aq) \u2192 Unfolded protein(aq)",
+      "answer": "B) Cellular respiration: C6H12O6(aq) + 6 O2(g) \u2192 6 CO2(g) + 6 H2O(l)",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.833333333333334
+      }
+    }
+  },
+  {
+    "pair_id": "ca4075c4-1a9d-4709-9133-7d2671b449d8",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Mules are relatively long-lived and hardy organisms that cannot, generally speaking, perform successful meiosis. Consequently, which statement about mules is true?\nA) They have a relative evolutionary fitness of zero.\nB) Their offspring have less genetic variation than the parents.\nC) Mutations cannot occur in their genomes.\nD) If crossing-over happens in mules, then it must be limited to prophase of mitosis.",
+      "answer": "A) They have a relative evolutionary fitness of zero.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Certain endorheic basins (closed drainage basins) have no outlet to the ocean and cannot, generally speaking, export water or sediments to marine environments. Consequently, which statement about endorheic basins is true?\nA) They have zero contribution to global oceanic sediment budgets.\nB) Their sediment deposits have less compositional variety than exorheic basin deposits.\nC) Erosion cannot occur within their boundaries.\nD) If sediment transport happens in endorheic basins, then it must be limited to aeolian processes only.",
+      "answer": "A) They have zero contribution to global oceanic sediment budgets.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "8ab89339-ef1e-40cd-a475-020314f0c9ab",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Two genes (B and E) determine coat color in Labrador retrievers. Alleles B and b code for how much melanin is present. The dominant allele B codes for black fur, the recessive allele b codes for brown hair. A second gene consisting of two alleles, E and e, codes for the deposition of pigment in the hair. In this case, the alleles for pigment deposition (E or e) are said to be epistatic to the gene that codes for black or brown pigment. If the dominant allele (E) is not present, regardless of the genotype at the black/brown locus, the animal's fur will be yellow.\nA) BBEe will be brown.\nB) BbEe will be brown.\nC) Bbee will be brown.\nD) BBee will be yellow.",
+      "answer": "D) BBee will be yellow.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Two factors (V and A) determine the type of volcanic eruption. Factor V represents magma viscosity, where allele V (high viscosity, silica-rich) produces explosive eruptions and allele v (low viscosity, basaltic) produces effusive eruptions. Factor A represents the presence of volatiles (water and gases), where allele A indicates high volatile content enabling eruption and allele a indicates degassed magma. The volatile factor (A or a) is said to be epistatic to the viscosity factor. If the dominant allele (A) for volatile presence is not present, regardless of the viscosity conditions at the V locus, the magma will form an intrusive pluton (no eruption). Which statement is correct?\nA) VVAa will produce effusive eruption.\nB) VvAa will produce effusive eruption.\nC) Vvaa will produce effusive eruption.\nD) VVaa will form a pluton.",
+      "answer": "D) VVaa will form a pluton.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "dbc1bcf4-52a0-4060-9bbd-fc76d1600936",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "In which of the following situations involving a source of sound and a detector of the sound is it possible that there is NO perceived Doppler shift?\nA) The source travels toward the stationary detector.\nB) The detector travels toward the stationary source.\nC) Both the source and detector travel in the same direction.\nD) Both the source and detector travel in opposite directions, with the source and detector moving away from each other.",
+      "answer": "C) Both the source and detector travel in the same direction.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "In which of the following situations involving a weather front and an observation station is it possible that there is NO perceived change in temperature?\nA) The cold front moves toward the stationary observation station.\nB) The observation station moves toward the stationary cold front.\nC) Both the cold front and observation station move in the same direction at the same speed.\nD) Both the cold front and observation station move in opposite directions, with the front and station moving away from each other.",
+      "answer": "C) Both the cold front and observation station move in the same direction at the same speed.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "0bd8cafc-8187-4a1e-86a6-3996c216e70d",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "In the gambling game \"craps,\" a pair of dice is rolled and the outcome of the experiment is the sum of the points on the up sides of the six-sided dice. The bettor wins on the first roll if the sum is 7 or 11. The bettor loses on the first roll if the sum is 2,3 , or 12 . If the sum is $4,5,6$, 8,9 , or 10 , that number is called the bettor's \"point.\" Once the point is established, the rule is as follows: If the bettor rolls a 7 before the point, the bettor loses; but if the point is rolled before a 7 , the bettor wins. Find the probability that the bettor wins on the first roll. That is, find the probability of rolling a 7 or 11 , $P(7$ or 11$)$.",
+      "answer": "0.22222222",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A meteorologist is studying cloud formation conditions. Atmospheric parcels have relative humidity values of 50%, 60%, 70%, 80%, 90%, or 100%, each occurring with equal probability (1/6) during afternoon observations. Cloud formation initiates immediately if the relative humidity is 90% (cumulus formation threshold) or 100% (saturation). If relative humidity is 50%, 60%, 70%, or 80%, additional atmospheric lifting is required before clouds form. Find the probability that cloud formation initiates immediately during the first observation. That is, find P(90% or 100%).",
+      "answer": "0.33333333",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "fad7b9fa-4c3f-4083-9e1e-b22c83522bc2",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. A chemical reaction takes place in a container of cross-sectional area $100 \\mathrm{~cm}^2$. As a result of the reaction, a piston is pushed out through $10 \\mathrm{~cm}$ against an external pressure of $1.0 \\mathrm{~atm}$. Calculate the work done by the system.",
+      "answer": "-100",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "During muscle contraction, a sarcomere with cross-sectional area 100 nm\u00b2 shortens by 10 nm while generating a force corresponding to a pressure of 1.0 \u00d7 10\u2075 Pa against the resistance. Calculate the work done by the sarcomere during this contraction.",
+      "answer": "-100 zJ",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "f02b850d-ddba-4e8b-8ec5-8c44d42b8817",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "What is the uncertainty of the momentum of an electron if we know its position is somewhere in a $10 \\mathrm{pm}$ interval?",
+      "answer": "6.6",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "What is the net primary productivity (NPP) of a forest ecosystem if the gross primary productivity is 25,000 kcal/m\u00b2/year and the respiration rate is 40% of GPP?",
+      "answer": "15000 kcal/m\u00b2/year",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "1f5aa28d-149f-493b-86f5-84dcdaabe6ed",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Find the probability that the electron in the ground-state $\\mathrm{H}$ atom is less than a distance $a$ from the nucleus.",
+      "answer": "0.323",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "The oxygen-hemoglobin dissociation curve follows the Hill equation. For hemoglobin with a P\u2085\u2080 of 27 mmHg and a Hill coefficient (n) of 2.8, calculate the fractional saturation (Y) when the partial pressure of oxygen is 40 mmHg.",
+      "answer": "0.735 or 73.5%",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.333333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "bb6688ff-e2f7-40cf-a7b7-7076a539a3f1",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "What is the number of ways of selecting a president, a vice president, a secretary, and a treasurer in a club consisting of 10 persons?",
+      "answer": "5040",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A seismologist is monitoring 10 distinct seismic stations around a volcanic region. She needs to assign priority levels for data transmission where Station Priority 1 gets first access, Priority 2 gets second access, Priority 3 gets third access, and Priority 4 gets fourth access to the satellite uplink. Each station can only be assigned one priority level, and all four priority positions must be filled with different stations. How many different priority assignment schemes are possible?",
+      "answer": "5040",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "3107ec2f-ee51-4eee-a182-d94b981c8cf2",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Two genes (B and E) determine coat color in Labrador retrievers. Alleles B and b code for how much melanin is present. The dominant allele B codes for black fur, the recessive allele b codes for brown hair. A second gene consisting of two alleles, E and e, codes for the deposition of pigment in the hair. In this case, the alleles for pigment deposition (E or e) are said to be epistatic to the gene that codes for black or brown pigment. If the dominant allele (E) is not present, regardless of the genotype at the black/brown locus, the animal's fur will be yellow.\nA) BBEe will be brown.\nB) BbEe will be brown.\nC) Bbee will be brown.\nD) BBee will be yellow.",
+      "answer": "D) BBee will be yellow.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Two factors (W and C) determine the type of sedimentary structure formed in a tidal environment. Factor W represents wave energy, where allele W (high energy) produces cross-bedding and allele w (low energy) produces parallel lamination. Factor C represents sediment cohesion, where allele C allows structure preservation and allele c causes bioturbation that destroys structures. The cohesion factor (C or c) is said to be epistatic to the wave energy factor. If the dominant allele (C) for structure preservation is not present, regardless of the wave energy conditions at the W locus, the sediment will be bioturbated (structureless). Which statement is correct?\nA) WWCc will show parallel lamination.\nB) WwCc will show parallel lamination.\nC) Wwcc will show parallel lamination.\nD) WWcc will be bioturbated.",
+      "answer": "D) WWcc will be bioturbated.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "16203c5d-05f0-4724-af56-5e385658b974",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following statements best summarizes evolution as it is viewed today?\nA) It is goal-directed.\nB) It represents the result of selection for acquired characteristics.\nC) It is synonymous with the process of gene flow.\nD) It is the differential survival and reproduction of the most-fit phenotypes.",
+      "answer": "D) It is the differential survival and reproduction of the most-fit phenotypes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following statements best describes the rock cycle as understood in modern geology?\nA) It proceeds in a single, linear direction from igneous to sedimentary to metamorphic.\nB) It represents the result of catastrophic events only.\nC) It is synonymous with the process of weathering.\nD) It is the continuous transformation of rocks through various geological processes driven by Earth's internal and external energy.",
+      "answer": "D) It is the continuous transformation of rocks through various geological processes driven by Earth's internal and external energy.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "5a166165-8890-4c59-9128-f42c78151294",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A small cart of mass m is initially at rest. It collides elastically with a large cart of mass 4m and velocity v. The large cart loses half its kinetic energy to the little cart. The little cart now has a velocity of\nA) 1.41v\nB) v\nC) 2v\nD) 4v",
+      "answer": "A) 1.41v",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A small ice crystal of mass m is initially stationary in a cloud. It collides with a large graupel particle of mass 4m falling at velocity v. The graupel loses half its kinetic energy to the ice crystal during the collision. The ice crystal now has a velocity of\nA) 1.41v\nB) v\nC) 2v\nD) 4v",
+      "answer": "A) 1.41v",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 3.6666666666666665,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.583333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "4cbfd3d0-797a-4c56-93e1-05c57607d299",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The resolution of a telescope is a measure of its:\nA) Ability to magnify distant objects\nB) Ability to measure the angular separation of objects\nC) Ability to measure the distance between objects\nD) Light-collecting efficiency",
+      "answer": "B) Ability to measure the angular separation of objects",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The permeability of a rock is a measure of its:\nA) Ability to store water in its pore spaces\nB) Ability to transmit fluids through its pore spaces\nC) Ability to resist weathering and erosion\nD) Total volume of void spaces",
+      "answer": "B) Ability to transmit fluids through its pore spaces",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "bfb5b8cd-fd6f-4e7c-9e76-e475945a84ca",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The model of light most supported by the photoelectric effect is the\nA) wave model\nB) particle model\nC) Both of these\nD) Neither of these",
+      "answer": "B) particle model",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The mechanism of SN1 reactions most supported by the observation that reaction rate depends only on substrate concentration is the\nA) concerted one-step mechanism\nB) stepwise mechanism with carbocation intermediate\nC) Both of these\nD) Neither of these",
+      "answer": "B) stepwise mechanism with carbocation intermediate",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "ab98a020-ab91-426f-91dd-d86c3a469519",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "When a cannonball is fired from a cannon, both the cannonball and the cannon experience equal\nA) amounts of force\nB) accelerations\nC) Both\nD) Neither",
+      "answer": "A) amounts of force",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "When a catalyst molecule collides with a reactant molecule during a catalyzed reaction, both molecules experience equal\nA) collision forces\nB) changes in activation energy\nC) Both\nD) Neither",
+      "answer": "A) collision forces",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "36770a99-cb2e-42aa-ab67-f04cf801822c",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "An urn contains eight red and seven blue balls. A second urn contains an unknown number of red balls and nine blue balls. A ball is drawn from each urn at random, and the probability of getting two balls of the same color is $151 / 300$. How many red balls are in the second urn?",
+      "answer": "11",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A reaction vessel contains a mixture with a mole fraction of methanol of 0.533 and a mole fraction of ethanol of 0.467. A second reaction vessel contains a mixture with an unknown mole fraction of methanol and a mole fraction of ethanol of 0.600. A molecule is selected at random from each vessel, and the probability of selecting two molecules of the same type is 0.503. What is the mole fraction of methanol in the second vessel?",
+      "answer": "0.733",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "625d2cde-0657-44c0-b1d5-e66de3cfad58",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "During the study of the reaction A \u2192 2B, a chemist constructs several graphs. The graph of [A] versus time and the graph of ln [A] versus time both give a curved line; however, the graph of 1/[A] versus time and gives a straight line. This implies the rate law is\nA) Rate = k[A]\nB) Rate = k[A]^2\nC) Rate = k[A]^0\nD) Rate = k[A]^-1",
+      "answer": "B) Rate = k[A]^2",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A hydrologist studying groundwater flow through an aquifer measures hydraulic head at various distances from a pumping well and creates several graphs. The graph of h (hydraulic head) versus r (radial distance) and the graph of 1/h versus r both give curved lines; however, the graph of h versus ln r gives a straight line. This implies the head distribution follows:\nA) Linear relationship: h = h\u2080 + kr\nB) Logarithmic relationship: h = h\u2080 + k ln r\nC) Power law: h = h\u2080r^k\nD) Exponential relationship: h = h\u2080e^(kr)",
+      "answer": "B) Logarithmic relationship: h = h\u2080 + k ln r",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "39465cac-65ff-480f-bb9f-24f95c274284",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The model of light most supported by the photoelectric effect is the\nA) wave model\nB) particle model\nC) Both of these\nD) Neither of these",
+      "answer": "B) particle model",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The electronic structure of benzene most supported by its resistance to addition reactions and uniform C-C bond lengths is the\nA) Kekul\u00e9 structure with alternating single and double bonds\nB) resonance hybrid with delocalized electrons\nC) Both of these\nD) Neither of these",
+      "answer": "B) resonance hybrid with delocalized electrons",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "87ad4908-9554-45f9-b223-83196d9ba5db",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "A convex lens of focal length f = 0.2 m is used to examine a small coin lying on a table. During the examination, the lens is held a distance 0.3 m above the coin and is moved slowly to a distance of 0.1 m above the coin. During this process, what happens to the image of the coin?\nA) The image continually increases in size.\nB) The image continually decreases in size.\nC) The image gets smaller at first and then bigger in size.\nD) The image flips over.",
+      "answer": "D) The image flips over.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A neuronal membrane at resting state has an equilibrium potential for potassium (EK) of -90 mV. During an experiment, the membrane potential is changed from -70 mV to -110 mV by current injection. During this process, what happens to the driving force for potassium ions (Vm - EK)?\nA) The driving force continually increases in magnitude.\nB) The driving force continually decreases in magnitude.\nC) The driving force magnitude decreases at first and then increases.\nD) The driving force changes direction (reverses sign).",
+      "answer": "D) The driving force changes direction (reverses sign).",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "16939586-c64b-4f81-ba82-b070cf9c29a5",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Relativity equations for time, length, and momentum hold true for\nA) everyday low speeds.\nB) relativistic speeds.\nC) Both of these.\nD) Neither of these.",
+      "answer": "C) Both of these.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The principles of natural selection (variation, inheritance, differential survival) apply to\nA) populations with long generation times.\nB) populations with short generation times.\nC) Both of these.\nD) Neither of these.",
+      "answer": "C) Both of these.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "f872e27d-b3a2-48f9-aaff-476d0388a06c",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The resolution of a telescope is a measure of its:\nA) Ability to magnify distant objects\nB) Ability to measure the angular separation of objects\nC) Ability to measure the distance between objects\nD) Light-collecting efficiency",
+      "answer": "B) Ability to measure the angular separation of objects",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The seismicity of a region is a measure of its:\nA) Ability to withstand tectonic stress without deformation\nB) Ability to generate and experience earthquake activity\nC) Ability to transmit seismic waves at high velocities\nD) Total accumulated strain energy in the lithosphere",
+      "answer": "B) Ability to generate and experience earthquake activity",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "bb9543f7-5dec-408e-920c-c2644bf9d501",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Let $X$ and $Y$ have a bivariate normal distribution with correlation coefficient $\\rho$. To test $H_0: \\rho=0$ against $H_1: \\rho \\neq 0$, a random sample of $n$ pairs of observations is selected. Suppose that the sample correlation coefficient is $r=0.68$. Using a significance level of $\\alpha=0.05$, find the smallest value of the sample size $n$ so that $H_0$ is rejected.",
+      "answer": "9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A climatologist is studying the relationship between atmospheric CO\u2082 concentration and global mean temperature anomaly. Let C and T have a bivariate normal distribution with correlation coefficient \u03c1. To test H\u2080: \u03c1=0 against H\u2081: \u03c1 \u2260 0, a random sample of n annual records is analyzed. Suppose that the sample correlation coefficient is r=0.68. Using a significance level of \u03b1=0.05, find the smallest value of the sample size n so that H\u2080 is rejected.",
+      "answer": "9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 3.6666666666666665,
+        "difficulty_parity": 5.0,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "1fc2dd4a-d3d2-4d38-8dfc-d46e590ff079",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "An electric dipole consisting of charges of magnitude $1.50 \\mathrm{nC}$ separated by $6.20 \\mu \\mathrm{m}$ is in an electric field of strength 1100 $\\mathrm{N} / \\mathrm{C}$. What is the magnitude of the electric dipole moment?",
+      "answer": "9.30",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A sedimentary layer has a porosity of 0.28 and a total volume of 3.50 \u00d7 10\u2074 m\u00b3. If the layer is fully saturated with water, what is the volume of water contained in the pore spaces?",
+      "answer": "9800 m\u00b3",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "a36e4f60-6567-4c62-b188-aefa035d6ec5",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "When a cannonball is fired from a cannon, both the cannonball and the cannon experience equal\nA) amounts of force\nB) accelerations\nC) Both\nD) Neither",
+      "answer": "A) amounts of force",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "When a sodium ion (Na\u207a) and a chloride ion (Cl\u207b) attract each other in solution to form an ion pair, both ions experience equal\nA) electrostatic forces\nB) changes in hydration energy\nC) Both\nD) Neither",
+      "answer": "A) electrostatic forces",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "c6a514df-e893-467e-a47f-d7a3032edac9",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "The belts and zones of Jupiter are\nA) names for the layers of gaseous and metallic hydrogen deep within the planet.\nB) alternating bands of rising and falling air at different latitudes.\nC) alternating regions of charged particles in Jupiter's magnetic field.\nD) regions of the plasma torus created by ions from Io's volcanoes",
+      "answer": "B) alternating bands of rising and falling air at different latitudes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The white and gray matter of the spinal cord are\nA) names for the meningeal layers of dura mater and pia mater surrounding the cord.\nB) alternating regions of myelinated axons and neuronal cell bodies at different locations.\nC) alternating zones of sensory and motor neurons in the dorsal root ganglia.\nD) regions of cerebrospinal fluid created by secretions from ependymal cells.",
+      "answer": "B) alternating regions of myelinated axons and neuronal cell bodies at different locations.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  }
+]

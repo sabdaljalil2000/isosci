@@ -1,0 +1,2190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IsoSci-150 Annotation Booklet</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 900px; margin: 0 auto; padding: 2rem;
+         color: #222; line-height: 1.6; background: #fafafa; }
+  h1 { font-size: 1.6rem; border-bottom: 2px solid #333; padding-bottom: 0.5rem; }
+  h2 { font-size: 1.1rem; color: #555; margin-top: 0; }
+  .pair { background: white; border: 1px solid #ddd; border-radius: 8px;
+           padding: 1.5rem; margin-bottom: 2.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.07); }
+  .pair-header { display: flex; justify-content: space-between; align-items: baseline;
+                  border-bottom: 1px solid #eee; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+  .pair-num { font-size: 1.2rem; font-weight: bold; color: #333; }
+  .mapping { font-size: 0.85rem; background: #e8f0fe; color: #1a56db;
+              padding: 2px 8px; border-radius: 12px; }
+  .problem-block { margin-bottom: 1rem; }
+  .problem-label { font-size: 0.75rem; font-weight: bold; text-transform: uppercase;
+                    letter-spacing: 0.05em; color: #666; margin-bottom: 0.25rem; }
+  .problem-box { background: #f8f9fa; border-left: 3px solid #6c757d;
+                  padding: 0.75rem 1rem; border-radius: 0 4px 4px 0; font-size: 0.95rem; }
+  .source-box { border-left-color: #2563eb; }
+  .target-box { border-left-color: #059669; }
+  .answer { font-size: 0.85rem; color: #555; margin-top: 0.35rem; }
+  .structure-tag { font-size: 0.8rem; background: #fef3c7; color: #92400e;
+                    padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 1rem; }
+  .score-table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: 0.9rem; }
+  .score-table th { background: #f3f4f6; text-align: left; padding: 0.5rem;
+                     border: 1px solid #e5e7eb; }
+  .score-table td { padding: 0.5rem; border: 1px solid #e5e7eb; }
+  .score-input { width: 60px; text-align: center; border: 1px solid #d1d5db;
+                  border-radius: 4px; padding: 4px; }
+  .verdict { margin-top: 1rem; }
+  .verdict label { font-weight: bold; margin-right: 1.5rem; }
+  .verdict input { margin-right: 0.3rem; }
+  .notes-input { width: 100%; border: 1px solid #d1d5db; border-radius: 4px;
+                  padding: 0.5rem; margin-top: 0.5rem; font-size: 0.9rem;
+                  font-family: inherit; resize: vertical; min-height: 60px; }
+  .failure-modes { margin-top: 0.75rem; font-size: 0.85rem; }
+  .failure-modes label { margin-right: 1rem; }
+  .toc { background: white; border: 1px solid #ddd; border-radius: 8px;
+          padding: 1rem 1.5rem; margin-bottom: 2rem; }
+  .toc a { color: #2563eb; text-decoration: none; }
+  .toc a:hover { text-decoration: underline; }
+  .tier-badge { font-size: 0.75rem; padding: 2px 8px; border-radius: 12px; font-weight: bold; }
+  .tier-accepted   { background: #dcfce7; color: #166534; }
+  .tier-borderline { background: #fef9c3; color: #854d0e; }
+  .tier-rejected   { background: #fee2e2; color: #991b1b; }
+  @media print {
+    .pair { page-break-inside: avoid; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body>
+
+<h1>IsoSci-150 Human Annotation Booklet</h1>
+<p><strong>Annotator:</strong> ______________________ &nbsp;&nbsp;
+   <strong>Date:</strong> ______________________</p>
+<p>Please score each pair on the four criteria below using the 1–5 scale.
+See the attached instructions for rubric details. For each pair, also record
+an overall ACCEPT / REJECT verdict and check any applicable failure modes.</p>
+
+<div class="toc">
+<strong>Quick navigation:</strong><br>
+<a href="#pair-1">Pair 1</a> <span style="color:#888;font-size:0.85em">(biology → earth science)</span> &nbsp;|&nbsp; <a href="#pair-2">Pair 2</a> <span style="color:#888;font-size:0.85em">(physics → earth science)</span> &nbsp;|&nbsp; <a href="#pair-3">Pair 3</a> <span style="color:#888;font-size:0.85em">(chemistry → earth science)</span> &nbsp;|&nbsp; <a href="#pair-4">Pair 4</a> <span style="color:#888;font-size:0.85em">(chemistry → biology)</span> &nbsp;|&nbsp; <a href="#pair-5">Pair 5</a> <span style="color:#888;font-size:0.85em">(physics → chemistry)</span> &nbsp;|&nbsp; <a href="#pair-6">Pair 6</a> <span style="color:#888;font-size:0.85em">(physics → biology)</span> &nbsp;|&nbsp; <a href="#pair-7">Pair 7</a> <span style="color:#888;font-size:0.85em">(physics → biology)</span> &nbsp;|&nbsp; <a href="#pair-8">Pair 8</a> <span style="color:#888;font-size:0.85em">(physics → earth science)</span> &nbsp;|&nbsp; <a href="#pair-9">Pair 9</a> <span style="color:#888;font-size:0.85em">(physics → chemistry)</span> &nbsp;|&nbsp; <a href="#pair-10">Pair 10</a> <span style="color:#888;font-size:0.85em">(chemistry → earth science)</span> &nbsp;|&nbsp; <a href="#pair-11">Pair 11</a> <span style="color:#888;font-size:0.85em">(chemistry → earth science)</span> &nbsp;|&nbsp; <a href="#pair-12">Pair 12</a> <span style="color:#888;font-size:0.85em">(physics → earth science)</span> &nbsp;|&nbsp; <a href="#pair-13">Pair 13</a> <span style="color:#888;font-size:0.85em">(physics → biology)</span> &nbsp;|&nbsp; <a href="#pair-14">Pair 14</a> <span style="color:#888;font-size:0.85em">(physics → chemistry)</span> &nbsp;|&nbsp; <a href="#pair-15">Pair 15</a> <span style="color:#888;font-size:0.85em">(biology → earth science)</span> &nbsp;|&nbsp; <a href="#pair-16">Pair 16</a> <span style="color:#888;font-size:0.85em">(biology → earth science)</span> &nbsp;|&nbsp; <a href="#pair-17">Pair 17</a> <span style="color:#888;font-size:0.85em">(physics → chemistry)</span> &nbsp;|&nbsp; <a href="#pair-18">Pair 18</a> <span style="color:#888;font-size:0.85em">(chemistry → biology)</span> &nbsp;|&nbsp; <a href="#pair-19">Pair 19</a> <span style="color:#888;font-size:0.85em">(biology → earth science)</span> &nbsp;|&nbsp; <a href="#pair-20">Pair 20</a> <span style="color:#888;font-size:0.85em">(chemistry → biology)</span> &nbsp;|&nbsp; <a href="#pair-21">Pair 21</a> <span style="color:#888;font-size:0.85em">(chemistry → earth science)</span> &nbsp;|&nbsp; <a href="#pair-22">Pair 22</a> <span style="color:#888;font-size:0.85em">(physics → biology)</span> &nbsp;|&nbsp; <a href="#pair-23">Pair 23</a> <span style="color:#888;font-size:0.85em">(physics → earth science)</span> &nbsp;|&nbsp; <a href="#pair-24">Pair 24</a> <span style="color:#888;font-size:0.85em">(chemistry → biology)</span> &nbsp;|&nbsp; <a href="#pair-25">Pair 25</a> <span style="color:#888;font-size:0.85em">(biology → earth science)</span>
+</div>
+
+<div class="pair" id="pair-1">
+  <div class="pair-header">
+    <span class="pair-num">Pair 1 of 25</span>
+    <span class="mapping">biology → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.33/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Biology)</div>
+    <div class="problem-box source-box">A researcher is experimenting with nerve transmission using neurons from a giant squid. At the beginning of the experiment, the axon is at rest and has a threshold measured at –70 mV at 37oC. The axon receives one stimulus that triggers one action potential in the axon. Subsequent stimuli are much stronger. Which of the following statements explains what happens when several strong stimuli are experienced by the axon?
+A) The axon becomes hyperpolarized to –90 mV.
+B) The axon becomes hyperpolarized to –50 mV.
+C) The strength of the action potential becomes greater.
+D) The frequency of the action potential increases.</div>
+    <div class="answer">&#x2713; Answer: <em>D) The frequency of the action potential increases.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">A geologist is studying earthquake wave propagation through Earth's crust. At the beginning of observation, a seismometer is at rest with a detection threshold of 0.5 mm ground displacement at 15°C. The seismometer records one seismic wave that exceeds the detection threshold. Subsequent seismic waves arriving at the location are much stronger in amplitude. Which of the following statements explains what happens when several strong seismic waves are experienced by the seismometer?
+A) The seismometer's threshold increases to 1.0 mm.
+B) The seismometer's threshold decreases to 0.3 mm.
+C) The amplitude of individual recorded waves becomes greater.
+D) The number of wave events recorded per unit time increases.</div>
+    <div class="answer">&#x2713; Answer: <em>D) The number of wave events recorded per unit time increases.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p1_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p1_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p1_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p1_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p1_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p1_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p1_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p1_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p1_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p1_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p1_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p1_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p1_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p1_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p1_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-2">
+  <div class="pair-header">
+    <span class="pair-num">Pair 2 of 25</span>
+    <span class="mapping">physics → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">A table supports a wooden block placed on the tabletop. Which fundamental force of nature is responsible for this interaction, and why?
+A) The electric force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.
+B) The gravitational force, because by F = GMm/r^2, the force of the table on the wood at that close range is sufficient to balance the force of the Earth on the wood.
+C) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.
+D) The strong nuclear force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.</div>
+    <div class="answer">&#x2713; Answer: <em>C) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">Water molecules adhere to the surface of soil particles in the vadose zone above the water table. Which fundamental force of nature is primarily responsible for this adhesion, and why?
+A) The gravitational force, because the mass of water molecules is attracted to the larger mass of soil particles by F = GMm/r².
+B) The electromagnetic force, because polar water molecules are attracted to charged or polar sites on soil particle surfaces through electrostatic interactions.
+C) The strong nuclear force, because the hydrogen nuclei in water molecules bond directly with nuclei in the soil minerals.
+D) The weak nuclear force, because it mediates the decay of radioactive isotopes in soil that attracts water molecules.</div>
+    <div class="answer">&#x2713; Answer: <em>B) The electromagnetic force, because polar water molecules are attracted to charged or polar sites on soil particle surfaces through electrostatic interactions.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p2_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p2_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p2_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p2_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p2_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p2_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p2_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p2_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p2_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p2_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p2_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p2_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p2_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p2_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p2_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-3">
+  <div class="pair-header">
+    <span class="pair-num">Pair 3 of 25</span>
+    <span class="mapping">chemistry → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">During the study of the reaction A → 2B, a chemist constructs several graphs. The graph of [A] versus time and the graph of ln [A] versus time both give a curved line; however, the graph of 1/[A] versus time and gives a straight line. This implies the rate law is
+A) Rate = k[A]
+B) Rate = k[A]^2
+C) Rate = k[A]^0
+D) Rate = k[A]^-1</div>
+    <div class="answer">&#x2713; Answer: <em>B) Rate = k[A]^2</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">A hydrologist studying groundwater flow through an aquifer measures hydraulic head at various distances from a pumping well and creates several graphs. The graph of h (hydraulic head) versus r (radial distance) and the graph of 1/h versus r both give curved lines; however, the graph of h versus ln r gives a straight line. This implies the head distribution follows:
+A) Linear relationship: h = h₀ + kr
+B) Logarithmic relationship: h = h₀ + k ln r
+C) Power law: h = h₀r^k
+D) Exponential relationship: h = h₀e^(kr)</div>
+    <div class="answer">&#x2713; Answer: <em>B) Logarithmic relationship: h = h₀ + k ln r</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p3_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p3_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p3_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p3_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p3_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p3_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p3_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p3_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p3_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p3_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p3_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p3_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p3_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p3_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p3_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-4">
+  <div class="pair-header">
+    <span class="pair-num">Pair 4 of 25</span>
+    <span class="mapping">chemistry → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: formula recall and substitute &amp;nbsp;|&amp;nbsp; LLM avg score: 4.0/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">At $298.15 \mathrm{~K}, \Delta G_f^{\circ}(\mathrm{HCOOH}, g)=-351.0 \mathrm{~kJ} \mathrm{~mol}^{-1}$ and $\Delta G_f^{\circ}(\mathrm{HCOOH}, l)=-361.4 \mathrm{~kJ} \mathrm{~mol}^{-1}$. Calculate the vapor pressure of formic acid at this temperature.</div>
+    <div class="answer">&#x2713; Answer: <em>1.51</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">A population of bacteria is growing in a chemostat with a dilution rate of 0.45 h^(-1). The maximum specific growth rate (μmax) of the bacteria is 0.85 h^(-1), and the saturation constant (Ks) is 2.5 g/L. At steady state, calculate the substrate concentration in the chemostat using the Monod equation.</div>
+    <div class="answer">&#x2713; Answer: <em>2.81 g/L</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p4_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p4_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p4_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p4_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p4_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p4_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p4_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p4_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p4_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p4_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p4_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p4_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p4_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p4_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p4_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-5">
+  <div class="pair-header">
+    <span class="pair-num">Pair 5 of 25</span>
+    <span class="mapping">physics → chemistry</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">An observer O at rest midway between two sources of light at x = 0 and x = 10 m observes the two sources to flash simultaneously. According to a second observer O', moving at a constant speed parallel to the x-axis, one source of light flashes 13 ns before the other. Which of the following gives the speed of O' relative to O?
+A) 0.13c
+B) 0.15c
+C) 0.36c
+D) 0.53c</div>
+    <div class="answer">&#x2713; Answer: <em>C) 0.36c</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Chemistry)</div>
+    <div class="problem-box target-box">A chemist measures the pH of two buffer solutions, one at position A and one at position B (separated by 10 cm), and finds them both to have pH = 7.00 at the same instant. A second chemist moving at constant velocity parallel to the line connecting A and B measures the pH of solution A to be 7.00 exactly 13 ns before measuring solution B to be 7.00. The pH measurements are made using light signals from pH-sensitive fluorescent dyes that emit at the instant pH = 7.00 is reached during a titration. Which of the following gives the speed of the second chemist relative to the first? A) 0.13c B) 0.15c C) 0.36c D) 0.53c</div>
+    <div class="answer">&#x2713; Answer: <em>C) 0.36c</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p5_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p5_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p5_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p5_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p5_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p5_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p5_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p5_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p5_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p5_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p5_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p5_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p5_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p5_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p5_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-6">
+  <div class="pair-header">
+    <span class="pair-num">Pair 6 of 25</span>
+    <span class="mapping">physics → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">Why does the plasma (ion) tail of a comet always point away from the Sun?
+A) Radiation pressure from the Sun's light pushes the ions away.
+B) The conservation of the angular momentum in the tail keeps it always pointing away from the Sun.
+C) The ions are following Keplerian orbits that lead away from the Sun.
+D) The solar wind electromagnetically "blows" the ions directly away from the Sun.</div>
+    <div class="answer">&#x2713; Answer: <em>D) The solar wind electromagnetically "blows" the ions directly away from the Sun.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">Why do the flagella of motile bacteria always point away from the direction of travel during swimming?
+A) Brownian motion randomly orients the flagella backward.
+B) The conservation of rotational momentum in the flagellum keeps it always pointing backward.
+C) The flagella follow helical trajectories that naturally trail behind.
+D) Hydrodynamic drag forces push the flagella directly backward relative to the cell body.</div>
+    <div class="answer">&#x2713; Answer: <em>D) Hydrodynamic drag forces push the flagella directly backward relative to the cell body.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p6_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p6_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p6_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p6_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p6_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p6_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p6_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p6_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p6_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p6_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p6_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p6_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p6_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p6_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p6_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-7">
+  <div class="pair-header">
+    <span class="pair-num">Pair 7 of 25</span>
+    <span class="mapping">physics → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">The belts and zones of Jupiter are
+A) names for the layers of gaseous and metallic hydrogen deep within the planet.
+B) alternating bands of rising and falling air at different latitudes.
+C) alternating regions of charged particles in Jupiter's magnetic field.
+D) regions of the plasma torus created by ions from Io's volcanoes</div>
+    <div class="answer">&#x2713; Answer: <em>B) alternating bands of rising and falling air at different latitudes.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">The white and gray matter of the spinal cord are
+A) names for the meningeal layers of dura mater and pia mater surrounding the cord.
+B) alternating regions of myelinated axons and neuronal cell bodies at different locations.
+C) alternating zones of sensory and motor neurons in the dorsal root ganglia.
+D) regions of cerebrospinal fluid created by secretions from ependymal cells.</div>
+    <div class="answer">&#x2713; Answer: <em>B) alternating regions of myelinated axons and neuronal cell bodies at different locations.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p7_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p7_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p7_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p7_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p7_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p7_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p7_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p7_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p7_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p7_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p7_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p7_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p7_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p7_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p7_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-8">
+  <div class="pair-header">
+    <span class="pair-num">Pair 8 of 25</span>
+    <span class="mapping">physics → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.67/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">A particle is constrained to move in a circle with a 10-meter radius. At one instant, the particle’s speed is 10 meters per second and is increasing at a rate of 10 meters per second squared. The angle between the particle’s velocity and acceleration vectors is
+A) 0°
+B) 30°
+C) 45°
+D) 60°</div>
+    <div class="answer">&#x2713; Answer: <em>C) 45°</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">A point on Earth's equator moves in a circular path with a 6,371-kilometer radius due to Earth's rotation. At one instant, the tangential velocity is 464 meters per second and the rate of change of this velocity (due to tidal forces) is 0.0334 meters per second squared. The angle between the velocity vector and the total acceleration vector is
+A) 0°
+B) 30°
+C) 45°
+D) 60°</div>
+    <div class="answer">&#x2713; Answer: <em>C) 45°</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p8_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p8_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p8_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p8_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p8_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p8_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p8_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p8_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p8_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p8_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p8_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p8_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p8_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p8_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p8_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-9">
+  <div class="pair-header">
+    <span class="pair-num">Pair 9 of 25</span>
+    <span class="mapping">physics → chemistry</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.75/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">A liquid flows at a constant flow rate through a pipe with circular cross-sections of varying diameters. At one point in the pipe, the diameter is 2 cm and the flow speed is 18 m/s. What is the flow speed at another point in this pipe, where the diameter is 3 cm?
+A) 4 m/s
+B) 6 m/s
+C) 8 m/s
+D) 12 m/s</div>
+    <div class="answer">&#x2713; Answer: <em>C) 8 m/s</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Chemistry)</div>
+    <div class="problem-box target-box">In an electrochemical cell, electrons flow at a constant rate through conducting wires of different cross-sectional areas. At one point in the circuit, the wire has a cross-sectional area of 0.50 mm² and the current density is 24 A/mm². What is the current density at another point where the wire has a cross-sectional area of 0.75 mm²?
+A) 12 A/mm²
+B) 16 A/mm²
+C) 18 A/mm²
+D) 36 A/mm²</div>
+    <div class="answer">&#x2713; Answer: <em>B) 16 A/mm²</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p9_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p9_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p9_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p9_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p9_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p9_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p9_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p9_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p9_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p9_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p9_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p9_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p9_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p9_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p9_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-10">
+  <div class="pair-header">
+    <span class="pair-num">Pair 10 of 25</span>
+    <span class="mapping">chemistry → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 3.75/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">3,3,6-trimethylhepta-1,5-dien-4-one is treated with 1 equivalent of meta-chloroperbenzoic acid. Two different products are formed, in approximately a 1:1 ratio.
+
+In a separate vessel, Methyllithium is treated with copper(I)iodide. an excess of the resulting solution is slowly added to the product mixture of the first reaction. Name one product that will be formed by this reaction:</div>
+    <div class="answer">&#x2713; Answer: <em>6-hydroxy-2,2,5,5-tetramethyloctan-4-one</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">A sediment core from the deep ocean shows two distinct layers. The upper layer (0-50 cm) contains foraminiferal tests with δ¹⁸O values averaging +2.5‰ VPDB. The lower layer (50-100 cm) contains foraminiferal tests with δ¹⁸O values averaging +1.2‰ VPDB. Using the paleotemperature equation, the upper layer represents water temperatures of 2°C and the lower layer represents 8°C. A volcanic ash layer at 45 cm depth is dated to 18,000 years BP. Subsequently, pore water analysis reveals two distinct diagenetic zones: Zone 1 (0-60 cm) where sulfate reduction is active, and Zone 2 (60-100 cm) where methanogenesis dominates. What is the primary diagenetic mineral that will precipitate at 75 cm depth? (Given: sulfate reduction produces HS⁻ which combines with dissolved Fe²⁺ to form pyrite; methanogenesis produces CH₄ and CO₃²⁻ which combines with Ca²⁺ to form authigenic carbonate)</div>
+    <div class="answer">&#x2713; Answer: <em>authigenic carbonate (calcite or dolomite)</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p10_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p10_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p10_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p10_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p10_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p10_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p10_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p10_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p10_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p10_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p10_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p10_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p10_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p10_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p10_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-11">
+  <div class="pair-header">
+    <span class="pair-num">Pair 11 of 25</span>
+    <span class="mapping">chemistry → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: formula recall and substitute &amp;nbsp;|&amp;nbsp; LLM avg score: 4.83/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">The sedimentation coefficient of lysozyme $\left(\mathrm{M}=14,100 \mathrm{~g} \mathrm{~mol}^{-1}\right)$ in water at $20^{\circ} \mathrm{C}$ is $1.91 \times 10^{-13} \mathrm{~s}$ and the specific volume is $0.703 \mathrm{~cm}^3 \mathrm{~g}^{-1}$. The density of water at this temperature is $0.998 \mathrm{~g} \mathrm{~cm}^{-3}$ and $\eta=1.002 \mathrm{cP}$. Assuming lysozyme is spherical, what is the radius of this protein?</div>
+    <div class="answer">&#x2713; Answer: <em>1.94</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">A spherical hailstone falls through the atmosphere at a terminal velocity of 12.5 m/s. The density of ice is 917 kg/m³ and the density of air at the altitude of interest is 1.20 kg/m³. The dynamic viscosity of air is 1.83 × 10⁻⁵ Pa·s. Assuming Stokes flow conditions apply, what is the radius of the hailstone?</div>
+    <div class="answer">&#x2713; Answer: <em>2.01 mm</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p11_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p11_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p11_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p11_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p11_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p11_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p11_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p11_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p11_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p11_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p11_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p11_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p11_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p11_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p11_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-12">
+  <div class="pair-header">
+    <span class="pair-num">Pair 12 of 25</span>
+    <span class="mapping">physics → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: formula recall and substitute &amp;nbsp;|&amp;nbsp; LLM avg score: 3.75/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">Calculate the maximum height change in the ocean tides caused by the Moon.</div>
+    <div class="answer">&#x2713; Answer: <em>0.54</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">Calculate the depth to the brittle-ductile transition in continental crust where the temperature is 350°C. The geothermal gradient is 25°C/km and the surface temperature is 15°C.</div>
+    <div class="answer">&#x2713; Answer: <em>13.4 km</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p12_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p12_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p12_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p12_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p12_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p12_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p12_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p12_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p12_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p12_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p12_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p12_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p12_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p12_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p12_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-13">
+  <div class="pair-header">
+    <span class="pair-num">Pair 13 of 25</span>
+    <span class="mapping">physics → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.08/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">The Gravitron is a carnival ride that looks like a large cylinder. People stand inside the cylinder against the wall as it begins to spin. Eventually, it is rotating fast enough that the floor can be removed without anyone falling. Given then the coefficient of friction between a person’s clothing and the wall is μ, the tangential speed is v, and the radius of the ride is R, what is greatest mass that a person can be to safely go on this ride?
+A) μv^2/(rg)
+B) r^2v^2/(μg)
+C) rg/(μv^2)
+D) None of the above.</div>
+    <div class="answer">&#x2713; Answer: <em>D) None of the above.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">In enzyme kinetics, the Michaelis-Menten equation describes reaction velocity. Given that the maximum velocity is V_max = 100 μmol/(min·mg enzyme), the Michaelis constant is K_m = 5 mM, and the substrate concentration is [S] = 20 mM, what is the minimum molecular weight (in Daltons) of the enzyme required for the reaction to proceed?
+A) 45,000 Da
+B) 67,500 Da
+C) 150,000 Da
+D) None of the above.</div>
+    <div class="answer">&#x2713; Answer: <em>D) None of the above.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p13_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p13_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p13_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p13_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p13_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p13_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p13_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p13_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p13_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p13_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p13_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p13_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p13_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p13_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p13_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-14">
+  <div class="pair-header">
+    <span class="pair-num">Pair 14 of 25</span>
+    <span class="mapping">physics → chemistry</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: formula recall and substitute &amp;nbsp;|&amp;nbsp; LLM avg score: 4.58/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">Let $Y_1 &lt; Y_2 &lt; Y_3 &lt; Y_4 &lt; Y_5 &lt; Y_6$ be the order statistics of a random sample of size $n=6$ from a distribution of the continuous type having $(100 p)$ th percentile $\pi_p$. Compute $P\left(Y_2 &lt; \pi_{0.5} &lt; Y_5\right)$.</div>
+    <div class="answer">&#x2713; Answer: <em>0.7812</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Chemistry)</div>
+    <div class="problem-box target-box">Let X₁ &lt; X₂ &lt; X₃ &lt; X₄ &lt; X₅ &lt; X₆ be the order statistics of a random sample of size n=6 from a distribution of the continuous type representing the mole fraction of component A in a binary mixture at equilibrium. The median mole fraction is χ₀.₅. Compute P(X₂ &lt; χ₀.₅ &lt; X₅).</div>
+    <div class="answer">&#x2713; Answer: <em>0.7812</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p14_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p14_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p14_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p14_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p14_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p14_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p14_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p14_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p14_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p14_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p14_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p14_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p14_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p14_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p14_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-15">
+  <div class="pair-header">
+    <span class="pair-num">Pair 15 of 25</span>
+    <span class="mapping">biology → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Biology)</div>
+    <div class="problem-box source-box">In reference to a segment of DNA, which of the following molecules contains the fewest number of nucleotides?
+A) a single strand of the original DNA segment
+B) a single strand of the original DNA segment after a point mutation
+C) the primary RNA transcript (before splicing) from the original DNA
+D) a single strand of complementary DNA (cDNA) made from the original DNA</div>
+    <div class="answer">&#x2713; Answer: <em>D) a single strand of complementary DNA (cDNA) made from the original DNA</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">In reference to a complete mineral crystal structure, which of the following descriptions contains the fewest number of atomic positions?
+A) all atomic positions in the complete unit cell of the original crystal
+B) all atomic positions in the complete unit cell after a substitution defect
+C) the extended crystal lattice (before identifying symmetry) showing multiple unit cells
+D) the asymmetric unit showing only symmetry-independent atomic positions</div>
+    <div class="answer">&#x2713; Answer: <em>D) the asymmetric unit showing only symmetry-independent atomic positions</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p15_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p15_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p15_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p15_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p15_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p15_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p15_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p15_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p15_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p15_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p15_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p15_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p15_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p15_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p15_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-16">
+  <div class="pair-header">
+    <span class="pair-num">Pair 16 of 25</span>
+    <span class="mapping">biology → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.5/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Biology)</div>
+    <div class="problem-box source-box">Which of the following substances is found in greater quantity in exhaled air?
+A) Carbon dioxide
+B) Carbon monoxide
+C) Nitrogen
+D) Oxygen</div>
+    <div class="answer">&#x2713; Answer: <em>C) Nitrogen</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">Which of the following minerals is found in the greatest quantity in oceanic crust?
+A) Olivine
+B) Plagioclase feldspar
+C) Pyroxene
+D) Quartz</div>
+    <div class="answer">&#x2713; Answer: <em>B) Plagioclase feldspar</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p16_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p16_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p16_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p16_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p16_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p16_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p16_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p16_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p16_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p16_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p16_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p16_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p16_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p16_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p16_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-17">
+  <div class="pair-header">
+    <span class="pair-num">Pair 17 of 25</span>
+    <span class="mapping">physics → chemistry</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.0/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">Which one of the following statements is true concerning the motion of an ideal projectile launched at an angle of 45° to the horizontal?
+A) The acceleration vector points opposite to the velocity vector on the way up and in the same direction as the velocity vector on the way down.
+B) The speed at the top of the trajectory is zero.
+C) The object's total speed remains constant during the entire flight.
+D) The vertical speed decreases on the way up and increases on the way down.</div>
+    <div class="answer">&#x2713; Answer: <em>D) The vertical speed decreases on the way up and increases on the way down.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Chemistry)</div>
+    <div class="problem-box target-box">Which one of the following statements is true concerning the oxidation state of manganese in a redox reaction where MnO₄⁻ is reduced to MnO₂ in basic solution?
+A) The oxidation state of manganese remains constant while oxygen's oxidation state changes.
+B) The oxidation state of manganese reaches zero at the end of the reduction.
+C) The change in oxidation state occurs at a constant rate throughout the electron transfer.
+D) The oxidation state of manganese decreases during the reduction and the number of electrons gained by each manganese atom increases during the reduction.</div>
+    <div class="answer">&#x2713; Answer: <em>D) The oxidation state of manganese decreases during the reduction and the number of electrons gained by each manganese atom increases during the reduction.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p17_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p17_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p17_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p17_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p17_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p17_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p17_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p17_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p17_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p17_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p17_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p17_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p17_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p17_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p17_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-18">
+  <div class="pair-header">
+    <span class="pair-num">Pair 18 of 25</span>
+    <span class="mapping">chemistry → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: formula recall and substitute &amp;nbsp;|&amp;nbsp; LLM avg score: 4.92/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. A chemical reaction takes place in a container of cross-sectional area $100 \mathrm{~cm}^2$. As a result of the reaction, a piston is pushed out through $10 \mathrm{~cm}$ against an external pressure of $1.0 \mathrm{~atm}$. Calculate the work done by the system.</div>
+    <div class="answer">&#x2713; Answer: <em>-100</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">A cylindrical root cell has a cross-sectional area of 100 μm² and elongates by 10 μm during growth against a turgor pressure of 1.0 MPa. Calculate the work done by the cell during this expansion.</div>
+    <div class="answer">&#x2713; Answer: <em>-100 pJ</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p18_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p18_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p18_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p18_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p18_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p18_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p18_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p18_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p18_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p18_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p18_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p18_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p18_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p18_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p18_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-19">
+  <div class="pair-header">
+    <span class="pair-num">Pair 19 of 25</span>
+    <span class="mapping">biology → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.0/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Biology)</div>
+    <div class="problem-box source-box">When water evaporates from the surface of a pond, what happens to the remaining liquid water?
+A) The surface water cools.
+B) The surface water warms.
+C) The surface water temperature remains unchanged.
+D) The pH of the remaining water decreases.</div>
+    <div class="answer">&#x2713; Answer: <em>A) The surface water cools.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">When air descends from high altitude in the atmosphere and undergoes adiabatic compression, what happens to the temperature of the air mass?
+A) The air mass cools.
+B) The air mass warms.
+C) The air mass temperature remains unchanged.
+D) The air mass pressure decreases.</div>
+    <div class="answer">&#x2713; Answer: <em>B) The air mass warms.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p19_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p19_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p19_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p19_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p19_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p19_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p19_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p19_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p19_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p19_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p19_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p19_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p19_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p19_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p19_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-20">
+  <div class="pair-header">
+    <span class="pair-num">Pair 20 of 25</span>
+    <span class="mapping">chemistry → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.75/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">Substances whose Lewis structures must be drawn with an unpaired electron are called
+A) ionic compounds
+B) free radicals
+C) resonance structures
+D) polar molecules</div>
+    <div class="answer">&#x2713; Answer: <em>B) free radicals</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">Organisms that produce their own organic compounds from inorganic substances using light or chemical energy are called
+A) heterotrophs
+B) autotrophs
+C) decomposers
+D) parasites</div>
+    <div class="answer">&#x2713; Answer: <em>B) autotrophs</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p20_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p20_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p20_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p20_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p20_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p20_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p20_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p20_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p20_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p20_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p20_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p20_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p20_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p20_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p20_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-21">
+  <div class="pair-header">
+    <span class="pair-num">Pair 21 of 25</span>
+    <span class="mapping">chemistry → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: formula recall and substitute &amp;nbsp;|&amp;nbsp; LLM avg score: 4.75/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">The sedimentation coefficient of lysozyme $\left(\mathrm{M}=14,100 \mathrm{~g} \mathrm{~mol}^{-1}\right)$ in water at $20^{\circ} \mathrm{C}$ is $1.91 \times 10^{-13} \mathrm{~s}$ and the specific volume is $0.703 \mathrm{~cm}^3 \mathrm{~g}^{-1}$. The density of water at this temperature is $0.998 \mathrm{~g} \mathrm{~cm}^{-3}$ and $\eta=1.002 \mathrm{cP}$. Assuming lysozyme is spherical, what is the radius of this protein?</div>
+    <div class="answer">&#x2713; Answer: <em>1.94</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">A spherical mineral grain with density 2650 kg/m³ settles through seawater at 15°C with a measured settling velocity of 0.85 cm/s. The density of seawater at this temperature is 1025 kg/m³ and the dynamic viscosity is 1.14 × 10⁻³ Pa·s. Assuming laminar flow conditions (Stokes regime), what is the diameter of the grain?</div>
+    <div class="answer">&#x2713; Answer: <em>0.245 mm</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p21_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p21_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p21_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p21_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p21_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p21_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p21_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p21_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p21_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p21_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p21_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p21_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p21_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p21_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p21_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-22">
+  <div class="pair-header">
+    <span class="pair-num">Pair 22 of 25</span>
+    <span class="mapping">physics → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.25/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">The Gravitron is a carnival ride that looks like a large cylinder. People stand inside the cylinder against the wall as it begins to spin. Eventually, it is rotating fast enough that the floor can be removed without anyone falling. Given then the coefficient of friction between a person’s clothing and the wall is μ, the tangential speed is v, and the radius of the ride is R, what is greatest mass that a person can be to safely go on this ride?
+A) μv^2/(rg)
+B) r^2v^2/(μg)
+C) rg/(μv^2)
+D) None of the above.</div>
+    <div class="answer">&#x2713; Answer: <em>D) None of the above.</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">In a neuron, the equilibrium potential for an ion depends on the concentration gradient across the membrane. Given that the Nernst equation is E = (RT/zF)ln([ion]_out/[ion]_in), where R is the gas constant, T is temperature, z is the ion's valence, F is Faraday's constant, and the concentrations are [K+]_out = 5 mM and [K+]_in = 140 mM at body temperature (310 K), what is the maximum number of potassium ions that can pass through a single channel per second to maintain equilibrium?
+A) 2.3 × 10^6 ions/s
+B) 1.4 × 10^8 ions/s
+C) 5.0 × 10^5 ions/s
+D) None of the above.</div>
+    <div class="answer">&#x2713; Answer: <em>D) None of the above.</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p22_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p22_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p22_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p22_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p22_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p22_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p22_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p22_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p22_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p22_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p22_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p22_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p22_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p22_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p22_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-23">
+  <div class="pair-header">
+    <span class="pair-num">Pair 23 of 25</span>
+    <span class="mapping">physics → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.42/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Physics)</div>
+    <div class="problem-box source-box">Two identical capacitors are hooked in parallel to an external circuit. Which of the following quantities must be the same for both capacitors? I. the charge stored on the capacitor II.  the voltage across the capacitor III. the capacitance of the capacitor
+A) I only
+B) II only
+C) II and III only
+D) (E) I, II, and III</div>
+    <div class="answer">&#x2713; Answer: <em>D) (E) I, II, and III</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">Two identical soil columns are subjected in parallel to the same infiltration conditions (same water input rate and same hydraulic gradient). Which of the following quantities must be the same for both soil columns? I. the total volume of water infiltrated II. the hydraulic conductivity III. the soil texture
+A) I only
+B) II only
+C) II and III only
+D) I, II, and III</div>
+    <div class="answer">&#x2713; Answer: <em>D) I, II, and III</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p23_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p23_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p23_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p23_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p23_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p23_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p23_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p23_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p23_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p23_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p23_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p23_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p23_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p23_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p23_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-24">
+  <div class="pair-header">
+    <span class="pair-num">Pair 24 of 25</span>
+    <span class="mapping">chemistry → biology</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.58/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Chemistry)</div>
+    <div class="problem-box source-box">The equation ΔH = ΔU + PΔV is applicable
+A) always
+B) only for constant pressure processes
+C) only for constant temperature processes
+D) only for constant volume processes</div>
+    <div class="answer">&#x2713; Answer: <em>B) only for constant pressure processes</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Biology)</div>
+    <div class="problem-box target-box">The equation ΔG = ΔH - TΔS is applicable
+A) always
+B) only for constant temperature and pressure processes
+C) only for constant volume processes
+D) only for isothermal processes</div>
+    <div class="answer">&#x2713; Answer: <em>B) only for constant temperature and pressure processes</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p24_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p24_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p24_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p24_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p24_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p24_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p24_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p24_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p24_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p24_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p24_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p24_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p24_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p24_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p24_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+<div class="pair" id="pair-25">
+  <div class="pair-header">
+    <span class="pair-num">Pair 25 of 25</span>
+    <span class="mapping">biology → earth science</span>
+    <span class="tier-badge tier-accepted">LLM ACCEPTED</span>
+  </div>
+  <div class="structure-tag">Structure: unknown &amp;nbsp;|&amp;nbsp; LLM avg score: 4.25/5</div>
+
+  <div class="problem-block">
+    <div class="problem-label">Source problem (Biology)</div>
+    <div class="problem-box source-box">Which describes brightly colored peacocks mating more frequently than drab peacocks?
+A) artificial selection
+B) directional selection
+C) stabilizing selection
+D) sexual selection</div>
+    <div class="answer">&#x2713; Answer: <em>D) sexual selection</em></div>
+  </div>
+
+  <div class="problem-block">
+    <div class="problem-label">Target problem (Earth Science)</div>
+    <div class="problem-box target-box">Which describes the process where fine clay particles remain suspended in a river during low flow conditions while coarse sand particles settle out?
+A) hydraulic sorting
+B) chemical precipitation
+C) turbidity current
+D) differential settling by grain size</div>
+    <div class="answer">&#x2713; Answer: <em>D) differential settling by grain size</em></div>
+  </div>
+
+  <table class="score-table">
+    <tr>
+      <th>Criterion</th>
+      <th>Question</th>
+      <th>Score (1–5)</th>
+    </tr>
+    <tr>
+      <td><strong>Logical Equivalence</strong></td>
+      <td>Same reasoning steps and operations?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p25_logical_equivalence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Domain Independence</strong></td>
+      <td>Knowledge is non-overlapping?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p25_domain_independence" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Difficulty Parity</strong></td>
+      <td>Equally challenging for undergrad?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p25_difficulty_parity" placeholder="1–5"></td>
+    </tr>
+    <tr>
+      <td><strong>Self-Containment</strong></td>
+      <td>All info needed is provided?</td>
+      <td><input class="score-input" type="number" min="1" max="5"
+          name="p25_self_containment" placeholder="1–5"></td>
+    </tr>
+  </table>
+
+  <div class="verdict">
+    <strong>Overall verdict:</strong><br>
+    <label><input type="radio" name="p25_verdict" value="ACCEPT"> ACCEPT
+      (all scores ≥ 4)</label>
+    <label><input type="radio" name="p25_verdict" value="MARGINAL"> MARGINAL
+      (any score = 3)</label>
+    <label><input type="radio" name="p25_verdict" value="REJECT"> REJECT
+      (any score ≤ 2)</label>
+  </div>
+
+  <div class="failure-modes">
+    <strong>Failure modes (check all that apply, only if MARGINAL or REJECT):</strong><br>
+    <label><input type="checkbox" name="p25_fm_formula_overlap"> Formula overlap</label>
+    <label><input type="checkbox" name="p25_fm_difficulty_mismatch"> Difficulty mismatch</label>
+    <label><input type="checkbox" name="p25_fm_ambiguous_answer"> Ambiguous answer</label>
+    <label><input type="checkbox" name="p25_fm_missing_information"> Missing information</label>
+    <label><input type="checkbox" name="p25_fm_trivial_target"> Trivial target</label>
+    <label><input type="checkbox" name="p25_fm_structural_inequivalence"> Structural inequivalence</label>
+    <label><input type="checkbox" name="p25_fm_other"> Other</label>
+  </div>
+
+  <div>
+    <strong>Notes (optional — explain any failure modes or borderline scores):</strong>
+    <textarea class="notes-input" name="p25_notes"
+              placeholder="Explain any scores of 3 or below, or note anything unusual..."></textarea>
+  </div>
+</div>
+
+</body>
+</html>

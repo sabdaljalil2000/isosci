@@ -1,0 +1,104 @@
+{
+  "o3-mini / GPT-4o-mini": {
+    "mmlu_stem": {
+      "statistic": 95.55607476635514,
+      "p_value": 0.0,
+      "b01": 179,
+      "b10": 35,
+      "n_common": 750,
+      "significant": true
+    },
+    "scibench": {
+      "statistic": 2.2344827586206897,
+      "p_value": 0.13496178094138178,
+      "b01": 63,
+      "b10": 82,
+      "n_common": 585,
+      "significant": false
+    },
+    "gpqa": {
+      "statistic": 15.21111111111111,
+      "p_value": 9.613610778647086e-05,
+      "b01": 26,
+      "b10": 64,
+      "n_common": 198,
+      "significant": true
+    },
+    "isosci": {
+      "statistic": 47.57281553398058,
+      "p_value": 5.29987165265311e-12,
+      "b01": 87,
+      "b10": 16,
+      "n_common": 288,
+      "significant": true
+    }
+  },
+  "Qwen3-32B thinking-on vs off": {
+    "mmlu_stem": {
+      "statistic": 3.292517006802721,
+      "p_value": 0.06959625797640889,
+      "b01": 62,
+      "b10": 85,
+      "n_common": 750,
+      "significant": false
+    },
+    "scibench": {
+      "statistic": 2.4380952380952383,
+      "p_value": 0.11841994270812406,
+      "b01": 44,
+      "b10": 61,
+      "n_common": 585,
+      "significant": false
+    },
+    "gpqa": {
+      "statistic": 2.0408163265306123,
+      "p_value": 0.1531274510196654,
+      "b01": 19,
+      "b10": 30,
+      "n_common": 198,
+      "significant": false
+    },
+    "isosci": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b01": 20,
+      "b10": 21,
+      "n_common": 288,
+      "significant": false
+    }
+  },
+  "Gemini-2.0-Flash-001 thinking-on vs off": {
+    "mmlu_stem": {
+      "statistic": 0.125,
+      "p_value": 0.7236736098317629,
+      "b01": 4,
+      "b10": 4,
+      "n_common": 750,
+      "significant": false
+    },
+    "scibench": {
+      "statistic": 2.227272727272727,
+      "p_value": 0.13559300126630158,
+      "b01": 7,
+      "b10": 15,
+      "n_common": 585,
+      "significant": false
+    },
+    "gpqa": {
+      "statistic": 0.17391304347826086,
+      "p_value": 0.6766573217164242,
+      "b01": 13,
+      "b10": 10,
+      "n_common": 198,
+      "significant": false
+    },
+    "isosci": {
+      "statistic": 0.0,
+      "p_value": 1.0,
+      "b01": 9,
+      "b10": 8,
+      "n_common": 288,
+      "significant": false
+    }
+  }
+}

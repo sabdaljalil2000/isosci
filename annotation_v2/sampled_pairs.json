@@ -1,0 +1,2148 @@
+[
+  {
+    "pair_id": "6c8d2cec-46ad-40e0-b535-7effc89df3df",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "d04759a7-9bdc-4954-813a-9906c9229fe1",
+      "question": "A researcher is experimenting with nerve transmission using neurons from a giant squid. At the beginning of the experiment, the axon is at rest and has a threshold measured at \u201370 mV at 37oC. The axon receives one stimulus that triggers one action potential in the axon. Subsequent stimuli are much stronger. Which of the following statements explains what happens when several strong stimuli are experienced by the axon?\nA) The axon becomes hyperpolarized to \u201390 mV.\nB) The axon becomes hyperpolarized to \u201350 mV.\nC) The strength of the action potential becomes greater.\nD) The frequency of the action potential increases.",
+      "answer": "D) The frequency of the action potential increases.",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_biology"
+      }
+    },
+    "target": {
+      "id": "dbaf17af-41a5-4aa9-8a6e-65634713377e",
+      "question": "A geologist is studying earthquake wave propagation through Earth's crust. At the beginning of observation, a seismometer is at rest with a detection threshold of 0.5 mm ground displacement at 15\u00b0C. The seismometer records one seismic wave that exceeds the detection threshold. Subsequent seismic waves arriving at the location are much stronger in amplitude. Which of the following statements explains what happens when several strong seismic waves are experienced by the seismometer?\nA) The seismometer's threshold increases to 1.0 mm.\nB) The seismometer's threshold decreases to 0.3 mm.\nC) The amplitude of individual recorded waves becomes greater.\nD) The number of wave events recorded per unit time increases.",
+      "answer": "D) The number of wave events recorded per unit time increases.",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Seismometer response principle: Detection threshold remains constant; stronger stimuli increase event frequency, not individual event magnitude once threshold is exceeded",
+        "solution_steps": [
+          "Recognize that seismometer threshold (0.5 mm) is a fixed detection limit that does not change with stimulus strength",
+          "Understand that once threshold is exceeded, each seismic wave is recorded as a discrete event with standardized response",
+          "Conclude that stronger/more frequent seismic activity increases the number of threshold-crossing events per time unit, not the recorded magnitude of individual events"
+        ],
+        "domain_knowledge_required": [
+          "Seismometers have fixed detection thresholds",
+          "Individual seismic events are recorded as discrete occurrences",
+          "Stronger seismic activity manifests as increased event frequency at a detector",
+          "Recording instruments do not amplify signal strength beyond binary detection"
+        ],
+        "isomorphism_justification": "Both problems involve a detection system with fixed threshold responding to stimuli of increasing strength, where the response is increased event frequency rather than increased individual event magnitude or threshold changes.",
+        "sub_topic": "Seismology and earthquake detection"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.333333333333333
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 2.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The problems have fundamentally different logical structures. The source problem tests understanding of the all-or-none principle of action potentials (biological constraint where stimulus strength affects frequency, not amplitude). The target problem involves passive recording of independent physical events where stronger waves DO produce greater recorded amplitudes (answer C is actually correct). The seismometer doesn't generate responses like neurons do; it simply measures what arrives. This is a false isomorphism.",
+          "overall_assessment": "These problems appear structurally similar but require opposite reasoning. The neuron problem relies on a specific biological principle (all-or-none law), while the seismometer problem involves straightforward physical measurement where amplitude corresponds to stimulus strength, making answer C correct for the target.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, sharing identical logical reasoning while being rooted in different scientific domains. They are well-defined and can be solved independently of each other, with only a slight difference in difficulty level.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identical reasoning procedures while drawing on distinct domain knowledge, and are equally challenging and self-contained.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems have fundamentally different logical structures. The source problem tests understanding of the all-or-none principle of action potentials (biological constraint where stimulus strength affects frequency, not amplitude). The target problem involves passive recording of independent physical events where stronger waves DO produce greater recorded amplitudes (answer C is actually correct). The seismometer doesn't generate responses like neurons do; it simply measures what arrives. This is a false isomorphism."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.33
+  },
+  {
+    "pair_id": "d1b8bae9-c188-4010-aa7c-5a1c41c012d0",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "a6860296-0bc3-4aa5-b740-e07db16e967c",
+      "question": "A table supports a wooden block placed on the tabletop. Which fundamental force of nature is responsible for this interaction, and why?\nA) The electric force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.\nB) The gravitational force, because by F = GMm/r^2, the force of the table on the wood at that close range is sufficient to balance the force of the Earth on the wood.\nC) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.\nD) The strong nuclear force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.",
+      "answer": "C) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_physics"
+      }
+    },
+    "target": {
+      "id": "d5051ec3-3b1d-4e98-ba98-2f08bf302906",
+      "question": "Water molecules adhere to the surface of soil particles in the vadose zone above the water table. Which fundamental force of nature is primarily responsible for this adhesion, and why?\nA) The gravitational force, because the mass of water molecules is attracted to the larger mass of soil particles by F = GMm/r\u00b2.\nB) The electromagnetic force, because polar water molecules are attracted to charged or polar sites on soil particle surfaces through electrostatic interactions.\nC) The strong nuclear force, because the hydrogen nuclei in water molecules bond directly with nuclei in the soil minerals.\nD) The weak nuclear force, because it mediates the decay of radioactive isotopes in soil that attracts water molecules.",
+      "answer": "B) The electromagnetic force, because polar water molecules are attracted to charged or polar sites on soil particle surfaces through electrostatic interactions.",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Coulomb's law for electrostatic attraction: F = k \u00d7 (q\u2081 \u00d7 q\u2082)/r\u00b2",
+        "solution_steps": [
+          "Identify that water adhesion to soil involves molecular-scale interactions between water and mineral surfaces",
+          "Recognize that water molecules are polar (\u03b4+ on H, \u03b4- on O) and soil particles have charged surface sites",
+          "Conclude that electromagnetic force is responsible because electrostatic attraction between opposite partial charges creates adhesion, while gravity is too weak at molecular scales and nuclear forces don't operate between separate atoms"
+        ],
+        "domain_knowledge_required": [
+          "Water is a polar molecule with partial charges",
+          "Soil particles have charged or polar surface sites (clay minerals, hydroxyl groups)",
+          "Electromagnetic force governs molecular-scale interactions",
+          "Nuclear forces operate only within atomic nuclei or between nucleons"
+        ],
+        "isomorphism_justification": "Both problems require identifying which fundamental force operates at a specific scale (atomic/molecular) and explaining why that force, not others, creates the observed attraction or repulsion between two materials in contact.",
+        "sub_topic": "Soil Physics and Vadose Zone Hydrology"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "These problems are excellently isomorphic. Both require identifying which of the four fundamental forces operates at the atomic/molecular scale to explain contact interactions, eliminating gravitational (too weak at small scales), strong nuclear (requires nuclear contact), and weak nuclear (irrelevant to structural interactions), leaving electromagnetic force as the correct answer through different mechanisms (electron repulsion vs. polar attraction).",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, sharing identical logical reasoning while requiring distinct domain knowledge. Both problems are well-defined and can be solved independently, though the earth science problem may be slightly more complex due to the additional context of molecular interactions in soil.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identification of a fundamental force and explanation of its role in a specific interaction, with no domain overlap and equal difficulty.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "625d2cde-0657-44c0-b1d5-e66de3cfad58",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "9e0fb688-e323-4466-ad13-81ac7e4dec52",
+      "question": "During the study of the reaction A \u2192 2B, a chemist constructs several graphs. The graph of [A] versus time and the graph of ln [A] versus time both give a curved line; however, the graph of 1/[A] versus time and gives a straight line. This implies the rate law is\nA) Rate = k[A]\nB) Rate = k[A]^2\nC) Rate = k[A]^0\nD) Rate = k[A]^-1",
+      "answer": "B) Rate = k[A]^2",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_chemistry"
+      }
+    },
+    "target": {
+      "id": "09ccec59-16c5-497f-b615-86d0a984eba6",
+      "question": "A hydrologist studying groundwater flow through an aquifer measures hydraulic head at various distances from a pumping well and creates several graphs. The graph of h (hydraulic head) versus r (radial distance) and the graph of 1/h versus r both give curved lines; however, the graph of h versus ln r gives a straight line. This implies the head distribution follows:\nA) Linear relationship: h = h\u2080 + kr\nB) Logarithmic relationship: h = h\u2080 + k ln r\nC) Power law: h = h\u2080r^k\nD) Exponential relationship: h = h\u2080e^(kr)",
+      "answer": "B) Logarithmic relationship: h = h\u2080 + k ln r",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Thiem equation for steady radial flow: h = h_w + (Q/2\u03c0T)ln(r/r_w), which is linear in ln r",
+        "solution_steps": [
+          "Observe that curved h vs r eliminates linear relationship, and curved 1/h vs r eliminates simple inverse relationships",
+          "Identify that straight line for h vs ln r indicates a logarithmic relationship, since h = h\u2080 + k ln r plots as a straight line when h is on y-axis and ln r is on x-axis",
+          "Conclude that hydraulic head follows logarithmic distribution with radial distance according to the Thiem equation for radial groundwater flow"
+        ],
+        "domain_knowledge_required": [
+          "Steady-state radial flow to a well produces a logarithmic head distribution",
+          "The Thiem equation describes drawdown in confined aquifers as h = h_w + (Q/2\u03c0T)ln(r/r_w)",
+          "Logarithmic relationships appear linear when the independent variable is plotted on a logarithmic scale or as ln(variable)"
+        ],
+        "isomorphism_justification": "This problem maintains identical structure by requiring identification of the functional relationship through analysis of which plot transformation (linear scale, semi-log, or reciprocal) yields a straight line, using the same pattern recognition logic.",
+        "sub_topic": "Hydrogeology and Groundwater Flow"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identical reasoning: determining the functional relationship by identifying which graphical transformation produces linearity, using the principle that a straight line in a transformed plot reveals the underlying mathematical form.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, sharing identical reasoning procedures and requiring different domain knowledge. They are well-defined and equally challenging for a strong undergraduate student, with only a slight difference in complexity.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This pair is structurally isomorphic, requiring identical reasoning procedures across different domains, with equivalent difficulty and self-containment.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "0dbb5cf1-b20f-40dc-9274-86334d581402",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "id": "0f788f38-c0fa-4599-93f5-1a0006eee5fc",
+      "question": "At $298.15 \\mathrm{~K}, \\Delta G_f^{\\circ}(\\mathrm{HCOOH}, g)=-351.0 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$ and $\\Delta G_f^{\\circ}(\\mathrm{HCOOH}, l)=-361.4 \\mathrm{~kJ} \\mathrm{~mol}^{-1}$. Calculate the vapor pressure of formic acid at this temperature.",
+      "answer": "1.51",
+      "domain": "chemistry",
+      "structure_type": "formula_recall_and_substitute",
+      "source_bench": "scibench",
+      "metadata": {
+        "unit": "$10^3 \\mathrm{~Pa}$"
+      }
+    },
+    "target": {
+      "id": "572f388d-f66c-46da-bb2e-d384b533f280",
+      "question": "A population of bacteria is growing in a chemostat with a dilution rate of 0.45 h^(-1). The maximum specific growth rate (\u03bcmax) of the bacteria is 0.85 h^(-1), and the saturation constant (Ks) is 2.5 g/L. At steady state, calculate the substrate concentration in the chemostat using the Monod equation.",
+      "answer": "2.81 g/L",
+      "domain": "biology",
+      "structure_type": "formula_recall_and_substitute",
+      "metadata": {
+        "formula_used": "Monod equation at steady state: D = \u03bcmax \u00d7 S / (Ks + S), where D is dilution rate, \u03bcmax is maximum specific growth rate, S is substrate concentration, and Ks is the saturation constant",
+        "solution_steps": [
+          "Recall the Monod equation at steady state where dilution rate equals growth rate: D = \u03bcmax \u00d7 S / (Ks + S)",
+          "Rearrange to solve for S: D(Ks + S) = \u03bcmax \u00d7 S, which gives S = D \u00d7 Ks / (\u03bcmax - D)",
+          "Substitute values: S = (0.45 \u00d7 2.5) / (0.85 - 0.45) = 1.125 / 0.40 = 2.81 g/L"
+        ],
+        "domain_knowledge_required": [
+          "The Monod equation describes microbial growth kinetics as a function of substrate concentration",
+          "At steady state in a chemostat, the dilution rate equals the specific growth rate",
+          "Ks represents the substrate concentration at which growth rate is half of \u03bcmax"
+        ],
+        "isomorphism_justification": "Both problems involve recalling an equilibrium relationship equation, substituting known parameters that define system conditions, and solving for a concentration value that characterizes the equilibrium state.",
+        "sub_topic": "microbial growth kinetics and bioreactor dynamics"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.0,
+        "self_containment": 5.0,
+        "overall": 4.0
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems have fundamentally different logical structures. The chemistry problem requires calculating a difference in Gibbs free energy, relating it to equilibrium constant via \u0394G = -RT ln(K), then recognizing that vapor pressure ratio equals K, requiring multiple conceptual steps. The biology problem is a direct one-step substitution into the Monod equation (D = \u03bcmax*S/(Ks+S)) and algebraic rearrangement. The chemistry problem involves thermodynamic reasoning about phase equilibrium, while the biology problem is straightforward formula application.",
+          "overall_assessment": "While both problems involve equilibrium concepts and formula application, they differ significantly in logical complexity and reasoning steps. The chemistry problem requires multi-step thermodynamic reasoning, whereas the biology problem is direct formula substitution and algebraic manipulation.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The logical equivalence is partially met as the steps and operations differ slightly between the two problems, particularly in the equations used.",
+          "overall_assessment": "While the problems are from different domains and are fully specified, they do not share the same logical structure due to differences in the equations and reasoning required to solve them.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share a similar logical structure involving formula recall and substitution, but the biology problem introduces additional complexity with the Monod equation, making it slightly more challenging.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems have fundamentally different logical structures. The chemistry problem requires calculating a difference in Gibbs free energy, relating it to equilibrium constant via \u0394G = -RT ln(K), then recognizing that vapor pressure ratio equals K, requiring multiple conceptual steps. The biology problem is a direct one-step substitution into the Monod equation (D = \u03bcmax*S/(Ks+S)) and algebraic rearrangement. The chemistry problem involves thermodynamic reasoning about phase equilibrium, while the biology problem is straightforward formula application.",
+        "The logical equivalence is partially met as the steps and operations differ slightly between the two problems, particularly in the equations used."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.0
+  },
+  {
+    "pair_id": "543efaae-ff91-40dd-b6ca-497dae687db9",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "id": "0f9eaa97-62ab-43d3-a512-1867667367b3",
+      "question": "An observer O at rest midway between two sources of light at x = 0 and x = 10 m observes the two sources to flash simultaneously. According to a second observer O', moving at a constant speed parallel to the x-axis, one source of light flashes 13 ns before the other. Which of the following gives the speed of O' relative to O?\nA) 0.13c\nB) 0.15c\nC) 0.36c\nD) 0.53c",
+      "answer": "C) 0.36c",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "college_physics"
+      }
+    },
+    "target": {
+      "id": "a0bdd29b-15f5-4983-8c10-1dd5b3b46b2a",
+      "question": "A chemist measures the pH of two buffer solutions, one at position A and one at position B (separated by 10 cm), and finds them both to have pH = 7.00 at the same instant. A second chemist moving at constant velocity parallel to the line connecting A and B measures the pH of solution A to be 7.00 exactly 13 ns before measuring solution B to be 7.00. The pH measurements are made using light signals from pH-sensitive fluorescent dyes that emit at the instant pH = 7.00 is reached during a titration. Which of the following gives the speed of the second chemist relative to the first? A) 0.13c B) 0.15c C) 0.36c D) 0.53c",
+      "answer": "C) 0.36c",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Relativistic simultaneity: \u0394t' = -\u03b3v\u0394x/c\u00b2, combined with time dilation and Lorentz transformation",
+        "solution_steps": [
+          "Apply the relativity of simultaneity formula: \u0394t' = \u03b3(\u0394t - v\u0394x/c\u00b2). Since \u0394t = 0 for the stationary observer, \u0394t' = -\u03b3v\u0394x/c\u00b2",
+          "For small velocities where \u03b3 \u2248 1, simplify to \u0394t' \u2248 -v\u0394x/c\u00b2. Substitute \u0394t' = 13 ns, \u0394x = 10 m = 0.10 m (distance between measurement points)",
+          "Solve for v: v = -\u0394t'c\u00b2/\u0394x = -(13\u00d710\u207b\u2079 s)(3\u00d710\u2078 m/s)\u00b2/(10 m) \u2248 1.08\u00d710\u2078 m/s = 0.36c"
+        ],
+        "domain_knowledge_required": [
+          "pH measurements can be performed using fluorescent dyes that emit light signals",
+          "Chemical measurements are subject to relativistic effects when observers are in relative motion",
+          "Light signals from chemical events follow the same relativistic transformation rules as any other light signals"
+        ],
+        "isomorphism_justification": "This problem replaces light flashes with pH measurement events signaled by light emission, maintaining identical relativistic simultaneity structure with the same spatial separation, time difference, and solution method.",
+        "sub_topic": "Relativistic effects in chemical measurements"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identical relativistic simultaneity calculations using the Lorentz transformation, with the same numerical values (10 m separation, 13 ns time difference). The chemistry context is merely superficial wrapping around the same physics problem - the pH measurements are explicitly stated to be signaled by light emission, making this fundamentally about light signal detection in different reference frames.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit a strong structural isomorphism, sharing identical logical reasoning and being fully specified within their respective domains. They are equally challenging, though the chemistry problem may require slightly more domain-specific knowledge, which could affect perceived difficulty for some students.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identical reasoning procedures and maintaining the same level of complexity and self-containment, while using distinct domain knowledge.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "f610d198-a9a5-4ad9-b5ff-8e692f7b786c",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "id": "2a16048a-59c6-40bc-9e65-9d7e7e9c6919",
+      "question": "Why does the plasma (ion) tail of a comet always point away from the Sun?\nA) Radiation pressure from the Sun's light pushes the ions away.\nB) The conservation of the angular momentum in the tail keeps it always pointing away from the Sun.\nC) The ions are following Keplerian orbits that lead away from the Sun.\nD) The solar wind electromagnetically \"blows\" the ions directly away from the Sun.",
+      "answer": "D) The solar wind electromagnetically \"blows\" the ions directly away from the Sun.",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "astronomy"
+      }
+    },
+    "target": {
+      "id": "2e3b63a7-4937-4dd9-888c-91c71d30aec5",
+      "question": "Why do the flagella of motile bacteria always point away from the direction of travel during swimming?\nA) Brownian motion randomly orients the flagella backward.\nB) The conservation of rotational momentum in the flagellum keeps it always pointing backward.\nC) The flagella follow helical trajectories that naturally trail behind.\nD) Hydrodynamic drag forces push the flagella directly backward relative to the cell body.",
+      "answer": "D) Hydrodynamic drag forces push the flagella directly backward relative to the cell body.",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Stokes' drag law: F_drag = 6\u03c0\u03b7rv, where \u03b7 is fluid viscosity, r is radius, and v is velocity",
+        "solution_steps": [
+          "Recognize that bacterial flagella experience fluid resistance as the cell moves through liquid medium",
+          "Understand that hydrodynamic drag forces act opposite to the direction of motion on trailing structures",
+          "Conclude that these drag forces continuously push flagella backward, maintaining their trailing orientation regardless of swimming direction"
+        ],
+        "domain_knowledge_required": [
+          "Bacterial flagella are flexible, thread-like appendages used for locomotion",
+          "Bacteria swim in low Reynolds number environments where viscous forces dominate",
+          "Hydrodynamic drag acts on structures moving through fluid"
+        ],
+        "isomorphism_justification": "This problem has identical structure: a directional phenomenon (flagella pointing backward) is explained by a continuous external force (hydrodynamic drag) rather than momentum conservation, orbital mechanics, or random forces.",
+        "sub_topic": "bacterial motility and biophysics"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems share identical logical structure: explaining a directional phenomenon through continuous external force rather than momentum conservation, orbital mechanics, or random processes. The reasoning pattern is perfectly preserved across physics and biology domains.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism with equivalent reasoning procedures and fully specified contexts. They are from different domains, making them independent, though the difficulty may vary slightly for some students.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identical reasoning procedures while drawing from distinct domains, and are equally challenging and self-contained.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "c6a514df-e893-467e-a47f-d7a3032edac9",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "id": "073edace-73ab-452a-8c97-677465577472",
+      "question": "The belts and zones of Jupiter are\nA) names for the layers of gaseous and metallic hydrogen deep within the planet.\nB) alternating bands of rising and falling air at different latitudes.\nC) alternating regions of charged particles in Jupiter's magnetic field.\nD) regions of the plasma torus created by ions from Io's volcanoes",
+      "answer": "B) alternating bands of rising and falling air at different latitudes.",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "astronomy"
+      }
+    },
+    "target": {
+      "id": "b0ccc959-dffd-4e13-80c0-aa65d3deb037",
+      "question": "The white and gray matter of the spinal cord are\nA) names for the meningeal layers of dura mater and pia mater surrounding the cord.\nB) alternating regions of myelinated axons and neuronal cell bodies at different locations.\nC) alternating zones of sensory and motor neurons in the dorsal root ganglia.\nD) regions of cerebrospinal fluid created by secretions from ependymal cells.",
+      "answer": "B) alternating regions of myelinated axons and neuronal cell bodies at different locations.",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Anatomical organization principle: nervous tissue regions are defined by cellular component distribution",
+        "solution_steps": [
+          "Recall that the spinal cord has distinct regions with different colors based on tissue composition",
+          "Recognize that white matter (outer) contains myelinated axons while gray matter (inner) contains neuronal cell bodies and unmyelinated processes",
+          "Identify that these represent spatial organization of neural tissue components rather than meningeal layers, ganglia, or cerebrospinal fluid compartments"
+        ],
+        "domain_knowledge_required": [
+          "Spinal cord anatomy includes white matter and gray matter regions",
+          "White matter appears white due to myelin sheaths on axons and is located peripherally",
+          "Gray matter appears gray due to concentration of neuronal cell bodies and is located centrally in an H or butterfly shape"
+        ],
+        "isomorphism_justification": "Both problems require identifying what two named anatomical regions represent from multiple-choice options, with the correct answer being the spatial distribution of different functional tissue components.",
+        "sub_topic": "neuroanatomy and spinal cord structure"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identifying what two named anatomical/structural features represent from among four options, with the correct answer in both cases being option B describing spatial distribution of different functional components. The reasoning procedure is identical: recall the definition of the named features and match to the correct descriptive option.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, sharing identical logical reasoning while requiring distinct domain knowledge. They are well-defined and equally challenging for a strong undergraduate student.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring the same reasoning procedure and domain-independent knowledge, while maintaining equivalent difficulty and self-containment.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "2c39f451-5dae-4ed5-8230-01e2bd728094",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "9766a122-0675-4a1a-adc5-56f86386043b",
+      "question": "A particle is constrained to move in a circle with a 10-meter radius. At one instant, the particle\u2019s speed is 10 meters per second and is increasing at a rate of 10 meters per second squared. The angle between the particle\u2019s velocity and acceleration vectors is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "college_physics"
+      }
+    },
+    "target": {
+      "id": "a668af21-0f7f-44a4-b88e-d0d5e1715e41",
+      "question": "A point on Earth's equator moves in a circular path with a 6,371-kilometer radius due to Earth's rotation. At one instant, the tangential velocity is 464 meters per second and the rate of change of this velocity (due to tidal forces) is 0.0334 meters per second squared. The angle between the velocity vector and the total acceleration vector is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "For circular motion: centripetal acceleration a_c = v\u00b2/r; tangential acceleration a_t = dv/dt; angle \u03b8 = arctan(a_t/a_c)",
+        "solution_steps": [
+          "Calculate centripetal acceleration toward Earth's center: a_c = v\u00b2/r = (464 m/s)\u00b2/(6,371,000 m) = 215,296/6,371,000 = 0.0338 m/s\u00b2",
+          "The tangential acceleration (rate of velocity change) is given as a_t = 0.0334 m/s\u00b2",
+          "Calculate angle between velocity and total acceleration: tan(\u03b8) = a_t/a_c = 0.0334/0.0338 \u2248 0.988 \u2248 1, therefore \u03b8 = arctan(1) = 45\u00b0"
+        ],
+        "domain_knowledge_required": [
+          "Points on Earth's surface undergo circular motion due to planetary rotation",
+          "Centripetal acceleration points toward Earth's center",
+          "Tidal forces can cause changes in rotational velocity over time"
+        ],
+        "isomorphism_justification": "Both problems involve circular motion with specified radius and instantaneous velocity, requiring calculation of centripetal acceleration, using given tangential acceleration, and determining the angle between velocity and total acceleration through vector analysis.",
+        "sub_topic": "Planetary rotation and geophysics"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 2.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems are not sufficiently domain-independent. Both are fundamentally physics problems involving circular motion kinematics. The target problem merely applies the same physics concepts to an Earth science context, but requires identical physics knowledge and formulas (centripetal acceleration a_c = v\u00b2/r, vector addition, arctan calculations). A student who knows how to solve the source problem has a direct advantage on the target problem because they use the exact same domain knowledge.",
+          "overall_assessment": "While these problems are logically equivalent and equally difficult, they fail the domain independence criterion because both require the same physics knowledge of circular motion kinematics. The target problem is simply the source problem with different numerical values in an Earth science context, not a genuinely different domain.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, sharing identical logical processes and being fully specified within their respective domains. They are equally challenging, though the earth science problem may be slightly more complex due to larger numbers involved.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identical reasoning procedures and vector analysis, while drawing from distinct domains (physics vs. earth science). Both are well-specified and equally challenging.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems are not sufficiently domain-independent. Both are fundamentally physics problems involving circular motion kinematics. The target problem merely applies the same physics concepts to an Earth science context, but requires identical physics knowledge and formulas (centripetal acceleration a_c = v\u00b2/r, vector addition, arctan calculations). A student who knows how to solve the source problem has a direct advantage on the target problem because they use the exact same domain knowledge."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.67
+  },
+  {
+    "pair_id": "c3a63127-022f-4b37-be02-6ffadf9b79c7",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "id": "6f5dabcc-2afa-4bf9-a53e-0c3d802b56b1",
+      "question": "A liquid flows at a constant flow rate through a pipe with circular cross-sections of varying diameters. At one point in the pipe, the diameter is 2 cm and the flow speed is 18 m/s. What is the flow speed at another point in this pipe, where the diameter is 3 cm?\nA) 4 m/s\nB) 6 m/s\nC) 8 m/s\nD) 12 m/s",
+      "answer": "C) 8 m/s",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_physics"
+      }
+    },
+    "target": {
+      "id": "258c5410-14c2-4ff9-b294-dae8d45339f2",
+      "question": "In an electrochemical cell, electrons flow at a constant rate through conducting wires of different cross-sectional areas. At one point in the circuit, the wire has a cross-sectional area of 0.50 mm\u00b2 and the current density is 24 A/mm\u00b2. What is the current density at another point where the wire has a cross-sectional area of 0.75 mm\u00b2?\nA) 12 A/mm\u00b2\nB) 16 A/mm\u00b2\nC) 18 A/mm\u00b2\nD) 36 A/mm\u00b2",
+      "answer": "B) 16 A/mm\u00b2",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Conservation of current: I = j\u2081A\u2081 = j\u2082A\u2082, where I is total current, j is current density, and A is cross-sectional area",
+        "solution_steps": [
+          "Calculate total current: I = j\u2081A\u2081 = (24 A/mm\u00b2) \u00d7 (0.50 mm\u00b2) = 12 A",
+          "Apply conservation of current: j\u2082 = I/A\u2082",
+          "Calculate current density at second point: j\u2082 = 12 A \u00f7 0.75 mm\u00b2 = 16 A/mm\u00b2"
+        ],
+        "domain_knowledge_required": [
+          "Current density is defined as current per unit cross-sectional area",
+          "Total current through a conductor remains constant (conservation of charge)",
+          "Current density and cross-sectional area are inversely proportional for constant current"
+        ],
+        "isomorphism_justification": "This problem applies conservation of electric current where current density varies inversely with area, using the identical three-step structure: calculate total current, apply conservation principle, solve for unknown density.",
+        "sub_topic": "Electrochemistry and Conductivity"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems use conservation principles (mass flow rate vs. electric current) where an intensive quantity (flow speed vs. current density) varies inversely with cross-sectional area, requiring identical three-step reasoning: calculate the conserved quantity, apply conservation, solve for the unknown.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The target problem's answer is incorrect based on the provided information.",
+          "overall_assessment": "The problems are structurally similar and require similar reasoning, but the target problem's answer is incorrect, affecting its validity. The difficulty level is slightly different due to the specific context of each domain.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This pair is an excellent example of structural isomorphism, maintaining logical equivalence and domain independence while ensuring difficulty parity and self-containment.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The target problem's answer is incorrect based on the provided information."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.75
+  },
+  {
+    "pair_id": "32daf227-c14a-450a-b461-bf11726f1228",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "d8697c61-1441-4b26-8aca-922349391160",
+      "question": "3,3,6-trimethylhepta-1,5-dien-4-one is treated with 1 equivalent of meta-chloroperbenzoic acid. Two different products are formed, in approximately a 1:1 ratio.\n\nIn a separate vessel, Methyllithium is treated with copper(I)iodide. an excess of the resulting solution is slowly added to the product mixture of the first reaction. Name one product that will be formed by this reaction:",
+      "answer": "6-hydroxy-2,2,5,5-tetramethyloctan-4-one",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "source_bench": "gpqa_diamond",
+      "metadata": {
+        "subdomain": "organic chemistry"
+      }
+    },
+    "target": {
+      "id": "461e79a6-87dc-40ac-9476-10ecabb68c83",
+      "question": "A sediment core from the deep ocean shows two distinct layers. The upper layer (0-50 cm) contains foraminiferal tests with \u03b4\u00b9\u2078O values averaging +2.5\u2030 VPDB. The lower layer (50-100 cm) contains foraminiferal tests with \u03b4\u00b9\u2078O values averaging +1.2\u2030 VPDB. Using the paleotemperature equation, the upper layer represents water temperatures of 2\u00b0C and the lower layer represents 8\u00b0C. A volcanic ash layer at 45 cm depth is dated to 18,000 years BP. Subsequently, pore water analysis reveals two distinct diagenetic zones: Zone 1 (0-60 cm) where sulfate reduction is active, and Zone 2 (60-100 cm) where methanogenesis dominates. What is the primary diagenetic mineral that will precipitate at 75 cm depth? (Given: sulfate reduction produces HS\u207b which combines with dissolved Fe\u00b2\u207a to form pyrite; methanogenesis produces CH\u2084 and CO\u2083\u00b2\u207b which combines with Ca\u00b2\u207a to form authigenic carbonate)",
+      "answer": "authigenic carbonate (calcite or dolomite)",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Diagenetic zonation sequence and mineral precipitation from pore water chemistry",
+        "solution_steps": [
+          "Identify the paleoceanographic conditions: the \u03b4\u00b9\u2078O values indicate the upper layer is glacial (colder, ice-volume enriched in \u00b9\u2078O) and lower layer is interglacial (warmer). The ash at 45 cm confirms Last Glacial Maximum timing for the upper section.",
+          "Determine the diagenetic zone at 75 cm depth. Since Zone 1 (sulfate reduction) extends to 60 cm and Zone 2 (methanogenesis) spans 60-100 cm, the depth of 75 cm falls within the methanogenesis zone.",
+          "Apply the mineral precipitation rule for the methanogenesis zone. In Zone 2, methanogenesis produces CO\u2083\u00b2\u207b ions that combine with Ca\u00b2\u207a (abundant from foraminiferal test dissolution) to precipitate authigenic carbonate minerals (calcite or dolomite), not pyrite which forms in the sulfate reduction zone."
+        ],
+        "domain_knowledge_required": [
+          "Oxygen isotope paleotemperature relationships and VPDB standard",
+          "Last Glacial Maximum timing and characteristics",
+          "Sequence of diagenetic zones in marine sediments (sulfate reduction \u2192 methanogenesis)",
+          "Pyrite formation requires sulfate reduction and Fe\u00b2\u207a",
+          "Authigenic carbonate formation in methanogenic zones"
+        ],
+        "isomorphism_justification": "Mirrors the source problem's structure: initial conditions create a spatial distribution of environments (temperature/isotope zones vs. reactive sites), then a secondary process (diagenesis vs. organometallic addition) acts on these zones to produce distinct products at specific locations.",
+        "sub_topic": "Marine sediment diagenesis and paleoceanography"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.0,
+        "self_containment": 4.0,
+        "overall": 3.75
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 2.0,
+          "self_containment": 3.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems have fundamentally different logical structures. The chemistry problem requires: (1) identifying two epoxide products from selective oxidation, (2) recognizing Gilman reagent formation, (3) predicting nucleophilic opening of epoxides at specific positions. The earth science problem requires: (1) interpreting isotope data for paleoclimate, (2) identifying diagenetic zones, (3) applying a simple conditional rule (if methanogenesis zone, then carbonate precipitates). The chemistry problem involves multi-step mechanistic reasoning with regioselectivity, while the earth science problem is primarily zone identification followed by a lookup-style application of given information. The difficulty levels are also mismatched - the chemistry problem requires advanced organic mechanism knowledge, while the earth science problem explicitly provides the key relationship needed to answer it.",
+          "overall_assessment": "These problems are not structurally isomorphic. The chemistry problem requires complex mechanistic reasoning about reaction selectivity and regioselectivity, while the earth science problem is essentially identifying which zone contains the specified depth and applying a provided rule.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share some structural similarities in terms of initial conditions leading to distinct outcomes, but the reasoning processes differ significantly. The domain knowledge required is entirely separate, and while both problems are moderately challenging, they may not be equally difficult for all students.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share a similar logical structure involving initial conditions leading to distinct zones and subsequent processes producing specific products. They are domain-independent and equally challenging, with both being fully specified.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems have fundamentally different logical structures. The chemistry problem requires: (1) identifying two epoxide products from selective oxidation, (2) recognizing Gilman reagent formation, (3) predicting nucleophilic opening of epoxides at specific positions. The earth science problem requires: (1) interpreting isotope data for paleoclimate, (2) identifying diagenetic zones, (3) applying a simple conditional rule (if methanogenesis zone, then carbonate precipitates). The chemistry problem involves multi-step mechanistic reasoning with regioselectivity, while the earth science problem is primarily zone identification followed by a lookup-style application of given information. The difficulty levels are also mismatched - the chemistry problem requires advanced organic mechanism knowledge, while the earth science problem explicitly provides the key relationship needed to answer it."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 3.75
+  },
+  {
+    "pair_id": "102cdb5e-9205-4ef4-bfdd-91587c273711",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "3937a5a3-eb63-4b85-ab2c-1dcb93ab5223",
+      "question": "The sedimentation coefficient of lysozyme $\\left(\\mathrm{M}=14,100 \\mathrm{~g} \\mathrm{~mol}^{-1}\\right)$ in water at $20^{\\circ} \\mathrm{C}$ is $1.91 \\times 10^{-13} \\mathrm{~s}$ and the specific volume is $0.703 \\mathrm{~cm}^3 \\mathrm{~g}^{-1}$. The density of water at this temperature is $0.998 \\mathrm{~g} \\mathrm{~cm}^{-3}$ and $\\eta=1.002 \\mathrm{cP}$. Assuming lysozyme is spherical, what is the radius of this protein?",
+      "answer": "1.94",
+      "domain": "chemistry",
+      "structure_type": "formula_recall_and_substitute",
+      "source_bench": "scibench",
+      "metadata": {
+        "unit": "$\\mathrm{~nm}$"
+      }
+    },
+    "target": {
+      "id": "04def8ce-11d5-4cad-bdb9-58247625e922",
+      "question": "A spherical hailstone falls through the atmosphere at a terminal velocity of 12.5 m/s. The density of ice is 917 kg/m\u00b3 and the density of air at the altitude of interest is 1.20 kg/m\u00b3. The dynamic viscosity of air is 1.83 \u00d7 10\u207b\u2075 Pa\u00b7s. Assuming Stokes flow conditions apply, what is the radius of the hailstone?",
+      "answer": "2.01 mm",
+      "domain": "earth_science",
+      "structure_type": "formula_recall_and_substitute",
+      "metadata": {
+        "formula_used": "Stokes' law for terminal velocity: v_t = (2gr\u00b2(\u03c1_p - \u03c1_f))/(9\u03b7), rearranged to solve for r",
+        "solution_steps": [
+          "Recall Stokes' law for terminal velocity and rearrange to solve for radius: r = \u221a((9\u03b7v_t)/(2g(\u03c1_p - \u03c1_f)))",
+          "Substitute the given values: \u03b7 = 1.83 \u00d7 10\u207b\u2075 Pa\u00b7s, v_t = 12.5 m/s, g = 9.81 m/s\u00b2, \u03c1_p = 917 kg/m\u00b3, \u03c1_f = 1.20 kg/m\u00b3",
+          "Calculate: r = \u221a((9 \u00d7 1.83 \u00d7 10\u207b\u2075 \u00d7 12.5)/(2 \u00d7 9.81 \u00d7 (917 - 1.20))) = 2.01 \u00d7 10\u207b\u00b3 m = 2.01 mm"
+        ],
+        "domain_knowledge_required": [
+          "Stokes' law applies to spherical particles falling through viscous fluids",
+          "Terminal velocity occurs when drag force equals gravitational force",
+          "Density of ice and air at various atmospheric conditions",
+          "Dynamic viscosity of air"
+        ],
+        "isomorphism_justification": "Both problems require recalling a formula relating a measurable property to the radius of a sphere, substituting multiple given physical properties (densities, viscosity), and solving for the radius.",
+        "sub_topic": "Atmospheric Physics - Precipitation Dynamics"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.833333333333334
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require applying the Svedberg equation (chemistry) and Stokes' law (earth science) respectively to solve for the radius of a sphere, using identical mathematical structures with density differences, viscosity, and a velocity-related parameter, but drawing from completely different scientific domains.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, sharing a similar logical procedure while being rooted in different scientific domains. Both problems are well-defined and should present comparable challenges to students.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring similar reasoning procedures and formula applications across distinct domains, with equivalent difficulty and completeness.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.83
+  },
+  {
+    "pair_id": "cb815314-10cb-41b6-90be-515f075c8f44",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "b3a526c7-bc8e-4cce-af04-f73e32a009d0",
+      "question": "Calculate the maximum height change in the ocean tides caused by the Moon.",
+      "answer": "0.54",
+      "domain": "physics",
+      "structure_type": "formula_recall_and_substitute",
+      "source_bench": "scibench",
+      "metadata": {
+        "unit": "$\\mathrm{m}$"
+      }
+    },
+    "target": {
+      "id": "6180c5cb-dff2-48bc-bece-399a22645f72",
+      "question": "Calculate the depth to the brittle-ductile transition in continental crust where the temperature is 350\u00b0C. The geothermal gradient is 25\u00b0C/km and the surface temperature is 15\u00b0C.",
+      "answer": "13.4 km",
+      "domain": "earth_science",
+      "structure_type": "formula_recall_and_substitute",
+      "metadata": {
+        "formula_used": "d = (T - T\u2080)/G, where d is depth, T is temperature at depth, T\u2080 is surface temperature, and G is geothermal gradient",
+        "solution_steps": [
+          "Recall the geothermal depth formula: d = (T - T\u2080)/G",
+          "Identify given values: T = 350\u00b0C, T\u2080 = 15\u00b0C, G = 25\u00b0C/km",
+          "Substitute and calculate: d = (350 - 15)/25 = 335/25 = 13.4 km"
+        ],
+        "domain_knowledge_required": [
+          "Brittle-ductile transition occurs at approximately 350\u00b0C in continental crust",
+          "Geothermal gradient describes temperature increase with depth",
+          "Typical continental geothermal gradients range from 20-30\u00b0C/km"
+        ],
+        "isomorphism_justification": "Both problems follow the identical structure of recalling a specific formula relating physical quantities, substituting provided values, and computing a single numerical result.",
+        "sub_topic": "geothermal processes"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.3333333333333335,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.0,
+        "self_containment": 3.6666666666666665,
+        "overall": 3.75
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 2.0,
+          "self_containment": 2.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems have significantly different logical structures. The source problem requires recalling complex tidal physics formulas involving gravitational forces, Earth-Moon distances, and planetary radii - a multi-step derivation even if simplified. The target problem is a straightforward linear calculation: depth = (target_temp - surface_temp) / gradient = (350-15)/25 = 13.4 km. The source problem is severely underspecified (no constants provided), while the target is fully specified. They differ substantially in both complexity and self-containment.",
+          "overall_assessment": "These problems are not structurally isomorphic. The target is a simple linear interpolation with all values given, while the source requires complex gravitational physics and missing constants, making them fundamentally different in reasoning procedure and difficulty level.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The logical equivalence score is low due to differences in the number of steps and types of operations required for each problem.",
+          "overall_assessment": "While the problems are from different domains and are self-contained, they do not share the same logical structure or complexity, leading to a partial isomorphism assessment.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "Both problems share identical logical structure and require domain-independent knowledge, though the target problem may be slightly more complex due to additional context.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems have significantly different logical structures. The source problem requires recalling complex tidal physics formulas involving gravitational forces, Earth-Moon distances, and planetary radii - a multi-step derivation even if simplified. The target problem is a straightforward linear calculation: depth = (target_temp - surface_temp) / gradient = (350-15)/25 = 13.4 km. The source problem is severely underspecified (no constants provided), while the target is fully specified. They differ substantially in both complexity and self-containment.",
+        "The logical equivalence score is low due to differences in the number of steps and types of operations required for each problem."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 3.75
+  },
+  {
+    "pair_id": "3205df52-d574-44b2-a3e9-c09f4caeb211",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "id": "c9a4b22f-21ff-43c1-908e-48f2912c9faa",
+      "question": "The Gravitron is a carnival ride that looks like a large cylinder. People stand inside the cylinder against the wall as it begins to spin. Eventually, it is rotating fast enough that the floor can be removed without anyone falling. Given then the coefficient of friction between a person\u2019s clothing and the wall is \u03bc, the tangential speed is v, and the radius of the ride is R, what is greatest mass that a person can be to safely go on this ride?\nA) \u03bcv^2/(rg)\nB) r^2v^2/(\u03bcg)\nC) rg/(\u03bcv^2)\nD) None of the above.",
+      "answer": "D) None of the above.",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_physics"
+      }
+    },
+    "target": {
+      "id": "40bcb29a-6a9d-4263-b5f8-5f8bf39ed640",
+      "question": "In enzyme kinetics, the Michaelis-Menten equation describes reaction velocity. Given that the maximum velocity is V_max = 100 \u03bcmol/(min\u00b7mg enzyme), the Michaelis constant is K_m = 5 mM, and the substrate concentration is [S] = 20 mM, what is the minimum molecular weight (in Daltons) of the enzyme required for the reaction to proceed?\nA) 45,000 Da\nB) 67,500 Da\nC) 150,000 Da\nD) None of the above.",
+      "answer": "D) None of the above.",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Michaelis-Menten equation: v = (V_max[S])/(K_m + [S])",
+        "solution_steps": [
+          "Recognize that the Michaelis-Menten equation calculates reaction velocity, not molecular weight",
+          "Note that enzyme molecular weight is an intrinsic property of the protein structure, independent of kinetic parameters",
+          "Conclude that molecular weight cannot be determined from V_max, K_m, and substrate concentration as these parameters describe catalytic behavior, not enzyme size"
+        ],
+        "domain_knowledge_required": [
+          "Michaelis-Menten parameters describe catalytic efficiency, not enzyme structure",
+          "Enzyme molecular weight is determined by amino acid sequence, not kinetic constants",
+          "V_max and K_m are independent of the physical size of the enzyme molecule"
+        ],
+        "isomorphism_justification": "Like the source problem where mass is not limited by the ride parameters (friction, speed, radius), enzyme molecular weight is not determined by kinetic parameters as it's an independent structural property unrelated to the given values.",
+        "sub_topic": "Enzyme kinetics and biochemistry"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.3333333333333335,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.333333333333333,
+        "overall": 4.083333333333333
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems present seemingly relevant parameters that actually have no bearing on the requested quantity - mass is independent of ride parameters in the physics problem, just as enzyme molecular weight is independent of kinetic parameters in the biology problem. Both require recognizing that the question asks for something fundamentally unconstrained by the given information.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The logical equivalence is low because the reasoning procedures differ significantly; the physics problem involves dynamics and forces, while the biology problem involves enzyme kinetics and molecular weight, which are not directly comparable.",
+          "overall_assessment": "While the problems are from different domains and are self-contained, they do not share a similar logical structure or reasoning process, leading to a low score in logical equivalence.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share a superficial similarity in structure and answer format, but differ significantly in logical reasoning and complexity, making them only partially isomorphic.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The logical equivalence is low because the reasoning procedures differ significantly; the physics problem involves dynamics and forces, while the biology problem involves enzyme kinetics and molecular weight, which are not directly comparable."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.08
+  },
+  {
+    "pair_id": "6c41294d-be84-4de5-8da2-671d563cc07a",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "id": "fc16140d-9b1f-4504-be50-8e644ae22f93",
+      "question": "Let $Y_1 < Y_2 < Y_3 < Y_4 < Y_5 < Y_6$ be the order statistics of a random sample of size $n=6$ from a distribution of the continuous type having $(100 p)$ th percentile $\\pi_p$. Compute $P\\left(Y_2 < \\pi_{0.5} < Y_5\\right)$.",
+      "answer": "0.7812",
+      "domain": "physics",
+      "structure_type": "formula_recall_and_substitute",
+      "source_bench": "scibench",
+      "metadata": {
+        "unit": ""
+      }
+    },
+    "target": {
+      "id": "60398f73-47ea-49fd-b006-38db3ec404ef",
+      "question": "Let X\u2081 < X\u2082 < X\u2083 < X\u2084 < X\u2085 < X\u2086 be the order statistics of a random sample of size n=6 from a distribution of the continuous type representing the mole fraction of component A in a binary mixture at equilibrium. The median mole fraction is \u03c7\u2080.\u2085. Compute P(X\u2082 < \u03c7\u2080.\u2085 < X\u2085).",
+      "answer": "0.7812",
+      "domain": "chemistry",
+      "structure_type": "formula_recall_and_substitute",
+      "metadata": {
+        "formula_used": "For order statistics from a continuous distribution, P(Y\u1d62 < \u03c0\u209a < Y\u2c7c) = \u03a3\u2096\u208c\u1d62\u02b2\u207b\u00b9 C(n,k) \u00d7 p\u1d4f \u00d7 (1-p)\u207f\u207b\u1d4f, where p is the percentile value",
+        "solution_steps": [
+          "Recognize that for n=6 observations from a continuous distribution with median (p=0.5), we need P(X\u2082 < \u03c7\u2080.\u2085 < X\u2085) = P(2 \u2264 number of observations below \u03c7\u2080.\u2085 \u2264 4)",
+          "Apply the binomial probability formula: P(X\u2082 < \u03c7\u2080.\u2085 < X\u2085) = \u03a3\u2096\u208c\u2082\u2074 C(6,k) \u00d7 (0.5)\u1d4f \u00d7 (0.5)\u2076\u207b\u1d4f = C(6,2) \u00d7 (0.5)\u2076 + C(6,3) \u00d7 (0.5)\u2076 + C(6,4) \u00d7 (0.5)\u2076",
+          "Calculate: (15 + 20 + 15) \u00d7 (1/64) = 50/64 = 0.7812"
+        ],
+        "domain_knowledge_required": [
+          "Understanding that mole fractions in binary mixtures follow continuous distributions",
+          "Knowledge that order statistics can be applied to composition measurements",
+          "Recognition that the median represents the 50th percentile in any continuous distribution"
+        ],
+        "isomorphism_justification": "This problem has identical mathematical structure involving order statistics from a continuous distribution, computing the probability that the median falls between the 2nd and 5th order statistics of 6 samples, using the same binomial probability calculation.",
+        "sub_topic": "Physical Chemistry - Solution Thermodynamics"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 3.6666666666666665,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.583333333333333
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 1.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems are not domain-independent. Both are pure probability/statistics problems with identical mathematical content. The 'chemistry' wrapper (mole fraction, binary mixture, equilibrium) is superficial decoration that requires no chemistry knowledge and provides no meaningful domain transfer.",
+          "overall_assessment": "While these problems are logically identical and equally difficult, they fail the domain independence criterion because both are fundamentally the same statistics problem. The target merely relabels variables with chemistry terminology without requiring any actual chemistry knowledge or reasoning.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit perfect logical equivalence and domain independence, with only a slight difference in difficulty. Both problems are well-defined and can be solved using the information provided.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identical mathematical reasoning and calculations, while drawing from distinct domains, making them excellent examples of isomorphic problems.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems are not domain-independent. Both are pure probability/statistics problems with identical mathematical content. The 'chemistry' wrapper (mole fraction, binary mixture, equilibrium) is superficial decoration that requires no chemistry knowledge and provides no meaningful domain transfer."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.58
+  },
+  {
+    "pair_id": "8b42e5a6-0a8c-493b-863a-7bff28ee1cd5",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "da0bd8b7-ed51-4966-8d2f-fc9097e03a7f",
+      "question": "In reference to a segment of DNA, which of the following molecules contains the fewest number of nucleotides?\nA) a single strand of the original DNA segment\nB) a single strand of the original DNA segment after a point mutation\nC) the primary RNA transcript (before splicing) from the original DNA\nD) a single strand of complementary DNA (cDNA) made from the original DNA",
+      "answer": "D) a single strand of complementary DNA (cDNA) made from the original DNA",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_biology"
+      }
+    },
+    "target": {
+      "id": "fb892e58-c8d1-4574-84bb-f69c363e82ae",
+      "question": "In reference to a complete mineral crystal structure, which of the following descriptions contains the fewest number of atomic positions?\nA) all atomic positions in the complete unit cell of the original crystal\nB) all atomic positions in the complete unit cell after a substitution defect\nC) the extended crystal lattice (before identifying symmetry) showing multiple unit cells\nD) the asymmetric unit showing only symmetry-independent atomic positions",
+      "answer": "D) the asymmetric unit showing only symmetry-independent atomic positions",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Crystallographic symmetry principle - the asymmetric unit contains the minimum set of atoms needed to generate the complete unit cell through symmetry operations",
+        "solution_steps": [
+          "Recognize that the complete unit cell contains all atomic positions needed to define the repeating structure",
+          "Understand that extended lattices contain multiple unit cells, thus multiplying the number of positions",
+          "Recognize that the asymmetric unit contains only unique atoms before symmetry operations, representing the smallest irreducible set of positions"
+        ],
+        "domain_knowledge_required": [
+          "Crystal unit cells are the smallest repeating units in a crystal structure",
+          "Asymmetric units contain only symmetry-independent atoms",
+          "Symmetry operations generate equivalent atomic positions from the asymmetric unit",
+          "Extended lattices contain multiple repetitions of the unit cell",
+          "Substitution defects replace atoms but maintain the same number of positions"
+        ],
+        "isomorphism_justification": "Both problems compare four representations of an original structure where one version (D) contains only the essential non-redundant elements after removing duplicates/symmetry-equivalents, making it the smallest.",
+        "sub_topic": "crystallography and mineralogy"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identifying which representation contains the minimal non-redundant information after removing duplicates (introns/exons in biology vs symmetry-related positions in crystallography), using identical logical reasoning despite requiring completely different domain knowledge.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, requiring similar reasoning processes while being grounded in distinct scientific domains. They are well-defined and can be solved independently, though the difficulty may vary slightly for some students.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring the same reasoning procedure and level of complexity, while being fully independent in domain knowledge.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "0c974e4a-de4c-48b5-b195-db97d3626db6",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "19099a2d-9aee-437d-9764-17b308980d03",
+      "question": "Which of the following substances is found in greater quantity in exhaled air?\nA) Carbon dioxide\nB) Carbon monoxide\nC) Nitrogen\nD) Oxygen",
+      "answer": "C) Nitrogen",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "anatomy"
+      }
+    },
+    "target": {
+      "id": "fc04317c-06bb-4ac5-82ef-8e96e7a88dd8",
+      "question": "Which of the following minerals is found in the greatest quantity in oceanic crust?\nA) Olivine\nB) Plagioclase feldspar\nC) Pyroxene\nD) Quartz",
+      "answer": "B) Plagioclase feldspar",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Oceanic crust mineralogical composition by volume percentage",
+        "solution_steps": [
+          "Recall the mineralogical composition of oceanic crust (basaltic): Plagioclase feldspar (~50-60%), Pyroxene (~30-40%), Olivine (~5-10%), Quartz (~0%)",
+          "Compare the volume percentages of all four minerals listed in the options",
+          "Identify that Plagioclase feldspar at 50-60% is the most abundant mineral"
+        ],
+        "domain_knowledge_required": [
+          "Oceanic crust is primarily composed of basaltic rocks",
+          "Basalt mineralogy includes plagioclase feldspar, pyroxene, and minor olivine",
+          "Plagioclase feldspar is the dominant mineral in basaltic oceanic crust",
+          "Quartz is absent or negligible in mafic oceanic crust"
+        ],
+        "isomorphism_justification": "This problem requires knowing the relative proportions of components in a geological material and identifying which is most abundant from four options, perfectly mirroring the structure of comparing respiratory gas quantities.",
+        "sub_topic": "Petrology - Oceanic Crust Composition"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.5
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identical reasoning: recall the relative proportions of components in a mixture (exhaled air vs oceanic crust) and identify the most abundant one from four options. The domains are completely independent, and both require similar levels of factual knowledge typical of introductory science courses.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 4.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The target answer is incorrect; Plagioclase feldspar is not the most abundant mineral in oceanic crust.",
+          "overall_assessment": "While the problems share some structural similarities, the target problem's answer is incorrect, and the reasoning processes differ slightly, leading to a moderate score overall.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring the same reasoning procedure and being fully self-contained, though the earth science problem might be slightly more challenging due to the specificity of mineral knowledge required.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The target answer is incorrect; Plagioclase feldspar is not the most abundant mineral in oceanic crust."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.5
+  },
+  {
+    "pair_id": "c2389daf-c446-4737-8b68-35b062ead753",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "id": "26599ed7-1eb6-45b5-ace5-ed5bc7cadca0",
+      "question": "Which one of the following statements is true concerning the motion of an ideal projectile launched at an angle of 45\u00b0 to the horizontal?\nA) The acceleration vector points opposite to the velocity vector on the way up and in the same direction as the velocity vector on the way down.\nB) The speed at the top of the trajectory is zero.\nC) The object's total speed remains constant during the entire flight.\nD) The vertical speed decreases on the way up and increases on the way down.",
+      "answer": "D) The vertical speed decreases on the way up and increases on the way down.",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_physics"
+      }
+    },
+    "target": {
+      "id": "461e556c-0ca2-4283-9a4f-f8958570c280",
+      "question": "Which one of the following statements is true concerning the oxidation state of manganese in a redox reaction where MnO\u2084\u207b is reduced to MnO\u2082 in basic solution?\nA) The oxidation state of manganese remains constant while oxygen's oxidation state changes.\nB) The oxidation state of manganese reaches zero at the end of the reduction.\nC) The change in oxidation state occurs at a constant rate throughout the electron transfer.\nD) The oxidation state of manganese decreases during the reduction and the number of electrons gained by each manganese atom increases during the reduction.",
+      "answer": "D) The oxidation state of manganese decreases during the reduction and the number of electrons gained by each manganese atom increases during the reduction.",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Oxidation state rules and redox half-reaction: MnO\u2084\u207b + 2H\u2082O + 3e\u207b \u2192 MnO\u2082 + 4OH\u207b",
+        "solution_steps": [
+          "Determine initial and final oxidation states: Mn in MnO\u2084\u207b is +7, and Mn in MnO\u2082 is +4",
+          "Recognize that as reduction proceeds, the oxidation state decreases from +7 toward +4, while the cumulative number of electrons gained increases from 0 to 3 per Mn atom",
+          "Eliminate other options: oxygen's oxidation state stays -2, final Mn oxidation state is +4 (not 0), and electron transfer in real reactions doesn't occur at constant rate"
+        ],
+        "domain_knowledge_required": [
+          "Oxidation state calculation rules",
+          "Definition of reduction as decrease in oxidation state",
+          "Electron transfer in redox reactions",
+          "Relationship between oxidation state change and electron gain"
+        ],
+        "isomorphism_justification": "Both problems involve analyzing how two inversely related quantities (velocity magnitude vs. oxidation state, and position vs. electrons gained) change during a continuous process, with one decreasing while its complement increases, requiring rejection of common misconceptions.",
+        "sub_topic": "Redox Reactions and Oxidation States"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.3333333333333335,
+        "self_containment": 4.666666666666667,
+        "overall": 4.0
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 2.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The problems have fundamentally different logical structures. The physics problem asks about continuous changes in a single quantity (vertical speed) during two phases of motion. The chemistry problem's answer conflates two separate concepts: (1) oxidation state decreases during reduction (definitional), and (2) 'number of electrons gained increases' - which is nonsensical as each Mn atom gains a fixed number of electrons (3e\u207b) in the reaction MnO\u2084\u207b \u2192 MnO\u2082. The claimed 'inversely related quantities' mapping is forced and artificial. The chemistry answer appears to contain a conceptual error.",
+          "overall_assessment": "These problems lack structural isomorphism due to different reasoning patterns and an apparently incorrect target answer that confuses the fixed stoichiometry of electron transfer with a variable quantity.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share some logical structure but differ in reasoning complexity and steps involved, leading to a partial equivalence. They are independent in terms of domain knowledge, and both are well-defined and self-contained.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share a strong logical structure and require similar reasoning procedures, though the domains and specific concepts differ significantly.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems have fundamentally different logical structures. The physics problem asks about continuous changes in a single quantity (vertical speed) during two phases of motion. The chemistry problem's answer conflates two separate concepts: (1) oxidation state decreases during reduction (definitional), and (2) 'number of electrons gained increases' - which is nonsensical as each Mn atom gains a fixed number of electrons (3e\u207b) in the reaction MnO\u2084\u207b \u2192 MnO\u2082. The claimed 'inversely related quantities' mapping is forced and artificial. The chemistry answer appears to contain a conceptual error."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.0
+  },
+  {
+    "pair_id": "6fe33cfd-d6ae-4c81-8742-f9dc18674e76",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "id": "28442f8c-db18-4ca1-a674-4491f1295bb4",
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. A chemical reaction takes place in a container of cross-sectional area $100 \\mathrm{~cm}^2$. As a result of the reaction, a piston is pushed out through $10 \\mathrm{~cm}$ against an external pressure of $1.0 \\mathrm{~atm}$. Calculate the work done by the system.",
+      "answer": "-100",
+      "domain": "chemistry",
+      "structure_type": "formula_recall_and_substitute",
+      "source_bench": "scibench",
+      "metadata": {
+        "unit": "$\\mathrm{J}$"
+      }
+    },
+    "target": {
+      "id": "9725dd63-e6f7-4a26-a631-4131b99c0dcd",
+      "question": "A cylindrical root cell has a cross-sectional area of 100 \u03bcm\u00b2 and elongates by 10 \u03bcm during growth against a turgor pressure of 1.0 MPa. Calculate the work done by the cell during this expansion.",
+      "answer": "-100 pJ",
+      "domain": "biology",
+      "structure_type": "formula_recall_and_substitute",
+      "metadata": {
+        "formula_used": "W = -P \u00d7 \u0394V, where \u0394V = A \u00d7 \u0394l",
+        "solution_steps": [
+          "Calculate the volume change: \u0394V = A \u00d7 \u0394l = 100 \u03bcm\u00b2 \u00d7 10 \u03bcm = 1000 \u03bcm\u00b3 = 1.0 \u00d7 10\u207b\u00b9\u2075 m\u00b3",
+          "Convert pressure to Pa: P = 1.0 MPa = 1.0 \u00d7 10\u2076 Pa",
+          "Calculate work: W = -P \u00d7 \u0394V = -(1.0 \u00d7 10\u2076 Pa) \u00d7 (1.0 \u00d7 10\u207b\u00b9\u2075 m\u00b3) = -1.0 \u00d7 10\u207b\u2079 J = -100 pJ"
+        ],
+        "domain_knowledge_required": [
+          "Plant cells perform work during expansion against turgor pressure",
+          "Work done by a system against constant pressure is W = -P \u00d7 \u0394V",
+          "Volume change for cylindrical expansion is \u0394V = A \u00d7 \u0394l"
+        ],
+        "isomorphism_justification": "This problem has identical structure: recall the pressure-volume work formula, substitute given values (area, displacement, pressure), and compute the result.",
+        "sub_topic": "Plant Cell Biology - Turgor Pressure and Cell Growth"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identical reasoning: recall W = -P\u00d7\u0394V, recognize that \u0394V = area \u00d7 displacement, substitute values, and compute. The chemistry problem uses atmospheric pressure on a piston while the biology problem uses turgor pressure in a cell, making them genuinely domain-independent despite sharing the same underlying physics of pressure-volume work.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit perfect logical equivalence and domain independence, with only a slight difference in difficulty due to the biological context. Both problems are fully specified and solvable with the given information.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring identical reasoning steps and formula application, while drawing from distinct domains and maintaining equivalent difficulty and self-containment.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.92
+  },
+  {
+    "pair_id": "c93486bb-0bb7-48c6-ad3c-00ae4af76bcf",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "f8666032-b6a7-433a-80ab-e79cc67a7531",
+      "question": "When water evaporates from the surface of a pond, what happens to the remaining liquid water?\nA) The surface water cools.\nB) The surface water warms.\nC) The surface water temperature remains unchanged.\nD) The pH of the remaining water decreases.",
+      "answer": "A) The surface water cools.",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_biology"
+      }
+    },
+    "target": {
+      "id": "764b2843-97fc-4a69-9d88-18af873f758d",
+      "question": "When air descends from high altitude in the atmosphere and undergoes adiabatic compression, what happens to the temperature of the air mass?\nA) The air mass cools.\nB) The air mass warms.\nC) The air mass temperature remains unchanged.\nD) The air mass pressure decreases.",
+      "answer": "B) The air mass warms.",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Adiabatic heating principle: When a gas is compressed without heat exchange with surroundings, its temperature increases",
+        "solution_steps": [
+          "Recognize that descending air undergoes compression due to increasing atmospheric pressure at lower altitudes",
+          "Apply the principle that adiabatic compression converts mechanical work into thermal energy",
+          "Conclude that the air mass temperature increases (warms) as a result of compression"
+        ],
+        "domain_knowledge_required": [
+          "Air pressure increases with decreasing altitude",
+          "Adiabatic processes involve no heat exchange with surroundings",
+          "Compression of gases increases their temperature",
+          "This process creates warm, dry conditions in regions like the leeward side of mountains"
+        ],
+        "isomorphism_justification": "Like evaporative cooling removing high-energy molecules, adiabatic compression adds energy to molecules through mechanical work, both involving energy transfer mechanisms that change temperature in predictable directions.",
+        "sub_topic": "Atmospheric thermodynamics"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 2.6666666666666665,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.3333333333333335,
+        "self_containment": 5.0,
+        "overall": 4.0
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems have fundamentally different logical structures. The source problem involves selective molecular removal (evaporation removes high-energy molecules, leaving cooler ones behind), while the target involves energy addition through compression work. The source is about subtraction/selection, the target is about addition/transformation. These require different reasoning procedures despite both involving temperature changes.",
+          "overall_assessment": "While both problems involve temperature changes and energy transfer, they lack logical equivalence because evaporative cooling works through selective removal of high-energy molecules (a subtraction/filtering process), whereas adiabatic compression works through mechanical work adding energy to all molecules (an addition/transformation process). The reasoning paths are fundamentally different.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The reasoning procedures differ significantly; evaporative cooling involves energy loss while adiabatic compression involves energy gain.",
+          "overall_assessment": "While the problems are from different domains and are self-contained, they do not share the same logical structure, leading to a significant difference in reasoning required to arrive at the correct answers.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems share a similar logical structure involving energy transfer mechanisms affecting temperature, but require distinct domain knowledge, making them structurally isomorphic yet domain-independent.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems have fundamentally different logical structures. The source problem involves selective molecular removal (evaporation removes high-energy molecules, leaving cooler ones behind), while the target involves energy addition through compression work. The source is about subtraction/selection, the target is about addition/transformation. These require different reasoning procedures despite both involving temperature changes.",
+        "The reasoning procedures differ significantly; evaporative cooling involves energy loss while adiabatic compression involves energy gain."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.0
+  },
+  {
+    "pair_id": "0bbf1f18-69e3-4c57-8542-0bfce7bbb7e2",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "id": "6496cc5d-3e97-4349-9ce5-f311c60775d1",
+      "question": "Substances whose Lewis structures must be drawn with an unpaired electron are called\nA) ionic compounds\nB) free radicals\nC) resonance structures\nD) polar molecules",
+      "answer": "B) free radicals",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_chemistry"
+      }
+    },
+    "target": {
+      "id": "f72b3ae9-f52d-4487-8259-30474d432751",
+      "question": "Organisms that produce their own organic compounds from inorganic substances using light or chemical energy are called\nA) heterotrophs\nB) autotrophs\nC) decomposers\nD) parasites",
+      "answer": "B) autotrophs",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Definition-based classification of nutritional modes",
+        "solution_steps": [
+          "Recall the defining metabolic characteristic being described: producing organic compounds from inorganic substances",
+          "Match this characteristic to the correct ecological/nutritional term from the options",
+          "Identify autotrophs as the term for organisms with this self-feeding capability"
+        ],
+        "domain_knowledge_required": [
+          "Autotrophs synthesize their own food from inorganic materials",
+          "Heterotrophs consume other organisms for nutrition",
+          "Basic ecological classification terminology"
+        ],
+        "isomorphism_justification": "This problem requires recalling a definitional classification based on a specific metabolic characteristic, paralleling the source problem's structure of identifying a term for substances with a specific structural feature.",
+        "sub_topic": "Ecology - Nutritional Classification"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems require identical reasoning: recall a definitional term for entities characterized by a specific distinguishing feature (unpaired electron vs. self-production of organic compounds from inorganic sources). The problems are at the same introductory undergraduate level, require pure definitional recall with no calculation, and use completely independent domain knowledge.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit a strong logical equivalence and are independent in terms of domain knowledge. However, the difficulty level may vary slightly for students, making them not perfectly parallel in complexity.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "Both problems require recalling a definitional classification based on a specific characteristic, making them logically equivalent and domain-independent.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.75
+  },
+  {
+    "pair_id": "a765bd0a-0bc7-4d59-84f3-138b286f5a54",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "3937a5a3-eb63-4b85-ab2c-1dcb93ab5223",
+      "question": "The sedimentation coefficient of lysozyme $\\left(\\mathrm{M}=14,100 \\mathrm{~g} \\mathrm{~mol}^{-1}\\right)$ in water at $20^{\\circ} \\mathrm{C}$ is $1.91 \\times 10^{-13} \\mathrm{~s}$ and the specific volume is $0.703 \\mathrm{~cm}^3 \\mathrm{~g}^{-1}$. The density of water at this temperature is $0.998 \\mathrm{~g} \\mathrm{~cm}^{-3}$ and $\\eta=1.002 \\mathrm{cP}$. Assuming lysozyme is spherical, what is the radius of this protein?",
+      "answer": "1.94",
+      "domain": "chemistry",
+      "structure_type": "formula_recall_and_substitute",
+      "source_bench": "scibench",
+      "metadata": {
+        "unit": "$\\mathrm{~nm}$"
+      }
+    },
+    "target": {
+      "id": "50c9a6af-4c57-4366-ae8e-29902226d666",
+      "question": "A spherical mineral grain with density 2650 kg/m\u00b3 settles through seawater at 15\u00b0C with a measured settling velocity of 0.85 cm/s. The density of seawater at this temperature is 1025 kg/m\u00b3 and the dynamic viscosity is 1.14 \u00d7 10\u207b\u00b3 Pa\u00b7s. Assuming laminar flow conditions (Stokes regime), what is the diameter of the grain?",
+      "answer": "0.245 mm",
+      "domain": "earth_science",
+      "structure_type": "formula_recall_and_substitute",
+      "metadata": {
+        "formula_used": "Stokes' settling velocity: v_s = (gd\u00b2(\u03c1_s - \u03c1_f))/(18\u03b7), rearranged to solve for d",
+        "solution_steps": [
+          "Recall Stokes' settling velocity equation and rearrange to solve for diameter: d = \u221a((18\u03b7v_s)/(g(\u03c1_s - \u03c1_f)))",
+          "Substitute the given values: \u03b7 = 1.14 \u00d7 10\u207b\u00b3 Pa\u00b7s, v_s = 0.85 cm/s = 8.5 \u00d7 10\u207b\u00b3 m/s, g = 9.81 m/s\u00b2, \u03c1_s = 2650 kg/m\u00b3, \u03c1_f = 1025 kg/m\u00b3",
+          "Calculate: d = \u221a((18 \u00d7 1.14 \u00d7 10\u207b\u00b3 \u00d7 8.5 \u00d7 10\u207b\u00b3)/(9.81 \u00d7 (2650 - 1025))) = 2.45 \u00d7 10\u207b\u2074 m = 0.245 mm"
+        ],
+        "domain_knowledge_required": [
+          "Stokes' law for particle settling in fluids",
+          "Typical densities of silicate minerals",
+          "Physical properties of seawater (density and viscosity as functions of temperature)",
+          "Laminar flow regime conditions for sediment transport"
+        ],
+        "isomorphism_justification": "Like the source problem, this requires recalling a formula connecting size to other physical properties, substituting given density and viscosity values, and computing the characteristic dimension of a spherical particle.",
+        "sub_topic": "Sedimentology - Particle Settling Dynamics"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      },
+      "individual": [
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "Both problems require applying Stokes' law to spherical particles in viscous media, involving formula recall, unit conversion, and algebraic manipulation. The source uses the Svedberg equation (derived from Stokes) with sedimentation coefficient, while the target directly uses Stokes' settling velocity, creating a minor procedural difference but maintaining strong structural isomorphism.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit a strong structural isomorphism, requiring similar reasoning and operations while being independent in their respective domains. They are nearly equally challenging, though the chemistry problem may involve slightly more complexity due to additional parameters.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring the same reasoning procedure and level of complexity, while drawing from distinct domains.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": []
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.75
+  },
+  {
+    "pair_id": "714f848a-7233-4f92-8e17-e4c94ae27b16",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "id": "c9a4b22f-21ff-43c1-908e-48f2912c9faa",
+      "question": "The Gravitron is a carnival ride that looks like a large cylinder. People stand inside the cylinder against the wall as it begins to spin. Eventually, it is rotating fast enough that the floor can be removed without anyone falling. Given then the coefficient of friction between a person\u2019s clothing and the wall is \u03bc, the tangential speed is v, and the radius of the ride is R, what is greatest mass that a person can be to safely go on this ride?\nA) \u03bcv^2/(rg)\nB) r^2v^2/(\u03bcg)\nC) rg/(\u03bcv^2)\nD) None of the above.",
+      "answer": "D) None of the above.",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_physics"
+      }
+    },
+    "target": {
+      "id": "e2191f01-8b88-4548-9faf-7963107bb480",
+      "question": "In a neuron, the equilibrium potential for an ion depends on the concentration gradient across the membrane. Given that the Nernst equation is E = (RT/zF)ln([ion]_out/[ion]_in), where R is the gas constant, T is temperature, z is the ion's valence, F is Faraday's constant, and the concentrations are [K+]_out = 5 mM and [K+]_in = 140 mM at body temperature (310 K), what is the maximum number of potassium ions that can pass through a single channel per second to maintain equilibrium?\nA) 2.3 \u00d7 10^6 ions/s\nB) 1.4 \u00d7 10^8 ions/s\nC) 5.0 \u00d7 10^5 ions/s\nD) None of the above.",
+      "answer": "D) None of the above.",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Nernst equation: E = (RT/zF)ln([ion]_out/[ion]_in)",
+        "solution_steps": [
+          "Recognize that the Nernst equation calculates equilibrium potential (voltage), not ion flux rate",
+          "Note that the question asks for ion flux (number per second), which requires additional information like channel conductance and driving force",
+          "Conclude that the equilibrium potential alone cannot determine the maximum ion flux rate without knowing channel properties"
+        ],
+        "domain_knowledge_required": [
+          "The Nernst equation calculates membrane potential, not ion flux",
+          "Ion flux depends on both electrochemical gradient and channel conductance",
+          "Equilibrium potential is independent of the number of ions that can pass through channels"
+        ],
+        "isomorphism_justification": "Like the source problem where mass is independent of the physical parameters given (the ride works for any mass meeting friction requirements), ion flux rate cannot be determined from equilibrium potential alone as it's independent of the parameters provided.",
+        "sub_topic": "Neurophysiology and membrane potential"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.6666666666666665,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 4.333333333333333,
+        "overall": 4.25
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This is an excellent isomorphic pair. Both problems share the identical logical structure: they ask for a quantity (maximum mass, maximum ion flux) that cannot be determined from the given parameters because the answer is actually independent of those parameters or requires additional information not provided.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The logical equivalence is only partially met as the reasoning procedures differ; the physics problem involves friction and mass, while the biology problem involves ion concentration and equilibrium potential.",
+          "overall_assessment": "While the problems are from different domains and are self-contained, they do not share the same logical structure or reasoning process, leading to a partial isomorphism assessment.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 3.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The logical equivalence is only partially met because the reasoning procedures differ significantly. The physics problem involves understanding forces and friction, while the biology problem involves applying the Nernst equation and understanding ion flux.",
+          "overall_assessment": "The problems are from different domains and are self-contained, but they differ in reasoning procedure and complexity, making them only partially isomorphic.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The logical equivalence is only partially met as the reasoning procedures differ; the physics problem involves friction and mass, while the biology problem involves ion concentration and equilibrium potential.",
+        "The logical equivalence is only partially met because the reasoning procedures differ significantly. The physics problem involves understanding forces and friction, while the biology problem involves applying the Nernst equation and understanding ion flux."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.25
+  },
+  {
+    "pair_id": "57bf0366-e996-47e4-b44b-12e089545ab9",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "ef2839db-2dc5-454b-8da3-948bc83678be",
+      "question": "Two identical capacitors are hooked in parallel to an external circuit. Which of the following quantities must be the same for both capacitors? I. the charge stored on the capacitor II.  the voltage across the capacitor III. the capacitance of the capacitor\nA) I only\nB) II only\nC) II and III only\nD) (E) I, II, and III",
+      "answer": "D) (E) I, II, and III",
+      "domain": "physics",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_physics"
+      }
+    },
+    "target": {
+      "id": "1be584e8-3a6c-4ec4-8529-656949a8ec6d",
+      "question": "Two identical soil columns are subjected in parallel to the same infiltration conditions (same water input rate and same hydraulic gradient). Which of the following quantities must be the same for both soil columns? I. the total volume of water infiltrated II. the hydraulic conductivity III. the soil texture\nA) I only\nB) II only\nC) II and III only\nD) I, II, and III",
+      "answer": "D) I, II, and III",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Darcy's Law for infiltration and principles of parallel flow systems",
+        "solution_steps": [
+          "Recognize that 'identical soil columns' means they have the same intrinsic properties including soil texture, which determines hydraulic conductivity (II and III are true)",
+          "Understand that soil columns subjected to the same hydraulic gradient (parallel conditions) will have identical flow rates per unit area, analogous to current in parallel electrical circuits (depends on conductivity and gradient)",
+          "Apply the constraint that identical soils with the same hydraulic conductivity under the same gradient for the same time will infiltrate the same total volume of water (I is true)"
+        ],
+        "domain_knowledge_required": [
+          "Hydraulic conductivity is an intrinsic property determined by soil texture",
+          "Soil texture (particle size distribution) is an intrinsic property",
+          "Parallel infiltration conditions mean identical hydraulic gradients",
+          "Infiltration volume depends on conductivity, gradient, area, and time"
+        ],
+        "isomorphism_justification": "This problem has identical logical structure where 'identical' components under 'parallel' (same) conditions must share both an intensive property (hydraulic conductivity/voltage), an intrinsic property (soil texture/capacitance), and consequently an extensive property (infiltrated volume/charge).",
+        "sub_topic": "Soil Physics and Infiltration"
+      }
+    },
+    "verification_status": "auto_rejected",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 4.666666666666667,
+        "overall": 4.416666666666667
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": false,
+          "rejection_reason": "The logical structures are fundamentally different. In the capacitor problem, parallel connection FORCES equal voltage (Kirchhoff's law), and identical capacitance with equal voltage NECESSITATES equal charge (Q=CV). In the soil problem, parallel conditions don't force equal infiltration volumes - identical soil columns under the same conditions will have equal hydraulic conductivity and texture (intrinsic properties), but the total infiltrated volume depends on time and other factors not specified. The target problem conflates intensive/intrinsic properties with extensive outcomes.",
+          "overall_assessment": "These problems appear structurally similar but have critically different logical dependencies. The physics problem involves forced constraints (parallel connection mandates equal voltage), while the earth science problem involves probabilistic outcomes where identical conditions lead to identical rates but not necessarily identical accumulated volumes without time specification.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit a strong structural isomorphism with identical logical reasoning and fully specified conditions. They are from different domains, ensuring no advantage in knowledge transfer, and are nearly equally challenging for a strong undergraduate student.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "This pair is a strong example of structural isomorphism, with identical logical structure and reasoning procedures across different domains, while maintaining equivalent difficulty and self-containment.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The logical structures are fundamentally different. In the capacitor problem, parallel connection FORCES equal voltage (Kirchhoff's law), and identical capacitance with equal voltage NECESSITATES equal charge (Q=CV). In the soil problem, parallel conditions don't force equal infiltration volumes - identical soil columns under the same conditions will have equal hydraulic conductivity and texture (intrinsic properties), but the total infiltrated volume depends on time and other factors not specified. The target problem conflates intensive/intrinsic properties with extensive outcomes."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.42
+  },
+  {
+    "pair_id": "8296e4ae-930c-4dae-8abe-42185b4c8bb1",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "id": "44c676b0-7f49-4a7a-9621-a61c5d57fdd4",
+      "question": "The equation \u0394H = \u0394U + P\u0394V is applicable\nA) always\nB) only for constant pressure processes\nC) only for constant temperature processes\nD) only for constant volume processes",
+      "answer": "B) only for constant pressure processes",
+      "domain": "chemistry",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "college_chemistry"
+      }
+    },
+    "target": {
+      "id": "fe0b9bb6-b619-4956-964f-72075567044a",
+      "question": "The equation \u0394G = \u0394H - T\u0394S is applicable\nA) always\nB) only for constant temperature and pressure processes\nC) only for constant volume processes\nD) only for isothermal processes",
+      "answer": "B) only for constant temperature and pressure processes",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Gibbs free energy equation: \u0394G = \u0394H - T\u0394S",
+        "solution_steps": [
+          "Recall that the Gibbs free energy equation \u0394G = \u0394H - T\u0394S is derived under specific thermodynamic conditions",
+          "Recognize that this equation requires both temperature (T) and pressure to remain constant during the process",
+          "Conclude that the equation is only applicable for constant temperature and pressure processes"
+        ],
+        "domain_knowledge_required": [
+          "Gibbs free energy is a state function used to predict spontaneity of biological reactions",
+          "The equation \u0394G = \u0394H - T\u0394S requires constant temperature and pressure conditions",
+          "Under variable conditions, more complex differential forms must be used"
+        ],
+        "isomorphism_justification": "Both problems ask when a specific thermodynamic equation relating multiple state functions is valid, requiring recognition that the equation applies only under specific constant conditions (pressure vs. temperature and pressure).",
+        "sub_topic": "Bioenergetics and Thermodynamics"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.583333333333333
+      },
+      "individual": [
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 2.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The problems are not sufficiently domain-independent. Both are thermodynamic equations commonly taught together in physical chemistry and biochemistry courses. A student who understands the derivation constraints of \u0394H = \u0394U + P\u0394V would have significant advantage in recognizing that \u0394G = \u0394H - T\u0394S also requires constant conditions for its standard form.",
+          "overall_assessment": "While these problems share identical logical structure (identifying when a thermodynamic equation is valid), they fail domain independence because both are core thermodynamic relationships often taught in the same courses, with similar derivation constraints that transfer knowledge between them.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 4.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit strong structural isomorphism, as they require similar reasoning processes and are fully self-contained. They also draw from distinct domains, ensuring no advantage is gained from one to the other, although the difficulty may vary slightly due to the specific context of each discipline.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems are structurally isomorphic, requiring the same reasoning procedure and domain-independent knowledge, while maintaining equivalent difficulty and self-containment.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The problems are not sufficiently domain-independent. Both are thermodynamic equations commonly taught together in physical chemistry and biochemistry courses. A student who understands the derivation constraints of \u0394H = \u0394U + P\u0394V would have significant advantage in recognizing that \u0394G = \u0394H - T\u0394S also requires constant conditions for its standard form."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.58
+  },
+  {
+    "pair_id": "30548af9-b4c1-4f01-92a1-1f12ac341355",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "id": "597a3aa5-3a1b-4d0a-98ec-9ad6ec29d47f",
+      "question": "Which describes brightly colored peacocks mating more frequently than drab peacocks?\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) sexual selection",
+      "answer": "D) sexual selection",
+      "domain": "biology",
+      "structure_type": "unknown",
+      "source_bench": "mmlu_stem",
+      "metadata": {
+        "subject": "high_school_biology"
+      }
+    },
+    "target": {
+      "id": "942c7229-ba4a-4680-b457-eb2079d1a7be",
+      "question": "Which describes the process where fine clay particles remain suspended in a river during low flow conditions while coarse sand particles settle out?\nA) hydraulic sorting\nB) chemical precipitation\nC) turbidity current\nD) differential settling by grain size",
+      "answer": "D) differential settling by grain size",
+      "domain": "earth_science",
+      "structure_type": "unknown",
+      "metadata": {
+        "formula_used": "Settling velocity proportional to particle diameter squared (Stokes' Law for small particles)",
+        "solution_steps": [
+          "Identify the property causing differential behavior: particle size affects settling velocity through drag forces",
+          "Recognize this describes selective transport where smaller particles stay suspended longer than larger ones",
+          "Match to the process where particle size determines which grains settle versus remain in suspension"
+        ],
+        "domain_knowledge_required": [
+          "Settling velocity increases with particle size for sediment grains",
+          "Hydraulic sorting is the broader result, chemical precipitation involves dissolved ions, turbidity currents are density flows",
+          "Differential settling by grain size is the specific mechanism causing size-based separation"
+        ],
+        "isomorphism_justification": "Like peacocks experiencing different mating success based on coloration, sediment particles experience different transport behavior based on grain size, both requiring identification of the selective mechanism acting on a specific property.",
+        "sub_topic": "Sedimentology"
+      }
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.6666666666666665,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.25
+      },
+      "individual": [
+        {
+          "logical_equivalence": 2.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 4.0,
+          "answer_seems_correct": true,
+          "rejection_reason": "The logical structures differ fundamentally: the source problem asks about a mechanism explaining differential reproductive success (sexual selection vs. other selection types), while the target asks about a physical process describing particle behavior (differential settling vs. other sediment processes). The source requires distinguishing between types of evolutionary selection mechanisms, while the target requires identifying a descriptive term for a physical phenomenon. These are not isomorphic reasoning tasks.",
+          "overall_assessment": "While both problems involve differential outcomes based on properties (color vs. grain size), they require fundamentally different reasoning: one distinguishes between evolutionary mechanisms explaining reproductive success, the other identifies a physical process describing particle behavior. The logical structures are not equivalent despite superficial similarity.",
+          "judge_model": "anthropic/claude-sonnet-4-5"
+        },
+        {
+          "logical_equivalence": 4.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 3.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "The problems exhibit a strong logical equivalence in reasoning about selective mechanisms, though they differ in complexity. They are fully self-contained and require distinct domain knowledge, making them a good isomorphic pair despite slight differences in difficulty.",
+          "judge_model": "openai/gpt-4o-mini"
+        },
+        {
+          "logical_equivalence": 5.0,
+          "domain_independence": 5.0,
+          "difficulty_parity": 5.0,
+          "self_containment": 5.0,
+          "answer_seems_correct": true,
+          "rejection_reason": null,
+          "overall_assessment": "Both problems share identical logical structure, requiring identification of a selective mechanism based on a specific property, and are fully independent in domain knowledge and difficulty.",
+          "judge_model": "deepseek/deepseek-chat"
+        }
+      ],
+      "rejection_reasons": [
+        "The logical structures differ fundamentally: the source problem asks about a mechanism explaining differential reproductive success (sexual selection vs. other selection types), while the target asks about a physical process describing particle behavior (differential settling vs. other sediment processes). The source requires distinguishing between types of evolutionary selection mechanisms, while the target requires identifying a descriptive term for a physical phenomenon. These are not isomorphic reasoning tasks."
+      ]
+    },
+    "_annotation_tier": "accepted",
+    "_llm_overall_score": 4.25
+  }
+]

@@ -1,0 +1,236 @@
+{
+  "@context": {
+    "@language": "en",
+    "@vocab": "https://schema.org/",
+    "cr": "http://mlcommons.org/croissant/",
+    "rai": "http://mlcommons.org/croissant/RAI/",
+    "dct": "http://purl.org/dc/terms/",
+    "sc": "https://schema.org/"
+  },
+  "@type": "sc:Dataset",
+  "name": "IsoSci-150",
+  "description": "IsoSci-150 is a benchmark of 144 isomorphic cross-domain science problem pairs designed to separate reasoning ability from domain knowledge retrieval in LLM evaluation. Each pair consists of two problems sharing identical logical and computational structure but drawn from different scientific domains, requiring different domain-specific knowledge to solve.",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://huggingface.co/datasets/isosci/isosci",
+  "version": "1.0.0",
+  "keywords": [
+    "science",
+    "reasoning",
+    "knowledge",
+    "benchmark",
+    "isomorphic",
+    "LLM evaluation",
+    "physics",
+    "chemistry",
+    "biology",
+    "earth science"
+  ],
+  "creator": {
+    "@type": "sc:Person",
+    "name": "Anonymous (under review)"
+  },
+  "distribution": [
+    {
+      "@type": "cr:FileObject",
+      "@id": "verified_pairs.json",
+      "name": "verified_pairs.json",
+      "description": "144 verified isomorphic problem pairs in JSON format",
+      "contentUrl": "https://huggingface.co/datasets/isosci/isosci/resolve/main/data/verified_pairs.json",
+      "encodingFormat": "application/json",
+      "sha256": "TBD"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "test.json",
+      "name": "test.json",
+      "description": "Test split (64 pairs, stratified by domain mapping)",
+      "contentUrl": "https://huggingface.co/datasets/isosci/isosci/resolve/main/data/test.json",
+      "encodingFormat": "application/json",
+      "sha256": "TBD"
+    },
+    {
+      "@type": "cr:FileObject",
+      "@id": "train.json",
+      "name": "train.json",
+      "description": "Train split (80 pairs, stratified by domain mapping)",
+      "contentUrl": "https://huggingface.co/datasets/isosci/isosci/resolve/main/data/train.json",
+      "encodingFormat": "application/json",
+      "sha256": "TBD"
+    }
+  ],
+  "recordSet": [
+    {
+      "@type": "cr:RecordSet",
+      "@id": "pairs",
+      "name": "Isomorphic Problem Pairs",
+      "description": "Each record is an isomorphic pair of science problems.",
+      "field": [
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/pair_id",
+          "name": "pair_id",
+          "description": "Unique UUID identifier for the pair",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].pair_id"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/mapping",
+          "name": "mapping",
+          "description": "Cross-domain mapping (e.g. physics_to_chemistry)",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].mapping"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/source_domain",
+          "name": "source_domain",
+          "description": "Scientific domain of the source problem",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source_domain"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/target_domain",
+          "name": "target_domain",
+          "description": "Scientific domain of the target problem",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].target_domain"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/source_question",
+          "name": "source_question",
+          "description": "Source problem text",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source.question"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/source_answer",
+          "name": "source_answer",
+          "description": "Source problem gold answer",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source.answer"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/target_question",
+          "name": "target_question",
+          "description": "Target problem text (isomorphic to source)",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].target.question"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/target_answer",
+          "name": "target_answer",
+          "description": "Target problem gold answer",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].target.answer"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/structure_type",
+          "name": "structure_type",
+          "description": "Reasoning structure type (one of 5 categories)",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source.structure_type"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/source_bench",
+          "name": "source_bench",
+          "description": "Original benchmark the source seed came from",
+          "dataType": "sc:Text",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].source.source_bench"
+            }
+          }
+        },
+        {
+          "@type": "cr:Field",
+          "@id": "pairs/verification_score",
+          "name": "verification_score",
+          "description": "Average LLM judge score (1-5) across 4 criteria",
+          "dataType": "sc:Number",
+          "source": {
+            "fileObject": {
+              "@id": "verified_pairs.json"
+            },
+            "extract": {
+              "jsonPath": "$[*].verification_scores.avg.overall"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

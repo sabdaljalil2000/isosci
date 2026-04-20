@@ -1,0 +1,2 @@
+[console_scripts]
+mlcroissant = mlcroissant.scripts.cli:main

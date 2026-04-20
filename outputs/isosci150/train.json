@@ -1,0 +1,2206 @@
+[
+  {
+    "pair_id": "217895d5-4e1b-45ad-bd06-403b28e51606",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "What is the Cassini division of Saturn's rings?\nA) a dark ring visible from Earth composed of dark dusty particles\nB) the most opaque ring of Saturn made of highly reflective ice particles\nC) the widest ring of Saturn located between two large ring gaps\nD) a large gap visible from Earth produced by an orbital resonance with the moon Mimas",
+      "answer": "D) a large gap visible from Earth produced by an orbital resonance with the moon Mimas",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "What is the zone of inhibition in a bacterial culture plate?\nA) a dense bacterial growth visible to the naked eye composed of antibiotic-resistant colonies\nB) the most opaque region of the plate made of highly concentrated bacterial cells\nC) the widest growth region located between two nutrient-depleted areas\nD) a clear area visible to the naked eye produced by antimicrobial activity preventing bacterial growth",
+      "answer": "D) a clear area visible to the naked eye produced by antimicrobial activity preventing bacterial growth",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "97290cc6-c473-40fb-9c01-85c307c49112",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which describes brightly colored peacocks mating more frequently than drab peacocks?\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) sexual selection",
+      "answer": "D) sexual selection",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which describes the process where minerals with higher density settle to the bottom of a magma chamber more rapidly than minerals with lower density?\nA) chemical weathering\nB) fractional crystallization\nC) isostatic equilibrium\nD) gravitational settling",
+      "answer": "D) gravitational settling",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "8296e4ae-930c-4dae-8abe-42185b4c8bb1",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "The equation \u0394H = \u0394U + P\u0394V is applicable\nA) always\nB) only for constant pressure processes\nC) only for constant temperature processes\nD) only for constant volume processes",
+      "answer": "B) only for constant pressure processes",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The equation \u0394G = \u0394H - T\u0394S is applicable\nA) always\nB) only for constant temperature and pressure processes\nC) only for constant volume processes\nD) only for isothermal processes",
+      "answer": "B) only for constant temperature and pressure processes",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.583333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "49c3d2b1-5875-4840-aa41-e0ef46692df8",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "What is the number of ways of selecting a president, a vice president, a secretary, and a treasurer in a club consisting of 10 persons?",
+      "answer": "5040",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "An oceanographer is studying 10 distinct ocean current systems and needs to select four of them for detailed analysis in a research paper. The first current will be featured in the Introduction section, the second in the Methods section, the third in the Results section, and the fourth in the Discussion section. Each section must feature a different current system. How many different ways can the oceanographer assign the current systems to these four sections?",
+      "answer": "5040",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "686733c1-5fee-4956-bd9f-36dfecedbbbf",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Let $X$ and $Y$ have a bivariate normal distribution with correlation coefficient $\\rho$. To test $H_0: \\rho=0$ against $H_1: \\rho \\neq 0$, a random sample of $n$ pairs of observations is selected. Suppose that the sample correlation coefficient is $r=0.68$. Using a significance level of $\\alpha=0.05$, find the smallest value of the sample size $n$ so that $H_0$ is rejected.",
+      "answer": "9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A geologist is studying the relationship between earthquake magnitude and ground acceleration. Let M and A have a bivariate normal distribution with correlation coefficient \u03c1. To test H\u2080: \u03c1=0 against H\u2081: \u03c1 \u2260 0, a random sample of n earthquake events is collected. Suppose that the sample correlation coefficient is r=0.68. Using a significance level of \u03b1=0.05, find the smallest value of the sample size n so that H\u2080 is rejected.",
+      "answer": "9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 3.6666666666666665,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.583333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "382057bb-44b1-4683-bc75-91af717638b2",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Mules are relatively long-lived and hardy organisms that cannot, generally speaking, perform successful meiosis. Consequently, which statement about mules is true?\nA) They have a relative evolutionary fitness of zero.\nB) Their offspring have less genetic variation than the parents.\nC) Mutations cannot occur in their genomes.\nD) If crossing-over happens in mules, then it must be limited to prophase of mitosis.",
+      "answer": "A) They have a relative evolutionary fitness of zero.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Certain impact craters on the Moon formed in the pre-Nectarian period and cannot, generally speaking, undergo modification by plate tectonic processes. Consequently, which statement about pre-Nectarian lunar craters is true?\nA) They have zero potential to be subducted into a planetary mantle.\nB) Their ejecta blankets have less compositional complexity than craters on tectonically active bodies.\nC) Impact gardening cannot occur on their surfaces.\nD) If crater modification happens on the Moon, then it must be limited to the mare regions only.",
+      "answer": "A) They have zero potential to be subducted into a planetary mantle.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.333333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "50ab967b-95a5-4faf-b3d4-5dbde948ae47",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Select the suitable reagents for the following mentioned reactions.\nbutan-2-one + NaCN + A ---> 2-hydroxy-2-methylbutanenitrile\n2-(4-benzylphenyl)-2-hydroxybutanenitrile + B (H2O) ---> 2-(4-benzylphenyl)-2-hydroxybutanoic acid",
+      "answer": "A = NaHSO3, B = HCl",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "gpqa_diamond"
+    },
+    "target": {
+      "question": "Select the suitable enzymes for the following mentioned DNA replication steps.\nDNA template strand + A + dNTPs \u2192 RNA primer of 10 nucleotides\nRNA primer-DNA complex + B + dNTPs \u2192 extended DNA strand with primer removed",
+      "answer": "A = primase, B = DNA polymerase I",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.416666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "d1b8bae9-c188-4010-aa7c-5a1c41c012d0",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A table supports a wooden block placed on the tabletop. Which fundamental force of nature is responsible for this interaction, and why?\nA) The electric force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.\nB) The gravitational force, because by F = GMm/r^2, the force of the table on the wood at that close range is sufficient to balance the force of the Earth on the wood.\nC) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.\nD) The strong nuclear force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.",
+      "answer": "C) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Water molecules adhere to the surface of soil particles in the vadose zone above the water table. Which fundamental force of nature is primarily responsible for this adhesion, and why?\nA) The gravitational force, because the mass of water molecules is attracted to the larger mass of soil particles by F = GMm/r\u00b2.\nB) The electromagnetic force, because polar water molecules are attracted to charged or polar sites on soil particle surfaces through electrostatic interactions.\nC) The strong nuclear force, because the hydrogen nuclei in water molecules bond directly with nuclei in the soil minerals.\nD) The weak nuclear force, because it mediates the decay of radioactive isotopes in soil that attracts water molecules.",
+      "answer": "B) The electromagnetic force, because polar water molecules are attracted to charged or polar sites on soil particle surfaces through electrostatic interactions.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "04289f15-b895-4f66-84db-91edc21d5ad1",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. The volume of a certain liquid varies with temperature as\r\n$$\r\nV=V^{\\prime}\\left\\{0.75+3.9 \\times 10^{-4}(T / \\mathrm{K})+1.48 \\times 10^{-6}(T / \\mathrm{K})^2\\right\\}\r\n$$\r\nwhere $V^{\\prime}$ is its volume at $300 \\mathrm{~K}$. Calculate its expansion coefficient, $\\alpha$, at $320 \\mathrm{~K}$.",
+      "answer": "0.00131",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "The atmospheric pressure at a mountain location varies with altitude as P = P\u2080{1.00 - 1.15 \u00d7 10\u207b\u2074(h/m) + 8.5 \u00d7 10\u207b\u2079(h/m)\u00b2} where P\u2080 is sea level pressure (101325 Pa) and h is altitude in meters. Calculate the pressure lapse rate coefficient, \u03bb = -(1/P)(\u2202P/\u2202h), at an altitude of 1800 m.",
+      "answer": "1.180 \u00d7 10\u207b\u2074 m\u207b\u00b9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "575719ce-1dc7-4682-b20d-8271aaf25381",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "What is the Cassini division of Saturn's rings?\nA) a dark ring visible from Earth composed of dark dusty particles\nB) the most opaque ring of Saturn made of highly reflective ice particles\nC) the widest ring of Saturn located between two large ring gaps\nD) a large gap visible from Earth produced by an orbital resonance with the moon Mimas",
+      "answer": "D) a large gap visible from Earth produced by an orbital resonance with the moon Mimas",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "What is the nucleolus within a eukaryotic cell?\nA) a membrane-bound organelle visible under light microscopy composed of lipid bilayers\nB) the most electron-dense organelle of the cell made of highly condensed chromatin\nC) the largest organelle of the cell located between two major cytoplasmic regions\nD) a dense region visible under light microscopy produced by ribosomal RNA transcription at specific chromosomal loci",
+      "answer": "D) a dense region visible under light microscopy produced by ribosomal RNA transcription at specific chromosomal loci",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "e1a5ee31-654b-4f91-a1b1-9b3fa8c5f9f8",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "During the study of the reaction A \u2192 2B, a chemist constructs several graphs. The graph of [A] versus time and the graph of ln [A] versus time both give a curved line; however, the graph of 1/[A] versus time and gives a straight line. This implies the rate law is\nA) Rate = k[A]\nB) Rate = k[A]^2\nC) Rate = k[A]^0\nD) Rate = k[A]^-1",
+      "answer": "B) Rate = k[A]^2",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A meteorologist studying the change in atmospheric pressure with altitude collects data and creates several graphs. The graph of P (pressure) versus h (altitude) and the graph of 1/P versus h both give curved lines; however, the graph of ln P versus h gives a straight line with negative slope. This implies the pressure variation follows:\nA) Linear decrease: P = P\u2080 - kh\nB) Exponential decrease: P = P\u2080e^(-h/H)\nC) Quadratic decrease: P = P\u2080/(1 + kh\u00b2)\nD) Inverse relationship: P = P\u2080/(1 + kh)",
+      "answer": "B) Exponential decrease: P = P\u2080e^(-h/H)",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "2cfd10c3-dac1-4d7c-af56-5000d58a8c2c",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A particle is constrained to move in a circle with a 10-meter radius. At one instant, the particle\u2019s speed is 10 meters per second and is increasing at a rate of 10 meters per second squared. The angle between the particle\u2019s velocity and acceleration vectors is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A hurricane's eye wall is moving in a circular path with a 50-kilometer radius around the storm center. At one instant, the tangential wind speed is 60 meters per second and is increasing at a rate of 60 meters per second squared. The angle between the wind velocity vector and the total acceleration vector is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "2c39f451-5dae-4ed5-8230-01e2bd728094",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A particle is constrained to move in a circle with a 10-meter radius. At one instant, the particle\u2019s speed is 10 meters per second and is increasing at a rate of 10 meters per second squared. The angle between the particle\u2019s velocity and acceleration vectors is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A point on Earth's equator moves in a circular path with a 6,371-kilometer radius due to Earth's rotation. At one instant, the tangential velocity is 464 meters per second and the rate of change of this velocity (due to tidal forces) is 0.0334 meters per second squared. The angle between the velocity vector and the total acceleration vector is\nA) 0\u00b0\nB) 30\u00b0\nC) 45\u00b0\nD) 60\u00b0",
+      "answer": "C) 45\u00b0",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "3dfcfb71-2467-4486-8f2b-d68175b4d44d",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Which of the following was not cited as evidence for life in the martian meteorite ALH84001?\nA) Complex organic molecules specifically PAHs\nB) Magnetite grains similar to those formed by bacteria on Earth\nC) Carbonate minerals indicating a thicker warmer Martian atmosphere\nD) Amino acids with a preferred orientation or \"chirality\"",
+      "answer": "D) Amino acids with a preferred orientation or \"chirality\"",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following was NOT cited as evidence supporting the endosymbiotic theory for the origin of mitochondria?\nA) Mitochondria have their own circular DNA similar to bacterial genomes\nB) Mitochondria have double membranes consistent with engulfment by phagocytosis\nC) Mitochondrial ribosomes are 70S like bacterial ribosomes rather than 80S like eukaryotic ribosomes\nD) Mitochondria produce cellulose for structural support like plant cell walls",
+      "answer": "D) Mitochondria produce cellulose for structural support like plant cell walls",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "dfd7d624-a66f-4a2d-bc59-744b3e3397e3",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "During a study session about evolution, one of your fellow students remarks, \"The giraffe stretched its neck while reaching for higher leaves; its offspring inherited longer necks as a result.\" Which statement is most likely to be helpful in correcting this student's misconception?\nA) Characteristics acquired during an organism's life are generally not passed on through genes.\nB) Spontaneous mutations can result in the appearance of new traits.\nC) Only favorable adaptations have survival value.\nD) Disuse of an organ may lead to its eventual disappearance.",
+      "answer": "A) Characteristics acquired during an organism's life are generally not passed on through genes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "During a discussion about atmospheric circulation, a student observes a weather map and remarks, \"This high-pressure system has been stationary for three days, strengthening in place; future high-pressure systems in this region will inherit this same stationary tendency.\" Which statement is most likely to be helpful in correcting this student's misconception?\nA) Atmospheric pressure patterns are determined by current conditions, not inherited from previous pressure systems.\nB) Blocking patterns can result in the appearance of persistent weather features.\nC) Only strong pressure gradients have significant effects on weather.\nD) Weakening of jet stream flow may lead to the eventual disappearance of pressure systems.",
+      "answer": "A) Atmospheric pressure patterns are determined by current conditions, not inherited from previous pressure systems.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "8f14a4b2-e885-47e4-9fe8-0f105733f0b5",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "As more lamps are connected in parallel in a circuit, the current in the power source\nA) increases\nB) decreases\nC) remains the same\nD) Not enough information to say",
+      "answer": "A) increases",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "As more stomata on a leaf surface open in response to light, the total transpiration rate of the leaf\nA) increases\nB) decreases\nC) remains the same\nD) Not enough information to say",
+      "answer": "A) increases",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.833333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "4d2b1122-da5b-4f7a-9d59-0eac8e80ed07",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of these is a statement that Darwin would have rejected?\nA) Environmental change plays a role in evolution.\nB) The smallest entity that can evolve is an individual organism.\nC) Individuals can acquire new characteristics as they respond to new environments or situations.\nD) Inherited variation in a population is a necessary precondition for natural selection to operate.",
+      "answer": "B) The smallest entity that can evolve is an individual organism.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of these is a statement that Gilbert would have rejected in his theory of fluvial geomorphology?\nA) Changes in discharge and sediment load play a role in river channel evolution.\nB) The smallest entity that can establish equilibrium in a river system is a single grain of sediment.\nC) River channels can acquire new morphologies as they respond to changes in base level or climate.\nD) Variation in gradient and discharge within a drainage basin is a necessary precondition for understanding channel patterns.",
+      "answer": "B) The smallest entity that can establish equilibrium in a river system is a single grain of sediment.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 4.333333333333333,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "237e2273-cde2-4bf4-90b1-7b9337a10a82",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "An electric dipole consisting of charges of magnitude $1.50 \\mathrm{nC}$ separated by $6.20 \\mu \\mathrm{m}$ is in an electric field of strength 1100 $\\mathrm{N} / \\mathrm{C}$. What is the magnitude of the electric dipole moment?",
+      "answer": "9.30",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A mineral sample has a density of 2650 kg/m\u00b3 and occupies a volume of 3.51 \u00d7 10\u207b\u2076 m\u00b3. What is the mass of the mineral sample?",
+      "answer": "9.30 \u00d7 10\u207b\u00b3 kg or 9.30 g",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "0bbf1f18-69e3-4c57-8542-0bfce7bbb7e2",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Substances whose Lewis structures must be drawn with an unpaired electron are called\nA) ionic compounds\nB) free radicals\nC) resonance structures\nD) polar molecules",
+      "answer": "B) free radicals",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Organisms that produce their own organic compounds from inorganic substances using light or chemical energy are called\nA) heterotrophs\nB) autotrophs\nC) decomposers\nD) parasites",
+      "answer": "B) autotrophs",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "5475b26e-8731-4176-935b-a85a3ed62114",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Planetary rings are\nA) known to exist for all of the jovian planets.\nB) composed of a large number of individual particles that orbit their planet in accord with Kepler's third law.\nC) nearer to their planet than any of the planet's large moons.\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Homologous chromosomes are\nA) present as pairs in diploid organisms, with one chromosome inherited from each parent.\nB) similar in size, shape, and genetic content, carrying genes for the same traits at corresponding loci.\nC) separated during meiosis I, resulting in haploid daughter cells with one chromosome from each homologous pair.\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "baaf1083-f94c-4784-8c0d-0cf7c5979d7c",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "During a study session about evolution, one of your fellow students remarks, \"The giraffe stretched its neck while reaching for higher leaves; its offspring inherited longer necks as a result.\" Which statement is most likely to be helpful in correcting this student's misconception?\nA) Characteristics acquired during an organism's life are generally not passed on through genes.\nB) Spontaneous mutations can result in the appearance of new traits.\nC) Only favorable adaptations have survival value.\nD) Disuse of an organ may lead to its eventual disappearance.",
+      "answer": "A) Characteristics acquired during an organism's life are generally not passed on through genes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "While studying rock formation, a student examines a metamorphic rock and states, \"This rock was heated and compressed underground; it will pass on its metamorphic characteristics to sediments that form from it.\" Which statement is most likely to be helpful in correcting this student's misconception?\nA) Metamorphic minerals and textures are not inherited by sedimentary rocks formed from their weathered products.\nB) Extreme pressure can cause sudden transformation of rock types.\nC) Only certain metamorphic grades produce stable mineral assemblages.\nD) Lack of tectonic activity may lead to the eventual disappearance of metamorphic rocks.",
+      "answer": "A) Metamorphic minerals and textures are not inherited by sedimentary rocks formed from their weathered products.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "e1841178-5da6-43d5-9362-a7ee8e30acec",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Let $X$ equal the maximal oxygen intake of a human on a treadmill, where the measurements are in milliliters of oxygen per minute per kilogram of weight. Assume that, for a particular population, the mean of $X$ is $\\mu=$ 54.030 and the standard deviation is $\\sigma=5.8$. Let $\\bar{X}$ be the sample mean of a random sample of size $n=47$. Find $P(52.761 \\leq \\bar{X} \\leq 54.453)$, approximately.",
+      "answer": "0.6247",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "Let Y equal the molar concentration of a sodium chloride solution prepared in a chemistry laboratory, where measurements are in moles per liter. Assume that, for a particular preparation method, the mean of Y is \u03bc = 0.850 M and the standard deviation is \u03c3 = 0.042 M. Let \u0232 be the sample mean of a random sample of size n = 36 preparations. Find P(0.836 \u2264 \u0232 \u2264 0.859), approximately.",
+      "answer": "0.6247",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "80ef70aa-f5e6-45fb-9d37-62f7b029398f",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Why are the season's in Mars' southern hemisphere so extreme?\nA) because Mars is farther from the sun than the Earth\nB) because Mars has more carbon dioxide in its atmosphere than the Earth\nC) because Mars has a more eccentric orbit than the Earth\nD) because Mars' axis is more tilted than the Earth's",
+      "answer": "C) because Mars has a more eccentric orbit than the Earth",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Why does the Atacama Desert in Chile experience such extreme aridity compared to other deserts at similar latitudes?\nA) because the Atacama is at a higher elevation than other deserts\nB) because the Atacama receives less solar radiation than other deserts\nC) because the Atacama is in a rain shadow created by the Andes Mountains\nD) because the Atacama has less vegetation cover than other deserts",
+      "answer": "C) because the Atacama is in a rain shadow created by the Andes Mountains",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 4.666666666666667,
+        "overall": 4.416666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "b3cdf911-c15b-4ae9-ba73-c7f38d38332b",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "The lowest-frequency pure-rotational absorption line of ${ }^{12} \\mathrm{C}^{32} \\mathrm{~S}$ occurs at $48991.0 \\mathrm{MHz}$. Find the bond distance in ${ }^{12} \\mathrm{C}^{32} \\mathrm{~S}$.",
+      "answer": "1.5377",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "An enzyme-catalyzed reaction follows Michaelis-Menten kinetics with a maximum velocity (Vmax) of 120 \u03bcmol/min and a Michaelis constant (Km) of 2.5 mM. If the initial reaction velocity is measured to be 96 \u03bcmol/min, calculate the substrate concentration [S] (in mM) at which this velocity occurs.",
+      "answer": "10 mM",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "d3860aa9-e950-4562-87ae-1eba84b9421e",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "The resolution of a telescope is a measure of its:\nA) Ability to magnify distant objects\nB) Ability to measure the angular separation of objects\nC) Ability to measure the distance between objects\nD) Light-collecting efficiency",
+      "answer": "B) Ability to measure the angular separation of objects",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The specificity of an antibody is a measure of its:\nA) Ability to amplify immune responses\nB) Ability to distinguish between different antigens\nC) Ability to measure the concentration of antigens\nD) Antigen-binding capacity",
+      "answer": "B) Ability to distinguish between different antigens",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "c4f9f5a4-c680-4b59-90ff-a28b8eb86a2e",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following is the source of oxygen produced during photosynthesis?\nA) H2O\nB) H2O2\nC) CO2\nD) CO",
+      "answer": "A) H2O",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following is the primary source of carbon in carbonate rocks such as limestone?\nA) Volcanic outgassing of CO2\nB) Atmospheric CO2 dissolved in ocean water\nC) Organic matter from decomposed plants\nD) Methane from deep-sea vents",
+      "answer": "B) Atmospheric CO2 dissolved in ocean water",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 5.0,
+        "overall": 4.333333333333334
+      }
+    }
+  },
+  {
+    "pair_id": "30548af9-b4c1-4f01-92a1-1f12ac341355",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which describes brightly colored peacocks mating more frequently than drab peacocks?\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) sexual selection",
+      "answer": "D) sexual selection",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which describes the process where fine clay particles remain suspended in a river during low flow conditions while coarse sand particles settle out?\nA) hydraulic sorting\nB) chemical precipitation\nC) turbidity current\nD) differential settling by grain size",
+      "answer": "D) differential settling by grain size",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.6666666666666665,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.25
+      }
+    }
+  },
+  {
+    "pair_id": "3085eb55-4906-49f2-9736-4d025bd5ad6a",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The half-life of ${ }^{238} \\mathrm{U}$ is $4.5 \\times 10^9$ years. How many disintegrations occur in $1 \\mathrm{~min}$ for a $10 \\mathrm{mg}$ sample of this element?",
+      "answer": "1.43",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "The half-life of $^{14}\\mathrm{C}$ (carbon-14) is $5730$ years. An ancient wooden artifact contains $2.5$ mg of $^{14}\\mathrm{C}$. How many $^{14}\\mathrm{C}$ atoms disintegrate per minute in this sample?",
+      "answer": "1.64 \u00d7 10^7 disintegrations/min",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "dc8c034f-87b9-49bf-8620-f4436260a15d",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following is the source of oxygen produced during photosynthesis?\nA) H2O\nB) H2O2\nC) CO2\nD) CO",
+      "answer": "A) H2O",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following is the primary source of energy that drives Earth's water cycle?\nA) Geothermal heat from Earth's core\nB) Solar radiation from the Sun\nC) Tidal forces from the Moon\nD) Radioactive decay in the crust",
+      "answer": "B) Solar radiation from the Sun",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "4b1f37f2-51cc-4a15-9ca8-f11b1747349e",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "A Mars year is approximately how many Earth years long?\nA) 1/2\nB) 1\nC) 2\nD) 4",
+      "answer": "C) 2",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The half-life of carbon-14 is approximately how many years?\nA) 57\nB) 570\nC) 5,700\nD) 57,000",
+      "answer": "C) 5,700",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "2fb1a9d3-79d6-4d7c-9c93-4819e791be03",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "In reference to a segment of DNA, which of the following molecules contains the fewest number of nucleotides?\nA) a single strand of the original DNA segment\nB) a single strand of the original DNA segment after a point mutation\nC) the primary RNA transcript (before splicing) from the original DNA\nD) a single strand of complementary DNA (cDNA) made from the original DNA",
+      "answer": "D) a single strand of complementary DNA (cDNA) made from the original DNA",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "In reference to a complete weather system lifecycle, which of the following atmospheric records contains the fewest number of distinct pressure measurements?\nA) hourly barometric readings throughout the entire cyclone lifecycle\nB) hourly barometric readings after a data logger malfunction affected one reading\nC) the continuous analog pressure trace (before digitization) from the entire event\nD) a synoptic analysis showing only the pressure values at standard reporting times",
+      "answer": "D) a synoptic analysis showing only the pressure values at standard reporting times",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.333333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "d62602ce-bc05-4e7d-bb5c-e9f3d3e7721d",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "During the study of the reaction A \u2192 2B, a chemist constructs several graphs. The graph of [A] versus time and the graph of ln [A] versus time both give a curved line; however, the graph of 1/[A] versus time and gives a straight line. This implies the rate law is\nA) Rate = k[A]\nB) Rate = k[A]^2\nC) Rate = k[A]^0\nD) Rate = k[A]^-1",
+      "answer": "B) Rate = k[A]^2",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A geologist studying radioactive decay of uranium-238 creates several graphs. The graph of N (number of atoms) versus time and the graph of ln N versus time both give a curved line; however, the graph of ln N versus time gives a straight line with negative slope. This implies the decay follows:\nA) Zero-order kinetics (dN/dt = -k)\nB) First-order kinetics (dN/dt = -kN)\nC) Second-order kinetics (dN/dt = -kN\u00b2)\nD) Inverse-order kinetics (dN/dt = -k/N)",
+      "answer": "B) First-order kinetics (dN/dt = -kN)",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.0,
+        "domain_independence": 4.333333333333333,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 4.666666666666667,
+        "overall": 4.166666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "32389b98-4ed3-4f66-93f6-fd1acd6eef55",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The resolution of a telescope is a measure of its:\nA) Ability to magnify distant objects\nB) Ability to measure the angular separation of objects\nC) Ability to measure the distance between objects\nD) Light-collecting efficiency",
+      "answer": "B) Ability to measure the angular separation of objects",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The sorting of sediment is a measure of its:\nA) Ability to resist compaction under pressure\nB) Ability to indicate uniformity of grain sizes\nC) Ability to determine total grain volume\nD) Chemical composition and mineral content",
+      "answer": "B) Ability to indicate uniformity of grain sizes",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "c832dec7-78d5-4573-9d5c-f9d09f1bc46f",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "During a study session about evolution, one of your fellow students remarks, \"The giraffe stretched its neck while reaching for higher leaves; its offspring inherited longer necks as a result.\" Which statement is most likely to be helpful in correcting this student's misconception?\nA) Characteristics acquired during an organism's life are generally not passed on through genes.\nB) Spontaneous mutations can result in the appearance of new traits.\nC) Only favorable adaptations have survival value.\nD) Disuse of an organ may lead to its eventual disappearance.",
+      "answer": "A) Characteristics acquired during an organism's life are generally not passed on through genes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "During a geology field trip, a student observes that a river valley has steep walls and comments, \"The river carved this valley quickly during last year's flood; the valley will remain this shape permanently.\" Which statement is most likely to be helpful in correcting this student's misconception?\nA) Weathering and erosion are continuous processes that gradually modify landforms over long time periods.\nB) Catastrophic events can create sudden changes in landscape features.\nC) Only resistant rock types form permanent landscape features.\nD) Lack of precipitation may lead to the eventual disappearance of river valleys.",
+      "answer": "A) Weathering and erosion are continuous processes that gradually modify landforms over long time periods.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "f6ee302d-2e92-44dd-b19a-8b62caab3fbd",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Determine the energies and degeneracies of the lowest four energy levels of an ${ }^1 \\mathrm{H}^{35} \\mathrm{Cl}$ molecule freely rotating in three dimensions. What is the frequency of the transition between the lowest two rotational levels? The moment of inertia of an ${ }^1 \\mathrm{H}^{35} \\mathrm{Cl}$ molecule is $2.6422 \\times 10^{-47} \\mathrm{~kg} \\mathrm{~m}^2$.",
+      "answer": "635.7",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "An enzyme-catalyzed reaction follows Michaelis-Menten kinetics with a maximum velocity V_max of 120 \u03bcmol/(min\u00b7mg enzyme) and a Michaelis constant K_m of 2.5 mM. What is the initial reaction velocity when the substrate concentration [S] is 8.0 mM? Use the Michaelis-Menten equation to calculate the velocity.",
+      "answer": "91.4 \u03bcmol/(min\u00b7mg enzyme)",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "067e05f2-fc18-4a01-bcf0-b4013b29b324",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The flight of a blimp best illustrates\nA) Archimedes\u2019 principle\nB) Pascal\u2019s principle\nC) Bernoulli\u2019s principle\nD) Boyle\u2019s law",
+      "answer": "A) Archimedes\u2019 principle",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The ability of soap to clean oil from dishes best illustrates\nA) Henry's law\nB) The common ion effect\nC) Amphipathic molecular behavior\nD) Hess's law",
+      "answer": "C) Amphipathic molecular behavior",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "ba696e9e-39d8-41c5-b361-9c2d8e827a7f",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A table supports a wooden block placed on the tabletop. Which fundamental force of nature is responsible for this interaction, and why?\nA) The electric force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.\nB) The gravitational force, because by F = GMm/r^2, the force of the table on the wood at that close range is sufficient to balance the force of the Earth on the wood.\nC) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.\nD) The strong nuclear force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.",
+      "answer": "C) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Atmospheric molecules are prevented from escaping into space despite their thermal motion. Which fundamental force of nature is primarily responsible for retaining Earth's atmosphere, and why?\nA) The electromagnetic force, because the ionosphere's charged particles create a magnetic barrier that reflects neutral molecules back toward Earth.\nB) The strong nuclear force, because atmospheric nuclei are bound to nuclei in Earth's crust.\nC) The gravitational force, because Earth's mass creates a gravitational field (g = GM/r\u00b2) that exerts an attractive force on atmospheric molecules sufficient to overcome their average thermal kinetic energy.\nD) The gravitational force, because solar wind pressure compresses the atmosphere against Earth's surface.",
+      "answer": "C) The gravitational force, because Earth's mass creates a gravitational field (g = GM/r\u00b2) that exerts an attractive force on atmospheric molecules sufficient to overcome their average thermal kinetic energy.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 4.666666666666667,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.833333333333334
+      }
+    }
+  },
+  {
+    "pair_id": "e1f2c44d-0ef1-4106-bff1-648a327bc6fa",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Let $X$ and $Y$ have a bivariate normal distribution with correlation coefficient $\\rho$. To test $H_0: \\rho=0$ against $H_1: \\rho \\neq 0$, a random sample of $n$ pairs of observations is selected. Suppose that the sample correlation coefficient is $r=0.68$. Using a significance level of $\\alpha=0.05$, find the smallest value of the sample size $n$ so that $H_0$ is rejected.",
+      "answer": "9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "An oceanographer is investigating the relationship between sea surface temperature and salinity. Let T and S have a bivariate normal distribution with correlation coefficient \u03c1. To test H\u2080: \u03c1=0 against H\u2081: \u03c1 \u2260 0, a random sample of n oceanographic stations is surveyed. Suppose that the sample correlation coefficient is r=0.68. Using a significance level of \u03b1=0.05, find the smallest value of the sample size n so that H\u2080 is rejected.",
+      "answer": "9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 3.6666666666666665,
+        "difficulty_parity": 5.0,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "50adbd94-5ff1-4f8d-a961-af8f550c70cd",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "An electric dipole consisting of charges of magnitude $1.50 \\mathrm{nC}$ separated by $6.20 \\mu \\mathrm{m}$ is in an electric field of strength 1100 $\\mathrm{N} / \\mathrm{C}$. What is the magnitude of the electric dipole moment?",
+      "answer": "9.30",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A glacier is flowing down a valley with a surface velocity of 125 m/yr and experiences basal sliding that contributes 42.0% of the total surface motion. What is the velocity contribution from basal sliding?",
+      "answer": "52.5 m/yr",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "f6e3962d-26c4-4532-9b8f-b1aec1922e20",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "A table supports a wooden block placed on the tabletop. Which fundamental force of nature is responsible for this interaction, and why?\nA) The electric force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.\nB) The gravitational force, because by F = GMm/r^2, the force of the table on the wood at that close range is sufficient to balance the force of the Earth on the wood.\nC) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.\nD) The strong nuclear force, because the protons in the nuclei of the top atomic layer of the table repel the nuclei in the bottom atomic layer of the wood.",
+      "answer": "C) The electric force, because the outer electrons in the top atomic layer of the table repel the outer electrons in the bottom atomic layer of the wood.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A continental plate overrides an oceanic plate at a convergent boundary, causing the oceanic plate to descend into the mantle. Which fundamental force of nature is primarily responsible for the sinking of the denser oceanic plate, and why?\nA) The electromagnetic force, because the charged particles in the oceanic plate are attracted to opposite charges in the mantle.\nB) The gravitational force, because the denser oceanic plate experiences a greater gravitational pull per unit volume than the surrounding asthenosphere, causing it to sink.\nC) The strong nuclear force, because the atomic nuclei in the oceanic plate are attracted to nuclei in the mantle below.\nD) The gravitational force, because the Earth's rotation creates a centrifugal effect that pushes the denser plate downward.",
+      "answer": "B) The gravitational force, because the denser oceanic plate experiences a greater gravitational pull per unit volume than the surrounding asthenosphere, causing it to sink.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "c062b85e-1677-4324-a6da-3bfeb0cb42f4",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The Arrhenius equation may be used to determine\nA) the activation energy of a reaction\nB) the rate constant at various temperatures\nC) the shelf life of a consumer product or drug\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The Coriolis effect may be used to explain\nA) the deflection of wind patterns on a rotating Earth\nB) the direction of rotation in cyclones and anticyclones\nC) the circulation patterns of major ocean currents\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "709a9b75-05d6-467b-9171-946106c9fd6f",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "More than a dozen species of Darwin's finches with various specialized adaptations inhabit the Gal\u00e1pagos Islands. Each species possesses a specialized adaptation for obtaining food. Why is it that similar adaptations do not exist among the finches of the South American mainland, the presumed origin of the Gal\u00e1pagos finch ancestor?\nA) The various foods available on the mainland are different than those on the Gal\u00e1pagos Islands.\nB) South American predators limited evolution of the mainland finch.\nC) Reproductive isolation is not possible on the mainland.\nD) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "answer": "D) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Hydrothermal vent communities in the deep ocean contain numerous specialized species of organisms (tube worms, vent crabs, specialized fish) that thrive in these extreme environments. Each species possesses specialized adaptations for obtaining nutrients from chemosynthetic bacteria. Why is it that similar adaptations do not exist among marine organisms in the well-lit shallow coastal waters, where ancestral forms of these deep-sea organisms likely originated?\nA) The chemical composition of shallow water is different than that of hydrothermal vents.\nB) Shallow water predators limited evolution of coastal organisms.\nC) Reproductive isolation is not possible in shallow coastal environments.\nD) The available niches that deep-sea vent organisms exploited were already occupied by other species using photosynthesis-based food webs in shallow waters.",
+      "answer": "D) The available niches that deep-sea vent organisms exploited were already occupied by other species using photosynthesis-based food webs in shallow waters.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "9282bfeb-9fd7-4191-bc1e-153bd4e8c67e",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "Planetary rings are\nA) known to exist for all of the jovian planets.\nB) composed of a large number of individual particles that orbit their planet in accord with Kepler's third law.\nC) nearer to their planet than any of the planet's large moons.\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Mitochondria are\nA) known to exist in all eukaryotic cells.\nB) composed of an outer membrane and an inner membrane that is folded into cristae to increase surface area.\nC) the site of cellular respiration where ATP is produced through oxidative phosphorylation.\nD) all of the above",
+      "answer": "D) all of the above",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "97284a13-aff6-4b75-abd2-6caa38537b3e",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. The volume of a certain liquid varies with temperature as\r\n$$\r\nV=V^{\\prime}\\left\\{0.75+3.9 \\times 10^{-4}(T / \\mathrm{K})+1.48 \\times 10^{-6}(T / \\mathrm{K})^2\\right\\}\r\n$$\r\nwhere $V^{\\prime}$ is its volume at $300 \\mathrm{~K}$. Calculate its expansion coefficient, $\\alpha$, at $320 \\mathrm{~K}$.",
+      "answer": "0.00131",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "The density of seawater at a certain location varies with depth as \u03c1 = \u03c1\u2080{1.00 + 4.5 \u00d7 10\u207b\u2076(z/m) + 1.2 \u00d7 10\u207b\u00b9\u00b9(z/m)\u00b2} where \u03c1\u2080 is the density at the surface (1025 kg/m\u00b3) and z is the depth in meters. Calculate the compressibility coefficient, \u03b2 = (1/\u03c1)(\u2202\u03c1/\u2202z), at a depth of 2000 m.",
+      "answer": "4.548 \u00d7 10\u207b\u2076 m\u207b\u00b9",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.5,
+        "self_containment": 5.0,
+        "overall": 4.875
+      }
+    }
+  },
+  {
+    "pair_id": "80bef06a-efee-46f2-84d7-b43bae00770b",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Consider three identical, ideal capacitors. The first capacitor is charged to a voltage and then disconnected from the battery. The other two capacitors, initially uncharged and connected in series, are then connected across the first capacitor. What is the final voltage on the first capacitor?\nA) V_0/5\nB) V_0/3\nC) V_0/2\nD) 2V_0/3",
+      "answer": "D) 2V_0/3",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Consider three identical containers of ideal gas, each with volume V and initially at the same temperature T. The first container is filled with n moles of gas at pressure P_0. The other two containers, initially evacuated and connected in series (sharing volume), are then connected to the first container and the system reaches equilibrium at constant temperature. What is the final pressure in the first container?",
+      "answer": "2P_0/3",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "a9d0eef8-bdaf-4bf6-9f1d-fa97654fc66c",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following statements best summarizes evolution as it is viewed today?\nA) It is goal-directed.\nB) It represents the result of selection for acquired characteristics.\nC) It is synonymous with the process of gene flow.\nD) It is the differential survival and reproduction of the most-fit phenotypes.",
+      "answer": "D) It is the differential survival and reproduction of the most-fit phenotypes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following statements best characterizes plate tectonics as it is understood today?\nA) It is driven exclusively by gravitational forces from the Moon.\nB) It represents the result of Earth's initial formation and cooling.\nC) It is synonymous with the process of continental drift.\nD) It is the movement of lithospheric plates driven by mantle convection and resulting in various geological phenomena.",
+      "answer": "D) It is the movement of lithospheric plates driven by mantle convection and resulting in various geological phenomena.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "3fb0309b-87e5-4c9b-91bb-a7133c2af1ff",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "A convex lens of focal length f = 0.2 m is used to examine a small coin lying on a table. During the examination, the lens is held a distance 0.3 m above the coin and is moved slowly to a distance of 0.1 m above the coin. During this process, what happens to the image of the coin?\nA) The image continually increases in size.\nB) The image continually decreases in size.\nC) The image gets smaller at first and then bigger in size.\nD) The image flips over.",
+      "answer": "D) The image flips over.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A population of bacteria is growing in a culture with carrying capacity K = 10^8 cells/mL. Initially, the population density is 2.0 \u00d7 10^7 cells/mL and is allowed to grow until it reaches 5.0 \u00d7 10^8 cells/mL (through addition of nutrients that temporarily increase K, which then returns to original value). During this process, what happens to the per capita growth rate (r(1 - N/K))?\nA) The per capita growth rate continually increases.\nB) The per capita growth rate continually decreases.\nC) The per capita growth rate increases at first and then decreases.\nD) The per capita growth rate changes sign from positive to negative.",
+      "answer": "D) The per capita growth rate changes sign from positive to negative.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.6666666666666665,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.5
+      }
+    }
+  },
+  {
+    "pair_id": "8b42e5a6-0a8c-493b-863a-7bff28ee1cd5",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "In reference to a segment of DNA, which of the following molecules contains the fewest number of nucleotides?\nA) a single strand of the original DNA segment\nB) a single strand of the original DNA segment after a point mutation\nC) the primary RNA transcript (before splicing) from the original DNA\nD) a single strand of complementary DNA (cDNA) made from the original DNA",
+      "answer": "D) a single strand of complementary DNA (cDNA) made from the original DNA",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "In reference to a complete mineral crystal structure, which of the following descriptions contains the fewest number of atomic positions?\nA) all atomic positions in the complete unit cell of the original crystal\nB) all atomic positions in the complete unit cell after a substitution defect\nC) the extended crystal lattice (before identifying symmetry) showing multiple unit cells\nD) the asymmetric unit showing only symmetry-independent atomic positions",
+      "answer": "D) the asymmetric unit showing only symmetry-independent atomic positions",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "5fb49206-2baa-481d-83b6-2016dda919de",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Let $X$ equal the maximal oxygen intake of a human on a treadmill, where the measurements are in milliliters of oxygen per minute per kilogram of weight. Assume that, for a particular population, the mean of $X$ is $\\mu=$ 54.030 and the standard deviation is $\\sigma=5.8$. Let $\\bar{X}$ be the sample mean of a random sample of size $n=47$. Find $P(52.761 \\leq \\bar{X} \\leq 54.453)$, approximately.",
+      "answer": "0.6247",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "Let R equal the reaction rate constant for a first-order decomposition reaction measured in a kinetics laboratory, where measurements are in units of s\u207b\u00b9 \u00d7 10\u207b\u00b3. Assume that, for a particular experimental setup, the mean of R is \u03bc = 3.215 s\u207b\u00b9 \u00d7 10\u207b\u00b3 and the standard deviation is \u03c3 = 0.184 s\u207b\u00b9 \u00d7 10\u207b\u00b3. Let R\u0304 be the sample mean of a random sample of size n = 64 measurements. Find P(3.184 \u2264 R\u0304 \u2264 3.244), approximately.",
+      "answer": "0.6247",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "9e003f1b-e6b0-41b7-8504-353ce2c954f2",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following statements best summarizes evolution as it is viewed today?\nA) It is goal-directed.\nB) It represents the result of selection for acquired characteristics.\nC) It is synonymous with the process of gene flow.\nD) It is the differential survival and reproduction of the most-fit phenotypes.",
+      "answer": "D) It is the differential survival and reproduction of the most-fit phenotypes.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following statements best describes the water cycle as it is currently understood?\nA) It is a one-way transfer of water from oceans to land.\nB) It represents the result of water seeking its lowest energy state only.\nC) It is synonymous with the process of precipitation.\nD) It is the continuous circulation of water through Earth's systems driven by solar energy and gravity.",
+      "answer": "D) It is the continuous circulation of water through Earth's systems driven by solar energy and gravity.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "21548cc3-4cb0-4432-ab17-73f9fd14c514",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "Let $X$ equal the maximal oxygen intake of a human on a treadmill, where the measurements are in milliliters of oxygen per minute per kilogram of weight. Assume that, for a particular population, the mean of $X$ is $\\mu=$ 54.030 and the standard deviation is $\\sigma=5.8$. Let $\\bar{X}$ be the sample mean of a random sample of size $n=47$. Find $P(52.761 \\leq \\bar{X} \\leq 54.453)$, approximately.",
+      "answer": "0.6247",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "Let E equal the activation energy of a catalyzed reaction determined using the Arrhenius equation, where measurements are in kilojoules per mole. Assume that, for a particular catalyst system, the mean of E is \u03bc = 78.640 kJ/mol and the standard deviation is \u03c3 = 4.2 kJ/mol. Let \u0112 be the sample mean of a random sample of size n = 49 determinations. Find P(77.520 \u2264 \u0112 \u2264 79.412), approximately.",
+      "answer": "0.6247",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "5840feca-14b9-4cb7-aa1e-eca7ea484195",
+    "mapping": "physics_to_earth_science",
+    "source_domain": "physics",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of these does NOT belong in the family of electromagnetic waves?\nA) Light\nB) Sound\nC) Radio waves\nD) X-rays",
+      "answer": "B) Sound",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of these does NOT belong to the family of silicate minerals?\nA) Quartz\nB) Feldspar\nC) Calcite\nD) Mica",
+      "answer": "C) Calcite",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "c3ffc4c0-fbe5-4f12-a232-5303f5333c07",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "A torque is a force\nA) like any other force\nB) multiplied by a lever arm\nC) that is fictitious\nD) that accelerates things",
+      "answer": "B) multiplied by a lever arm",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "A reflex arc is a neural pathway\nA) like any other neural pathway\nB) that bypasses the brain for rapid response\nC) that only exists in invertebrates\nD) that requires conscious thought",
+      "answer": "B) that bypasses the brain for rapid response",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "6fe33cfd-d6ae-4c81-8742-f9dc18674e76",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. A chemical reaction takes place in a container of cross-sectional area $100 \\mathrm{~cm}^2$. As a result of the reaction, a piston is pushed out through $10 \\mathrm{~cm}$ against an external pressure of $1.0 \\mathrm{~atm}$. Calculate the work done by the system.",
+      "answer": "-100",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A cylindrical root cell has a cross-sectional area of 100 \u03bcm\u00b2 and elongates by 10 \u03bcm during growth against a turgor pressure of 1.0 MPa. Calculate the work done by the cell during this expansion.",
+      "answer": "-100 pJ",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "3a51cc71-ce6b-4f35-938b-c8f99b9ebb3d",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Three 25.00 mL samples of approximately 0.10 M phenol, C6H5OH, Ka = 1.0 \u00d7 10^-10 were removed from a container and placed in separate 250 mL beakers. The samples were titrated with standard potassium hydroxide, KOH, solution. Cresol red was the acid-base indicator used in the titration. The samples required 31.75, 32.38, and 41.75 mL to reach the endpoint. Which of the following might explain why one of the samples required significantly more base to reach the endpoint?\nA) The indicator was added too late.\nB) The wrong indicator was used.\nC) There was a base contaminating the unclean beaker.\nD) There was an acid contaminating the unclean beaker.",
+      "answer": "D) There was an acid contaminating the unclean beaker.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Three 100.0 g samples of approximately 2.5% organic carbon soil were removed from a collection site and placed in separate crucibles. The samples were analyzed using loss-on-ignition at 550\u00b0C to determine organic matter content. A muffle furnace and precision balance were used for the analysis. The samples showed mass losses of 4.82, 4.91, and 6.73 g. Which of the following might explain why one of the samples showed significantly more mass loss?",
+      "answer": "D) There was organic debris contaminating the unclean crucible.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "4a864802-64fc-40e6-a738-f785d3e6a0cf",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The factors, both of which will increase the magnetic field strength of an electromagnet, are\nA) increased electrical current and fewer coils of wire\nB) increased diameter of coil and an increase in the number of coils\nC) an increase in the electrical current and using a strong ferromagnetic material like iron\nD) using an air core instead of iron and increasing the diameter of the coil",
+      "answer": "C) an increase in the electrical current and using a strong ferromagnetic material like iron",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The factors, both of which will increase the rate of a chemical reaction, are\nA) increased temperature and decreased concentration of reactants\nB) increased surface area of solid reactants and decreased temperature\nC) increased temperature and using a catalyst\nD) using an inhibitor instead of a catalyst and increasing the pressure",
+      "answer": "C) increased temperature and using a catalyst",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "fbd62250-1f60-4dda-bdf5-721f642edcd8",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "More than a dozen species of Darwin's finches with various specialized adaptations inhabit the Gal\u00e1pagos Islands. Each species possesses a specialized adaptation for obtaining food. Why is it that similar adaptations do not exist among the finches of the South American mainland, the presumed origin of the Gal\u00e1pagos finch ancestor?\nA) The various foods available on the mainland are different than those on the Gal\u00e1pagos Islands.\nB) South American predators limited evolution of the mainland finch.\nC) Reproductive isolation is not possible on the mainland.\nD) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "answer": "D) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Lake Baikal in Siberia contains over 350 endemic species of amphipod crustaceans with diverse morphological and ecological specializations. Each species has evolved unique adaptations for exploiting different depth zones, substrates, and food sources in the lake. Why is it that similar levels of amphipod diversification do not exist in the Arctic Ocean, the likely source of the ancestral amphipods that colonized Lake Baikal?\nA) The water temperature in the Arctic Ocean is different than that in Lake Baikal.\nB) Arctic Ocean predators limited evolution of amphipod populations.\nC) Reproductive isolation is not possible in the open Arctic Ocean.\nD) The available ecological niches that Lake Baikal amphipods exploited were already occupied by other crustacean species and marine organisms in the Arctic Ocean.",
+      "answer": "D) The available ecological niches that Lake Baikal amphipods exploited were already occupied by other crustacean species and marine organisms in the Arctic Ocean.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "b2494554-a4a8-47ac-830c-53d60ec5b22b",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following is the strongest Br\u00f8nsted-Lowry acid?\nA) HBrO\nB) HBrO3\nC) HBrO2\nD) HBrO4",
+      "answer": "D) HBrO4",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following minerals has the highest hardness on the Mohs scale?\nA) Calcite\nB) Corundum\nC) Quartz\nD) Diamond",
+      "answer": "D) Diamond",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.75
+      }
+    }
+  },
+  {
+    "pair_id": "56df3cd2-fa8e-4aa1-9533-d00a41f64215",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "What is the Cassini division of Saturn's rings?\nA) a dark ring visible from Earth composed of dark dusty particles\nB) the most opaque ring of Saturn made of highly reflective ice particles\nC) the widest ring of Saturn located between two large ring gaps\nD) a large gap visible from Earth produced by an orbital resonance with the moon Mimas",
+      "answer": "D) a large gap visible from Earth produced by an orbital resonance with the moon Mimas",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "What is the synaptonemal complex during meiosis?\nA) a protein structure visible under electron microscopy composed of condensed DNA fibers\nB) the most stable chromosomal structure made of highly compacted sister chromatids\nC) the longest chromosomal structure located between two centromeric regions\nD) a protein scaffold visible under electron microscopy produced by homologous chromosome pairing during prophase I",
+      "answer": "D) a protein scaffold visible under electron microscopy produced by homologous chromosome pairing during prophase I",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "3597a704-012b-49a0-b85e-a741eb7e69b9",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The flight of a blimp best illustrates\nA) Archimedes\u2019 principle\nB) Pascal\u2019s principle\nC) Bernoulli\u2019s principle\nD) Boyle\u2019s law",
+      "answer": "A) Archimedes\u2019 principle",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The formation of a precipitate when two aqueous solutions are mixed best illustrates\nA) The solubility product principle\nB) Dalton's law of partial pressures\nC) The Arrhenius equation\nD) Gibbs free energy",
+      "answer": "A) The solubility product principle",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 5.0,
+        "overall": 4.666666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "d2658fb2-2f5a-4e7b-ab9f-8fe59d6b8ab6",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "The collision theory of reaction rates does not include\nA) the number of collisions per second\nB) the transition state\nC) the energy of each collision\nD) the orientation of each collision",
+      "answer": "B) the transition state",
+      "structure_type": "proportional_reasoning",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The induced fit model of enzyme action does not include\nA) conformational change of the enzyme\nB) substrate binding to active site\nC) formation of enzyme-substrate complex\nD) permanent denaturation of the enzyme",
+      "answer": "D) permanent denaturation of the enzyme",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "611ecaaa-cc27-43fa-9342-078aa56cf574",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Autoclaves that are used to sterilize surgical tools require a temperature of $120 .{ }^{\\circ} \\mathrm{C}$ to kill some bacteria. If water is used for this purpose, at what pressure must the autoclave operate?",
+      "answer": "1.95",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A population of bacteria doubles every 20 minutes under optimal growth conditions. If a culture starts with 500 bacteria, how many bacteria will be present after 3 hours?",
+      "answer": "256,000 bacteria",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 3.6666666666666665,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 5.0,
+        "overall": 4.333333333333333
+      }
+    }
+  },
+  {
+    "pair_id": "530d39dc-2d02-4533-971a-78bfe5434fd0",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Three 25.00 mL samples of approximately 0.10 M phenol, C6H5OH, Ka = 1.0 \u00d7 10^-10 were removed from a container and placed in separate 250 mL beakers. The samples were titrated with standard potassium hydroxide, KOH, solution. Cresol red was the acid-base indicator used in the titration. The samples required 31.75, 32.38, and 41.75 mL to reach the endpoint. Which of the following might explain why one of the samples required significantly more base to reach the endpoint?\nA) The indicator was added too late.\nB) The wrong indicator was used.\nC) There was a base contaminating the unclean beaker.\nD) There was an acid contaminating the unclean beaker.",
+      "answer": "D) There was an acid contaminating the unclean beaker.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Three 200.0 g samples of approximately 8% moisture sediment core were removed from a sealed container and placed in separate aluminum pans. The samples were dried in an oven at 105\u00b0C to determine water content. A drying oven and analytical balance were used for measurements. The samples showed mass losses of 15.84, 16.12, and 21.26 g. Which of the following might explain why one of the samples showed significantly more mass loss?",
+      "answer": "D) There was a hygroscopic salt contaminating the unclean pan.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "6e8e625e-6685-4799-95ea-788b2a70e9ad",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "As more lamps are connected in parallel in a circuit, the current in the power source\nA) increases\nB) decreases\nC) remains the same\nD) Not enough information to say",
+      "answer": "A) increases",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "As more capillaries in a tissue bed become perfused (open to blood flow), the total blood flow through that tissue\nA) increases\nB) decreases\nC) remains the same\nD) Not enough information to say",
+      "answer": "A) increases",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "bae115fb-ba55-4622-9cec-353f34de4da2",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "The model of light most supported by the photoelectric effect is the\nA) wave model\nB) particle model\nC) Both of these\nD) Neither of these",
+      "answer": "B) particle model",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The model of atomic structure most supported by the gold foil experiment (Rutherford scattering) is the\nA) plum pudding model\nB) nuclear model\nC) Both of these\nD) Neither of these",
+      "answer": "B) nuclear model",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "07af6f7a-78ef-4206-9168-119e09132d7c",
+    "mapping": "physics_to_chemistry",
+    "source_domain": "physics",
+    "target_domain": "chemistry",
+    "source": {
+      "question": "An urn contains eight red and seven blue balls. A second urn contains an unknown number of red balls and nine blue balls. A ball is drawn from each urn at random, and the probability of getting two balls of the same color is $151 / 300$. How many red balls are in the second urn?",
+      "answer": "11",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "physics",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A gas cylinder contains a mixture of 8 moles of nitrogen and 7 moles of oxygen. A second cylinder contains an unknown number of moles of nitrogen and 9 moles of oxygen. One mole is randomly removed from each cylinder, and the probability of removing two moles of the same gas is 151/300. How many moles of nitrogen are in the second cylinder?",
+      "answer": "11 moles",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "f5c4d888-e499-45cf-8c78-d41aedc7d846",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "The resolution of a telescope is a measure of its:\nA) Ability to magnify distant objects\nB) Ability to measure the angular separation of objects\nC) Ability to measure the distance between objects\nD) Light-collecting efficiency",
+      "answer": "B) Ability to measure the angular separation of objects",
+      "structure_type": "proportional_reasoning",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The acuity of a sensory receptor is a measure of its:\nA) Ability to amplify stimulus intensity\nB) Ability to distinguish between closely spaced stimuli\nC) Ability to measure absolute stimulus intensity\nD) Signal transduction efficiency",
+      "answer": "B) Ability to distinguish between closely spaced stimuli",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "fb6e4128-37d9-4831-949f-c8840ccd451e",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "When water evaporates from the surface of a pond, what happens to the remaining liquid water?\nA) The surface water cools.\nB) The surface water warms.\nC) The surface water temperature remains unchanged.\nD) The pH of the remaining water decreases.",
+      "answer": "A) The surface water cools.",
+      "structure_type": "proportional_reasoning",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "When glacial ice sublimates directly from solid to water vapor at high altitude in a dry climate, what happens to the temperature of the remaining ice surface?\nA) The ice surface cools.\nB) The ice surface warms.\nC) The ice surface temperature remains unchanged.\nD) The ice surface becomes more transparent.",
+      "answer": "A) The ice surface cools.",
+      "structure_type": "proportional_reasoning",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "95849991-ffe7-4c98-9fe4-d5ac9939695f",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of the following is the strongest Br\u00f8nsted-Lowry acid?\nA) HBrO\nB) HBrO3\nC) HBrO2\nD) HBrO4",
+      "answer": "D) HBrO4",
+      "structure_type": "two_step_causal_chain",
+      "domain": "chemistry",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of the following rock types has the highest typical density?\nA) Sandstone\nB) Granite\nC) Basalt\nD) Peridotite",
+      "answer": "D) Peridotite",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "e144e12a-11bb-4973-9d8b-32d1bf4a3233",
+    "mapping": "physics_to_biology",
+    "source_domain": "physics",
+    "target_domain": "biology",
+    "source": {
+      "question": "The greenish-blue color of ocean water is due mostly to light that hasn\u2019t been\nA) absorbed\nB) reflected\nC) scattered\nD) refracted",
+      "answer": "A) absorbed",
+      "structure_type": "two_step_causal_chain",
+      "domain": "physics",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "The yellow color of urine is due mostly to light that hasn't been\nA) absorbed\nB) reflected\nC) scattered\nD) refracted",
+      "answer": "A) absorbed",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "8eb83fa0-026d-42ff-af88-21737ee907a0",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. Calculate the standard enthalpy of solution of $\\mathrm{AgCl}(\\mathrm{s})$ in water from the enthalpies of formation of the solid and the aqueous ions.",
+      "answer": "+65.49",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "Calculate the standard enthalpy change for the weathering reaction of forsterite (Mg\u2082SiO\u2084) to form aqueous magnesium ions and silicic acid in water at 298.15 K. The standard enthalpy of formation of forsterite is -2174.0 kJ/mol, of Mg\u00b2\u207a(aq) is -466.85 kJ/mol, and of H\u2084SiO\u2084(aq) is -1449.4 kJ/mol. The reaction is: Mg\u2082SiO\u2084(s) + 4H\u2082O(l) \u2192 2Mg\u00b2\u207a(aq) + H\u2084SiO\u2084(aq) + 4OH\u207b(aq). The standard enthalpy of formation of H\u2082O(l) is -285.83 kJ/mol and of OH\u207b(aq) is -229.99 kJ/mol.",
+      "answer": "+91.5 kJ/mol",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 3.6666666666666665,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "c18c8c04-3bc6-4d47-ab21-83c53fbdb0af",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "What is the uncertainty of the momentum of an electron if we know its position is somewhere in a $10 \\mathrm{pm}$ interval?",
+      "answer": "6.6",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "What is the map distance between two genes if a test cross of a dihybrid organism produces 450 parental-type offspring and 50 recombinant-type offspring?",
+      "answer": "10 map units (or 10 centiMorgans)",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.333333333333333,
+        "self_containment": 5.0,
+        "overall": 4.666666666666666
+      }
+    }
+  },
+  {
+    "pair_id": "df5d03ce-1934-4ca3-8213-cf007716a803",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "The lowest-frequency pure-rotational absorption line of ${ }^{12} \\mathrm{C}^{32} \\mathrm{~S}$ occurs at $48991.0 \\mathrm{MHz}$. Find the bond distance in ${ }^{12} \\mathrm{C}^{32} \\mathrm{~S}$.",
+      "answer": "1.5377",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "The resting membrane potential of a neuron is measured to be -70 mV. If the intracellular potassium ion concentration is 140 mM and the extracellular potassium ion concentration is 5 mM, calculate the temperature (in Kelvin) at which this measurement was taken, assuming the membrane is permeable only to potassium ions. Use R = 8.314 J/(mol\u00b7K), F = 96485 C/mol, and z = +1 for K\u207a.",
+      "answer": "309.4 K",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.333333333333333,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.0,
+        "self_containment": 4.666666666666667,
+        "overall": 4.5
+      }
+    }
+  },
+  {
+    "pair_id": "28666d13-44bc-4d4a-9cb4-8d01c5f5204c",
+    "mapping": "biology_to_earth_science",
+    "source_domain": "biology",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "Which of these is a statement that Darwin would have rejected?\nA) Environmental change plays a role in evolution.\nB) The smallest entity that can evolve is an individual organism.\nC) Individuals can acquire new characteristics as they respond to new environments or situations.\nD) Inherited variation in a population is a necessary precondition for natural selection to operate.",
+      "answer": "B) The smallest entity that can evolve is an individual organism.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "biology",
+      "source_bench": "mmlu_stem"
+    },
+    "target": {
+      "question": "Which of these is a statement that Hutton would have rejected in his theory of uniformitarianism?\nA) Geological processes observable today have operated throughout Earth's history.\nB) The smallest time interval over which major geological changes occur is a single human lifetime.\nC) Rock formations can acquire new characteristics as they respond to erosion and deposition.\nD) The presence of sedimentary layers is a necessary precondition for interpreting Earth's geological history.",
+      "answer": "B) The smallest time interval over which major geological changes occur is a single human lifetime.",
+      "structure_type": "two_step_causal_chain",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "ed3a76c3-c1ab-490d-a7b3-c0bdd372417b",
+    "mapping": "chemistry_to_biology",
+    "source_domain": "chemistry",
+    "target_domain": "biology",
+    "source": {
+      "question": "Assume all gases are perfect unless stated otherwise. Unless otherwise stated, thermodynamic data are for 298.15 K. A chemical reaction takes place in a container of cross-sectional area $100 \\mathrm{~cm}^2$. As a result of the reaction, a piston is pushed out through $10 \\mathrm{~cm}$ against an external pressure of $1.0 \\mathrm{~atm}$. Calculate the work done by the system.",
+      "answer": "-100",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A contractile vacuole in a paramecium expels water through a pore of effective cross-sectional area 100 nm\u00b2. The water column is pushed out through a distance of 10 \u03bcm against an osmotic pressure difference of 1.0 \u00d7 10\u2074 Pa. Calculate the work done by the contractile vacuole.",
+      "answer": "-100 fJ",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "biology"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 5.0,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.916666666666667
+      }
+    }
+  },
+  {
+    "pair_id": "102cdb5e-9205-4ef4-bfdd-91587c273711",
+    "mapping": "chemistry_to_earth_science",
+    "source_domain": "chemistry",
+    "target_domain": "earth_science",
+    "source": {
+      "question": "The sedimentation coefficient of lysozyme $\\left(\\mathrm{M}=14,100 \\mathrm{~g} \\mathrm{~mol}^{-1}\\right)$ in water at $20^{\\circ} \\mathrm{C}$ is $1.91 \\times 10^{-13} \\mathrm{~s}$ and the specific volume is $0.703 \\mathrm{~cm}^3 \\mathrm{~g}^{-1}$. The density of water at this temperature is $0.998 \\mathrm{~g} \\mathrm{~cm}^{-3}$ and $\\eta=1.002 \\mathrm{cP}$. Assuming lysozyme is spherical, what is the radius of this protein?",
+      "answer": "1.94",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "chemistry",
+      "source_bench": "scibench"
+    },
+    "target": {
+      "question": "A spherical hailstone falls through the atmosphere at a terminal velocity of 12.5 m/s. The density of ice is 917 kg/m\u00b3 and the density of air at the altitude of interest is 1.20 kg/m\u00b3. The dynamic viscosity of air is 1.83 \u00d7 10\u207b\u2075 Pa\u00b7s. Assuming Stokes flow conditions apply, what is the radius of the hailstone?",
+      "answer": "2.01 mm",
+      "structure_type": "formula_recall_and_substitute",
+      "domain": "earth_science"
+    },
+    "verification_status": "auto_accepted",
+    "verification_scores": {
+      "avg": {
+        "logical_equivalence": 4.666666666666667,
+        "domain_independence": 5.0,
+        "difficulty_parity": 4.666666666666667,
+        "self_containment": 5.0,
+        "overall": 4.833333333333334
+      }
+    }
+  }
+]

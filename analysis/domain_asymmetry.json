@@ -1,0 +1,239 @@
+{
+  "model_pair_rows": [
+    {
+      "pair": "o3-mini / GPT-4o-mini",
+      "reasoning": "openai/o3-mini",
+      "standard": "openai/gpt-4o-mini-2024-07-18",
+      "physics": {
+        "reasoning_acc": 48.7,
+        "standard_acc": 58.3,
+        "delta_acc": -9.6,
+        "r_ci_95": [
+          45.1,
+          52.7
+        ],
+        "s_ci_95": [
+          54.4,
+          62.0
+        ],
+        "n_reasoning": 647,
+        "n_standard": 647
+      },
+      "chemistry": {
+        "reasoning_acc": 43.0,
+        "standard_acc": 49.0,
+        "delta_acc": -6.0,
+        "r_ci_95": [
+          39.6,
+          46.3
+        ],
+        "s_ci_95": [
+          45.6,
+          52.4
+        ],
+        "n_reasoning": 761,
+        "n_standard": 761
+      },
+      "biology": {
+        "reasoning_acc": 72.7,
+        "standard_acc": 82.1,
+        "delta_acc": -9.4,
+        "r_ci_95": [
+          68.0,
+          77.1
+        ],
+        "s_ci_95": [
+          78.3,
+          86.2
+        ],
+        "n_reasoning": 341,
+        "n_standard": 341
+      },
+      "earth_science": {
+        "reasoning_acc": 29.2,
+        "standard_acc": 54.2,
+        "delta_acc": -25.0,
+        "r_ci_95": [
+          19.4,
+          40.3
+        ],
+        "s_ci_95": [
+          41.7,
+          65.3
+        ],
+        "n_reasoning": 72,
+        "n_standard": 72
+      }
+    },
+    {
+      "pair": "Qwen3-32B thinking-on vs off",
+      "reasoning": "qwen/qwen3-32b:nitro [thinking=ON]",
+      "standard": "qwen/qwen3-32b:nitro [thinking=OFF]",
+      "physics": {
+        "reasoning_acc": 39.4,
+        "standard_acc": 36.5,
+        "delta_acc": 2.9,
+        "r_ci_95": [
+          35.7,
+          43.3
+        ],
+        "s_ci_95": [
+          32.8,
+          40.0
+        ],
+        "n_reasoning": 647,
+        "n_standard": 647
+      },
+      "chemistry": {
+        "reasoning_acc": 32.6,
+        "standard_acc": 30.0,
+        "delta_acc": 2.6,
+        "r_ci_95": [
+          29.3,
+          35.9
+        ],
+        "s_ci_95": [
+          26.9,
+          33.0
+        ],
+        "n_reasoning": 761,
+        "n_standard": 761
+      },
+      "biology": {
+        "reasoning_acc": 75.1,
+        "standard_acc": 72.1,
+        "delta_acc": 2.9,
+        "r_ci_95": [
+          70.7,
+          79.5
+        ],
+        "s_ci_95": [
+          67.2,
+          77.1
+        ],
+        "n_reasoning": 341,
+        "n_standard": 341
+      },
+      "earth_science": {
+        "reasoning_acc": 38.9,
+        "standard_acc": 34.7,
+        "delta_acc": 4.2,
+        "r_ci_95": [
+          27.8,
+          50.0
+        ],
+        "s_ci_95": [
+          25.0,
+          45.8
+        ],
+        "n_reasoning": 72,
+        "n_standard": 72
+      }
+    },
+    {
+      "pair": "Gemini-2.0-Flash-001 thinking-on vs off",
+      "reasoning": "google/gemini-2.0-flash-001 [thinking=ON]",
+      "standard": "google/gemini-2.0-flash-001 [thinking=OFF]",
+      "physics": {
+        "reasoning_acc": 72.8,
+        "standard_acc": 72.2,
+        "delta_acc": 0.6,
+        "r_ci_95": [
+          69.4,
+          76.4
+        ],
+        "s_ci_95": [
+          68.8,
+          75.7
+        ],
+        "n_reasoning": 647,
+        "n_standard": 647
+      },
+      "chemistry": {
+        "reasoning_acc": 64.4,
+        "standard_acc": 63.7,
+        "delta_acc": 0.7,
+        "r_ci_95": [
+          61.0,
+          67.7
+        ],
+        "s_ci_95": [
+          60.4,
+          66.9
+        ],
+        "n_reasoning": 761,
+        "n_standard": 761
+      },
+      "biology": {
+        "reasoning_acc": 85.9,
+        "standard_acc": 86.5,
+        "delta_acc": -0.6,
+        "r_ci_95": [
+          82.1,
+          89.4
+        ],
+        "s_ci_95": [
+          83.0,
+          90.3
+        ],
+        "n_reasoning": 341,
+        "n_standard": 341
+      },
+      "earth_science": {
+        "reasoning_acc": 61.1,
+        "standard_acc": 65.3,
+        "delta_acc": -4.2,
+        "r_ci_95": [
+          50.0,
+          72.2
+        ],
+        "s_ci_95": [
+          54.2,
+          76.4
+        ],
+        "n_reasoning": 72,
+        "n_standard": 72
+      }
+    }
+  ],
+  "average_deltas": {
+    "physics": -2.0,
+    "chemistry": -0.9,
+    "biology": -2.4,
+    "earth_science": -8.3
+  },
+  "spearman_rho": {
+    "rho": 0.6,
+    "p_value": 0.4
+  },
+  "domain_profiles": {
+    "physics": {
+      "K": 0.2,
+      "L": 0.3,
+      "C": 0.5,
+      "label": "Physics",
+      "computation_heavy": true
+    },
+    "chemistry": {
+      "K": 0.4,
+      "L": 0.3,
+      "C": 0.3,
+      "label": "Chemistry",
+      "computation_heavy": false
+    },
+    "biology": {
+      "K": 0.6,
+      "L": 0.3,
+      "C": 0.1,
+      "label": "Biology",
+      "computation_heavy": false
+    },
+    "earth_science": {
+      "K": 0.6,
+      "L": 0.2,
+      "C": 0.2,
+      "label": "Earth Science",
+      "computation_heavy": false
+    }
+  }
+}
