@@ -101,19 +101,3 @@ python evaluation/eval_script.py \
 - **Domain gap δ**: source_accuracy − target_accuracy
 - **Knowledge-dependent gain ratio**: fraction of gains that are domain-specific
 
-## Citation
-
-```bibtex
-@dataset{isosci150_2025,
-  title={IsoSci-150: Isomorphic Cross-Domain Science Problem Pairs for 
-         Evaluating Reasoning vs. Knowledge Retrieval in LLMs},
-  author={[Author names]},
-  year={2025},
-  url={https://huggingface.co/datasets/[your-org]/isosci-150},
-  license={CC-BY-4.0}
-}
-```
-
-## License
-
-CC-BY-4.0. Please cite the associated NeurIPS 2025 paper if you use this dataset.
