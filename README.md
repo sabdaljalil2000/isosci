@@ -10,6 +10,9 @@
 ```bash
 # 1. Clone and set up
 cd isosci
+python3 -m venv isosci_env
+source isosci_env/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
 
 # 2. Set your OpenRouter API key
@@ -193,10 +196,6 @@ from src.api_client import cost_tracker
 print(cost_tracker.summary())
 ```
 
-To reduce cost:
-- Set `PAIRS_PER_MAPPING = 17` → 102 pairs total (~$500 cheaper)
-- Use `--limit 50` in stage 4 for preliminary results
-- Stage 4 is the most expensive — run reasoning models last (they use more tokens)
 
 ---
 
@@ -216,13 +215,5 @@ After running all stages, the following are ready for inclusion in the paper:
 
 ---
 
-## Citation
 
-```bibtex
-@dataset{isosci150_2025,
-  title={IsoSci-150: Isomorphic Cross-Domain Science Problem Pairs},
-  author={[Author names]},
-  year={2025},
-  note={NeurIPS 2025 Datasets and Benchmarks Track}
-}
 ```
